@@ -1,156 +1,199 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calendar, GraduationCap, Library, Users } from 'lucide-react'
-import Link from "next/link"
+'use client'
 
-export default function SchoolProfile() {
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { FileText, Users, Lightbulb } from 'lucide-react'
+import headerLogo from "../public/cropped-HeaderLogo.png"
+import headMaster from "../public/039_DSC_3019-370x247.jpg"
+
+export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground shadow-lg">
-        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <GraduationCap className="h-8 w-8" />
-            <h1 className="text-2xl font-bold">Evergreen Academy</h1>
-          </div>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><Link href="#about" className="hover:underline">About</Link></li>
-              <li><Link href="#programs" className="hover:underline">Programs</Link></li>
-              <li><Link href="#facilities" className="hover:underline">Facilities</Link></li>
-              <li><Link href="#contact" className="hover:underline">Contact</Link></li>
-            </ul>
-          </nav>
-        </div>
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
+      <header className="bg-white shadow-md">
+        <nav className="container mx-auto px-6 py-3">
+          <ul className="flex justify-between items-center">
+            <Link href="/" className="flex items-center">
+              <Image 
+                src={headerLogo}
+                alt="SMAN 17 SURABAYA"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </Link>
+            <li><Link href="/about" className="text-gray-700 hover:text-blue-600">Tentang Kami</Link></li>
+            <li><Link href="/academics" className="text-gray-700 hover:text-blue-600">Agenda Sekolah</Link></li>
+            <li><Link href="/admissions" className="text-gray-700 hover:text-blue-600">Prestasi Siswa</Link></li>
+            <li><Link href="/blog" className="text-gray-700 hover:text-blue-600">Blog</Link></li>
+          </ul>
+        </nav>
       </header>
 
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <section id="about" className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">About Evergreen Academy</h2>
-          <p className="text-lg mb-4">
-            Evergreen Academy is a prestigious institution dedicated to nurturing young minds and fostering academic excellence. 
-            With a rich history spanning over 50 years, we pride ourselves on our innovative curriculum, experienced faculty, 
-            and state-of-the-art facilities.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Total Students</CardTitle>
-                <Users className="h-4 w-4 text-muted-foreground" />
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">1,500+</div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Programs Offered</CardTitle>
-                <GraduationCap className="h-4 w-4 text-muted-foreground" />
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">20+</div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Library Books</CardTitle>
-                <Library className="h-4 w-4 text-muted-foreground" />
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">50,000+</div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Extracurricular Activities</CardTitle>
-                <Calendar className="h-4 w-4 text-muted-foreground" />
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">30+</div>
-              </CardContent>
-            </Card>
-          </div>
+      <main>
+        <section className="hero relative h-[600px] flex items-center justify-center">
+          <Image
+            src= "https://images2.alphacoders.com/902/902437.jpg"
+            alt="School campus"
+            fill
+            sizes="100vw"
+            priority
+            quality={100}
+            objectFit="cover"
+            className="absolute z-0 object-cover"
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="z-10 text-center text-white"
+          >
+            <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">Selamat datang di laman resmi SMA Negeri 17 Surabaya</h1>
+            <p className="text-xl mb-8 drop-shadow-md">Untuk Bangsa, dan Negaraku</p>
+            <Button asChild className="bg-blue-600 hover:bg-blue-700">
+              <Link href="/admissions">Apply Now</Link>
+            </Button>
+          </motion.div>
         </section>
 
-        <section id="programs" className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">Our Programs</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {['Science & Technology', 'Arts & Humanities', 'Business Studies', 'Languages', 'Physical Education', 'Music & Performing Arts'].map((program) => (
-              <Card key={program}>
-                <CardHeader>
-                  <CardTitle>{program}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Our {program} program offers students a comprehensive curriculum designed to challenge and inspire.
-                  </CardDescription>
-                </CardContent>
-              </Card>
+        <section className="features container mx-auto px-6 py-16">
+          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Pillars</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { 
+                title: "INOVATIF", 
+                icon: FileText, 
+                description: "Di era digital sekarang ini guru harus bisa mengimbangi dan melangkah maju untuk mengikuti perkembangan pendidikan untuk meningkatkan keprofesionalan dalam mengajar sehingga lebih menarik dan mampu berinovatif", 
+                color: "from-blue-900 to-blue-10", 
+                name: "INARNI, S.PD", 
+                image: "https://i.pinimg.com/originals/62/8b/e9/628be9123fd21fddf512814d3e36da7c.gif" 
+              },
+              { 
+                title: "MANDIRI", 
+                icon: Users, 
+                description: "Manusia hebat adalah mereka yang mampu memotivasi dirinya sendiri tanpa harus diminta atau dipaksa orang lain. Berinisiatif sendiri dan berbuat baik menjadikan manusia kuat dan mandiri", 
+                color: "from-blue-700 to-blue-10", 
+                name: "TOTOK SUDARTO, S.PD", 
+                image: "https://i.pinimg.com/originals/64/a9/19/64a9196a102faf69e4ff8284cb3996ca.gif" 
+              },
+              { 
+                title: "KREATIF", 
+                icon: Lightbulb, 
+                description: "Pembelajaran yang disesuaikan dengan kondisi fisik pada jam tersebut dengan selingan humor dan tidak mengurangi isi materi", 
+                color: "from-blue-900 to-blue-10", 
+                name: "DRS. TEGUH JUANA, M.SI", 
+                image: "https://i.pinimg.com/originals/60/03/0e/60030eb651d4f7965b67dceab21484b7.gif" 
+              }
+            ].map((pillar, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="relative h-[400px] rounded-lg overflow-hidden"
+              >
+                <Image
+                  src={pillar.image}
+                  alt={pillar.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute z-0"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-br ${pillar.color} opacity-80 z-10`}></div>
+                <div className="relative z-20 p-6 flex flex-col justify-between h-full text-white">
+                  <div>
+                    <div className="flex items-center mb-4">
+                      <pillar.icon className="w-8 h-8 mr-2" />
+                      <h3 className="text-2xl font-bold">{pillar.title}</h3>
+                    </div>
+                    <p className="text-sm mb-6">{pillar.description}</p>
+                  </div>
+                  <div className="mt-auto">
+                    <span className="text-sm font-semibold px-3 py-1 bg-white text-blue-600 rounded">{pillar.name}</span>
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </section>
 
-        <section id="facilities" className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">Our Facilities</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="news-events container mx-auto px-6 py-16">
+          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Latest News & Events</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
+              <Image
+                src="/placeholder.svg?height=200&width=400"
+                alt="Science Fair"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover"
+              />
               <CardHeader>
-                <CardTitle>State-of-the-Art Laboratories</CardTitle>
+                <CardTitle>Annual Science Fair</CardTitle>
+                <CardDescription>Join us for an exciting showcase of student projects</CardDescription>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Our labs are equipped with the latest technology to provide hands-on learning experiences in sciences and technology.
-                </CardDescription>
+                <p>Date: May 15, 2024</p>
+                <p>Time: 10:00 AM - 3:00 PM</p>
               </CardContent>
+              <CardFooter>
+                <Button variant="outline">Learn More</Button>
+              </CardFooter>
             </Card>
             <Card>
+              <Image
+                src="/placeholder.svg?height=200&width=400"
+                alt="Arts Program"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover"
+              />
               <CardHeader>
-                <CardTitle>Modern Library</CardTitle>
+                <CardTitle>New Arts Program Launched</CardTitle>
+                <CardDescription>Expanding our curriculum with innovative arts courses</CardDescription>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Our extensive library houses over 50,000 books and provides digital access to numerous academic journals and resources.
-                </CardDescription>
+                <p>Starting from the upcoming academic year</p>
               </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Sports Complex</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Our sports complex includes indoor and outdoor facilities for a wide range of sports and physical activities.
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Auditorium</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Our modern auditorium hosts various events, performances, and guest lectures throughout the academic year.
-                </CardDescription>
-              </CardContent>
+              <CardFooter>
+                <Button variant="outline">Read More</Button>
+              </CardFooter>
             </Card>
           </div>
         </section>
-
-        <section id="contact" className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-          <Card>
-            <CardContent className="pt-6">
-              <p className="mb-2"><strong>Address:</strong> 123 Education Lane, Learningville, EV 12345</p>
-              <p className="mb-2"><strong>Phone:</strong> (555) 123-4567</p>
-              <p className="mb-2"><strong>Email:</strong> info@evergreenacademy.edu</p>
-              <Button className="mt-4">Schedule a Visit</Button>
-            </CardContent>
-          </Card>
-        </section>
       </main>
 
-      <footer className="bg-muted py-6">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 Evergreen Academy. All rights reserved.</p>
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-wrap justify-between">
+            <div className="w-full md:w-1/4 mb-6 md:mb-0">
+              <h3 className="text-lg font-semibold mb-2">SMAN 17 SURABAYA</h3>
+              <p className="text-sm"> Jl. Rungkut Asri Tengah, Rungkut Kidul, Kec. Rungkut<br />Surabaya, Jawa Timur 60293</p>
+            </div>
+            <div className="w-full md:w-1/4 mb-6 md:mb-0">
+              <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+              <ul className="text-sm">
+                <li><Link href="/about" className="hover:text-blue-300">About Us</Link></li>
+                <li><Link href="/academics" className="hover:text-blue-300">Academics</Link></li>
+                <li><Link href="/admissions" className="hover:text-blue-300">Admissions</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-300">Contact</Link></li>
+              </ul>
+            </div>
+            <div className="w-full md:w-1/4 mb-6 md:mb-0">
+              <h4 className="text-lg font-semibold mb-2">Connect</h4>
+              <ul className="text-sm">
+                <li><a href="#" className="hover:text-blue-300">Facebook</a></li>
+                <li><a href="#" className="hover:text-blue-300">Twitter</a></li>
+                <li><a href="#" className="hover:text-blue-300">Instagram</a></li>
+                <li><a href="#" className="hover:text-blue-300">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
