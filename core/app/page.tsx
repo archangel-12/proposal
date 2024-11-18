@@ -1,13 +1,14 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { FileText, Users, Lightbulb } from 'lucide-react'
-import headerLogo from "../public/cropped-HeaderLogo.png"
-import headMaster from "../public/039_DSC_3019-370x247.jpg"
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { FileText, Users, Lightbulb } from 'lucide-react';
+import headerLogo from "../public/cropped-HeaderLogo.png";
+import factoryVisit from "../public/hiya.jpeg";
+import Voley from "../public/lmao.png";
 
 export default function Home() {
   return (
@@ -120,31 +121,27 @@ export default function Home() {
         </section>
 
         <section className="news-events container mx-auto px-6 py-16">
-          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Latest News & Events</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Berita Sekolah</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
             <Card>
               <Image
-                src="/placeholder.svg?height=200&width=400"
+                src={factoryVisit}
                 alt="Science Fair"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
+                width={600}
+                height={300}
+                className="w-full h-48 object-contain"
               />
               <CardHeader>
-                <CardTitle>Annual Science Fair</CardTitle>
-                <CardDescription>Join us for an exciting showcase of student projects</CardDescription>
+                <CardTitle>Kunjungan Dharmawanita</CardTitle>
+                <CardDescription>Kunjungan Dharmawanita SMAN 17 Surabaya ke Pabrik Fiesta di Ngoro, Kabupaten Mojokerto</CardDescription>
               </CardHeader>
-              <CardContent>
-                <p>Date: May 15, 2024</p>
-                <p>Time: 10:00 AM - 3:00 PM</p>
-              </CardContent>
               <CardFooter>
-                <Button variant="outline">Learn More</Button>
+                <Button variant="outline">Read More</Button>
               </CardFooter>
             </Card>
             <Card>
               <Image
-                src="/placeholder.svg?height=200&width=400"
+                src={Voley}
                 alt="Arts Program"
                 width={400}
                 height={200}
@@ -155,7 +152,7 @@ export default function Home() {
                 <CardDescription>Expanding our curriculum with innovative arts courses</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Starting from the upcoming academic year</p>
+                <p>other than that, fuck em'. we ball...</p>
               </CardContent>
               <CardFooter>
                 <Button variant="outline">Read More</Button>
@@ -169,7 +166,15 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">SMAN 17 SURABAYA</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                <Image 
+                src={headerLogo}
+                alt="SMAN 17 SURABAYA"
+                width={150}
+                height={40}
+                className="h-15 w-auto"
+                />
+              </h3>
               <p className="text-sm"> Jl. Rungkut Asri Tengah, Rungkut Kidul, Kec. Rungkut<br />Surabaya, Jawa Timur 60293</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -182,7 +187,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h4 className="text-lg font-semibold mb-2">Connect</h4>
+              <h4 className="text-lg font-semibold mb-2">Connect with us!</h4>
               <ul className="text-sm">
                 <li><a href="#" className="hover:text-blue-300">Facebook</a></li>
                 <li><a href="#" className="hover:text-blue-300">Twitter</a></li>
