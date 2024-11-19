@@ -9,6 +9,7 @@ import { FileText, Users, Lightbulb } from 'lucide-react';
 import headerLogo from "../public/cropped-HeaderLogo.png";
 import factoryVisit from "../public/hiya.jpeg";
 import Voley from "../public/lmao.png";
+import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -59,9 +60,7 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section className="features container mx-auto px-6 py-16">
-          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Pillars</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3">
             {[
               { 
                 title: "INOVATIF", 
@@ -93,7 +92,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative h-[400px] rounded-lg overflow-hidden"
+                className="relative h-[300px]"
               >
                 <Image
                   src={pillar.image}
@@ -102,23 +101,79 @@ export default function Home() {
                   objectFit="cover"
                   className="absolute z-0"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-br ${pillar.color} opacity-80 z-10`}></div>
-                <div className="relative z-20 p-6 flex flex-col justify-between h-full text-white">
+                <div className="relative z-20 p-6 flex flex-col text-justify h-full text-white">
                   <div>
                     <div className="flex items-center mb-4">
                       <pillar.icon className="w-8 h-8 mr-2" />
                       <h3 className="text-2xl font-bold">{pillar.title}</h3>
                     </div>
-                    <p className="text-sm mb-6">{pillar.description}</p>
+                    <p>{pillar.description}</p>
                   </div>
                   <div className="mt-auto">
-                    <span className="text-sm font-semibold px-3 py-1 bg-white text-blue-600 rounded">{pillar.name}</span>
+                    <span className="text-md font-semibold px-3 py-1 bg-white text-blue-600 rounded">{pillar.name}</span>
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
-        </section>
+        
+
+        <main className="container mx-auto px-6 py-12">
+          <div className="flex gap-12">
+            <div className="w-1/2">
+              <Image
+                src="https://asset.kompas.com/crops/bVzqiC1Fk6lbCaIDX4MXnyepvzY=/16x0:787x514/1200x800/data/photo/2018/03/16/69007999.jpg" // Replace with actual principal image
+                alt="anggap aja contoh"
+                width={600}
+                height={800}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+              <motion.div 
+                className="w-1/2 space-y-6"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+            <h1 className="text-4xl font-bold">
+              <span className="text-gray-800">Good Morning</span>{' '}
+              <span className="text-orange-500">Everyone</span>{' '}
+            </h1>
+            
+            <h2 className="text-2xl text-gray-700">
+              We choose to go to the Moon!
+            </h2>
+
+            <div className="prose prose-lg text-justify">
+              <p>
+                If this capsule history of our progress teaches us anything, it is that man, in his quest for knowledge and progress, is determined and cannot be deterred. The exploration of space will go ahead, whether we join in it or not, and it is one of the great adventures of all time, and no nation which expects to be the leader of other nations can expect to stay behind in the race for space. 
+              </p>
+
+              <p>
+                Those who came before us made certain that this country rode the first waves of the industrial revolutions, the first waves of modern invention, and the first wave of nuclear power, and this generation does not intend to founder in the backwash of the coming age of space. We mean to be a part of it — we mean to lead it. For the eyes of the world now look into space, to the moon and to the planets beyond, and we have vowed that we shall not see it governed by a hostile flag of conquest, but by a banner of freedom and peace. We have vowed that we shall not see space filled with weapons of mass destruction, but with instruments of knowledge and understanding.
+              </p>
+
+              <p className='italic'>
+                We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too. 
+              </p>
+
+              <p>
+                However, I think we’re going to do it, and I think that we must pay what needs to be paid. I don’t think we ought to waste any money, but I think we ought to do the job. And this will be done in the decade of the sixties. It may be done while some of you are still here at school at this college and university. It will be done during the term of office of some of the people who sit here on this platform. But it will be done. And it will be done before the end of this decade.
+              </p>
+              
+              <p>
+              Well, space is there, and we’re going to climb it, and the moon and the planets are there, and new hopes for knowledge and peace are there. And, therefore, as we set sail we ask God’s blessing on the most hazardous and dangerous and greatest adventure on which man has ever embarked.
+              
+              Thank you.
+              </p>
+            </div>
+
+            <div className="mt-8 inline-block border-2 border-gray-800 px-6 py-2">
+              <p className="font-semibold">John Fitzgerald Kennedy</p>
+            </div>
+          </motion.div>
+        </div>
+      </main>
 
         <section className="news-events container mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Berita Sekolah</h2>
@@ -186,14 +241,22 @@ export default function Home() {
                 <li><Link href="/contact" className="hover:text-blue-300">Contact</Link></li>
               </ul>
             </div>
-            <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h4 className="text-lg font-semibold mb-2">Connect with us!</h4>
-              <ul className="text-sm">
-                <li><a href="#" className="hover:text-blue-300">Facebook</a></li>
-                <li><a href="#" className="hover:text-blue-300">Twitter</a></li>
-                <li><a href="#" className="hover:text-blue-300">Instagram</a></li>
-                <li><a href="#" className="hover:text-blue-300">LinkedIn</a></li>
-              </ul>
+            <div className="w-full md:w-1/3 mb-6 md:mb-0">
+              <h4 className="text-lg font-semibold mb-4">Connect with us!</h4>
+              <div className="flex space-x-4">
+                <a href="https://www.facebook.com/smantass/?locale=id_ID" className="text-white hover:text-blue-300 transition-colors duration-300">
+                  <FaFacebookF size={24} />
+                  <span className="sr-only">Facebook</span>
+                </a>
+                <a href="https://twitter.com/iasmantass" className="text-white hover:text-blue-300 transition-colors duration-300">
+                  <FaXTwitter size={24} />
+                  <span className="sr-only">Twitter</span>
+                </a>
+                <a href="https://www.instagram.com/smansby17/" className="text-white hover:text-blue-300 transition-colors duration-300">
+                  <FaInstagram size={24} />
+                  <span className="sr-only">Instagram</span>
+                </a>
+              </div>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
