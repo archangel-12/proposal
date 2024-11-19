@@ -11,6 +11,7 @@ import factoryVisit from "../public/hiya.jpeg";
 import Voley from "../public/lmao.png";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
@@ -173,8 +174,73 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </main>
 
+<section className="py-16">
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold text-gray-800 mb-2">DEWAN GURU</h2>
+      <p className="text-gray-600">Guru Dan Tenaga Kependidikan Sekolah</p>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        {
+          name: "Endang R., M.Pd",
+          role: "Guru Matematika",
+          image: "/teachers/008_Bu-Restu-2x3-1-350x350.png"
+        },
+        {
+          name: "Drs.Teguh Juana, M.Si",
+          role: "Guru Sejarah",
+          image: "/teachers/017_PAK-TEGUH-2X3-350x350.png"
+        },
+        {
+          name: "Drs. Teguh H., M.Pd",
+          role: "Guru Bahasa Indonesia",
+          image: "/teachers/018_Pak-Jon-2x3-1-350x350.png"
+        },
+        {
+          name: "Drs. Hari P., M.M",
+          role: "Guru Matematika",
+          image: "/teachers/019_Pak-Hari-2x3-1-350x350.png"
+        }
+      ].map((teacher, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          className="flex flex-col items-center"
+        >
+          <div className="relative w-48 h-48 mb-4">
+            <Image
+              src={teacher.image}
+              alt={teacher.name}
+              width={192}
+              height={192}
+              className="rounded-full object-cover border-4"
+            />
+          </div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-1">{teacher.name}</h3>
+          <p className="text-gray-600">{teacher.role}</p>
+        </motion.div>
+      ))}
+    </div>
+
+    <div className="flex justify-center space-x-2 mt-8">
+      {[...Array(13)].map((_, i) => (
+        <button
+          key={i}
+          className={`w-2 h-2 rounded-full ${i === 0 ? 'bg-blue-600' : 'bg-gray-300'}`}
+          aria-label={`Go to slide ${i + 1}`}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+
+      </main>
         <section className="news-events container mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Berita Sekolah</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
