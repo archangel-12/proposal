@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,17 +17,27 @@ import { FileText, Users, Lightbulb } from "lucide-react";
 import headerLogo from "../public/cropped-HeaderLogo.png";
 import factoryVisit from "../public/hiya.jpeg";
 import Voley from "../public/lmao.png";
-import { 
-  FaFacebookF, 
-  FaInstagram, 
-  FaXTwitter 
-} from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
-      <header className="bg-white shadow-md">
+      <header
+        className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${
+          isScrolled ? "py-2" : "py-4"
+        }`}
+      >
         <nav className="container mx-auto px-6 py-3">
           <ul className="flex justify-between items-center">
             <Link href="/" className="flex items-center">
@@ -36,7 +46,10 @@ export default function Home() {
                 alt="SMAN 17 SURABAYA"
                 width={150}
                 height={40}
-                className="h-10 w-auto"
+                className={`transition-all duration-300 ${
+                  isScrolled ? "h-12" : "h-16"
+                } w-fit`}
+                priority
               />
             </Link>
             <li>
@@ -269,7 +282,7 @@ export default function Home() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
-                  className= "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
                 >
                   {[
                     {
@@ -520,8 +533,24 @@ export default function Home() {
                     {
                       name: "Elon Reeve Musk",
                       role: "CEO of Tesla, Inc, SpaceX, & X Corp",
-                      image: "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200"
-                    }
+                      image:
+                        "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",
+                    },
+                    {
+                      name: "Novi Kiki Rizki Amalia",
+                      role: "Tenaga Kependidikan",
+                      image: "/tenaga_kependidikan/bu novi.png",
+                    },
+                    {
+                      name: "Julius Gatot P, S.E",
+                      role: "Tenaga Kependidikan",
+                      image: "/tenaga_kependidikan/pak gatot.png",
+                    },
+                    {
+                      name: "Nurul Huda",
+                      role: "Tenaga Kependidikan",
+                      image: "/tenaga_kependidikan/pak nurul.png",
+                    },
                   ]
                     .slice(currentPage * 4, (currentPage + 1) * 4)
                     .map((teacher, index) => (
@@ -552,7 +581,7 @@ export default function Home() {
               </AnimatePresence>
 
               <div className="flex justify-center space-x-2 mt-8">
-                {[...Array(13)].map((_, i) => (
+                {[...Array(14)].map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setCurrentPage(i)}
