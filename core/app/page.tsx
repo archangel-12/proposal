@@ -269,7 +269,7 @@ export default function Home() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                  className= "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
                 >
                   {[
                     {
@@ -329,7 +329,7 @@ export default function Home() {
                     },
                     {
                       name: "Maria Agustina D.P, S.Pd",
-                      role: "Guru Bahasa Inggris",
+                      role: "Guru Fisika & PKWU",
                       image: "/teachers/bu maria_bahasa inggris.png",
                     },
                     {
@@ -366,6 +366,161 @@ export default function Home() {
                       name: "Nur Amalia, S.Pd",
                       role: "Guru Matematika",
                       image: "/teachers/bu amalia_matematika.png",
+                    },
+                    {
+                      name: "Rino Hariyono, S.Pd",
+                      role: "Guru Penjaskes",
+                      image: "/teachers/pak rino_pendidikan olahraga.png",
+                    },
+                    {
+                      name: "Linda Wirianty, S.Pd",
+                      role: "Guru Kimia",
+                      image: "/teachers/bu linda_kimia.png",
+                    },
+                    {
+                      name: "Akhmad Fauzi, S.Pd",
+                      role: "Guru PkN",
+                      image: "/teachers/pak fauzi_olahraga.png",
+                    },
+                    {
+                      name: "ELVYN B, S.Sos., M.Pd",
+                      role: "Guru Sosiologi",
+                      image: "/teachers/bu elvyn_sosiologi.png",
+                    },
+                    {
+                      name: "Ibnu Mashuda, S.Pd",
+                      role: "Guru Penjaskes",
+                      image: "/teachers/pak ibnu_olahraga.png",
+                    },
+                    {
+                      name: "Anang Didit Soesilo, S.T",
+                      role: "Guru PKWU",
+                      image: "/teachers/pak anang_cs.png",
+                    },
+                    {
+                      name: "Fauzan Adim, S.E",
+                      role: "Guru Ekonomi",
+                      image: "/teachers/pak fauzan_ekonomi.png",
+                    },
+                    {
+                      name: "Dimas Dananjaya, S.Pd",
+                      role: "Guru Penjaskes",
+                      image: "/teachers/pak dimas_olahraga.png",
+                    },
+                    {
+                      name: "Galuh Prakasyta, S.Psi",
+                      role: "Guru Bimbingan Konseling",
+                      image: "/teachers/bu galuh_bk.png",
+                    },
+                    {
+                      name: "Eka Fidia Ramadhania, S.Pd",
+                      role: "Guru Bimbingan Konseling",
+                      image: "/teachers/bu eka_bk.png",
+                    },
+                    {
+                      name: "Made Hendra Sasmita, S.Pd",
+                      role: "Guru Seni Budaya",
+                      image: "/teachers/pak made_seni budaya.png",
+                    },
+                    {
+                      name: "Nurus Sulhah, S.Pd",
+                      role: "Guru PpKn",
+                      image: "/teachers/bu nurus_pkn.png",
+                    },
+                    {
+                      name: "Joko Susilo, S.Ag.K",
+                      role: "Guru Agama Katolik",
+                      image: "/teachers/pak joko_katolik.png",
+                    },
+                    {
+                      name: "Indah Triyuliati, S.Pd",
+                      role: "Guru Matematika",
+                      image: "/teachers/bu indah_matematika.png",
+                    },
+                    {
+                      name: "Wafi H, S.Pd.I, M.Pd",
+                      role: "Guru Agama Islam",
+                      image: "/teachers/pa wafi_islam.png",
+                    },
+                    {
+                      name: "Mat Sumiaji, S.Pd, M.Si",
+                      role: "Guru PpKn",
+                      image: "/teachers/pak aji_ppkn.png",
+                    },
+                    {
+                      name: "Ratih Indrawati, S.Pd",
+                      role: "Guru Seni Budaya",
+                      image: "/teachers/bu ratih_seni budaya.png",
+                    },
+                    {
+                      name: "Nindya R.P.D, S.Sos, M.Pd",
+                      role: "Guru Sosiologi",
+                      image: "/teachers/bu nindya_sosiologi.png",
+                    },
+                    {
+                      name: "Ratna Yulia Damayanti, S.Pd",
+                      role: "Guru Bahasa Daerah",
+                      image: "/teachers/bu ratna_bahasa daerah.png",
+                    },
+                    {
+                      name: "Nur Fadhillah, S.Pd.I, M.Pd",
+                      role: "Guru Agama Islam",
+                      image: "/teachers/bu nur_islam.png",
+                    },
+                    {
+                      name: "Saiful Hadi, S.Ag",
+                      role: "Guru Agama Islam",
+                      image: "/teachers/pak saiful_islam.png",
+                    },
+                    {
+                      name: "Siti Astriana, S.Pd",
+                      role: "Guru Sejarah",
+                      image: "/teachers/bu astri_sejarah.png",
+                    },
+                    {
+                      name: "Aviarina Widya I, S.Si, M.T",
+                      role: "Guru Kimia",
+                      image: "/teachers/bu avi_kimia.png",
+                    },
+                    {
+                      name: "Mohammad Rafli A, S.Pd",
+                      role: "Guru Geografi",
+                      image: "/teachers/pak rafli_geografi.png",
+                    },
+                    {
+                      name: "Rena Nurida, S.Pd",
+                      role: "Guru Bahasa Jepang",
+                      image: "/teachers/bu reni_nihon.png",
+                    },
+                    {
+                      name: "Nur Haniyyah M, S.Pd",
+                      role: "Guru Biologi",
+                      image: "/teachers/bu nur_biologi.png",
+                    },
+                    {
+                      name: "Adawiya K, S.Sos",
+                      role: "Guru Sosiologi",
+                      image: "/teachers/bu ada_sosiologi.png",
+                    },
+                    {
+                      name: "Stevani Siburian, S.Pd",
+                      role: "Guru Ekonomi",
+                      image: "/teachers/bu stevany_ekonomi.png",
+                    },
+                    {
+                      name: "Rena Nurida, S.Pd",
+                      role: "Guru Bahasa Jepang",
+                      image: "/teachers/bu reni_nihon.png",
+                    },
+                    {
+                      name: "Faranita Dian S, S.Pd",
+                      role: "Guru Bahasa Indonesia",
+                      image: "/teachers/bu farah_bahasa indonesia.png",
+                    },
+                    {
+                      name: "Elon Reeve Musk",
+                      role: "CEO of Tesla, Inc, SpaceX, & X Corp",
+                      image: "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200"
                     }
                   ]
                     .slice(currentPage * 4, (currentPage + 1) * 4)

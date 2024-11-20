@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'asset.kompas.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'foreignpolicy.com'
       }
     ],
   },
