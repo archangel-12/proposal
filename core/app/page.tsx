@@ -71,7 +71,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/tentangKami"
                     className="text-gray-700 hover:text-blue-600"
                   >
                     Tentang Kami
@@ -710,7 +710,7 @@ export default function Home() {
               </h3>
               <p className="text-sm">
                 {" "}
-                Jl. Rungkut Asri Tengah, Rungkut Kidul, Kec. Rungkut
+                Jl. Rungkut Asri Tengah, Rungkut Kidul
                 <br />
                 Surabaya, Jawa Timur 60293
               </p>

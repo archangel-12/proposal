@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import headerLogo from "../../public/cropped-HeaderLogo.png";
+import History from "./sejarah_sekolah.mdx";
+import Principals from "./kepala_sekolah.mdx";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export default function StrukturOrganisasi() {
@@ -49,7 +51,7 @@ export default function StrukturOrganisasi() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/tentangKami"
                     className="text-gray-700 hover:text-blue-600"
                   >
                     Tentang Kami
@@ -113,18 +115,30 @@ export default function StrukturOrganisasi() {
 
       {/* Main Content */}
       <main className="container mx-auto px-6 py-8">
-        <h1 className="text-3xl font-bold mb-4 text-center">
-          Struktur Organisasi
+        <h1 className="text-3xl font-bold mb-4 text-left">
+          Awal Mula Pendirian Sekolah
         </h1>
-        <div className="flex justify-center">
-          <Image
-            src="/struktur.jpg"
-            alt="struktur organisasi"
-            width={600}
-            height={800}
-            className="rounded-lg shadow-lg"
-          />
-        </div>
+        <History />
+      </main>
+
+      <main className="container mx-auto px-6 py-8 flex flex-col items-center">
+        <h2 className="text-3xl font-bold mb-4 text-left">
+          Visi & Misi Sekolah
+        </h2>
+        <Image
+          src="/troll.png"
+          alt="struktur organisasi"
+          width={500}
+          height={700}
+          className="object-contain"
+        />
+      </main>
+
+      <main className="container mx-auto px-6 py-8">
+        <h3 className="text-3xl font-m mb-4 text-left">
+          Berikut daftar nama kepala SMA Negeri 17 Surabaya:
+        </h3>
+        <Principals />
       </main>
 
       {/* Footer */}
@@ -181,13 +195,22 @@ export default function StrukturOrganisasi() {
             <div className="w-full md:w-1/4">
               <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/smantass/" className="text-white hover:text-blue-400">
+                <a
+                  href="https://www.facebook.com/smantass/"
+                  className="text-white hover:text-blue-400"
+                >
                   <FaFacebookF className="w-6 h-6" />
                 </a>
-                <a href="https://www.instagram.com/smansby17/" className="text-white hover:text-blue-400">
+                <a
+                  href="https://www.instagram.com/smansby17/"
+                  className="text-white hover:text-blue-400"
+                >
                   <FaInstagram className="w-6 h-6" />
                 </a>
-                <a href="https://twitter.com/IASmantass" className="text-white hover:text-blue-400">
+                <a
+                  href="https://twitter.com/IASmantass"
+                  className="text-white hover:text-blue-400"
+                >
                   <FaXTwitter className="w-6 h-6" />
                 </a>
               </div>
