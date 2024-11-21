@@ -19,9 +19,16 @@ import factoryVisit from "../public/hiya.jpeg";
 import Voley from "../public/lmao.png";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
+const TentangKami = [
+  { title: "Pendirian Sekolah", href: "/about/kurikulum" },
+  { title: "Visi & misi", href: "/about/kesiswaan" },
+  { title: "GTK", href: "/about/kehumasan", hasSubmenu: true },
+];
+
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeItem, setActiveItem] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,12 +42,12 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
       <header
         className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled ? "py-2" : "py-4"
+          isScrolled ? "py-1" : "py-1"
         }`}
       >
-        <nav className="container mx-auto px-6 py-3">
+        <nav className="container mx-auto px-6 py-4">
           <ul className="flex justify-between items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex-shrink-0">
               <Image
                 src={headerLogo}
                 alt="SMAN 17 SURABAYA"
@@ -52,32 +59,76 @@ export default function Home() {
                 priority
               />
             </Link>
-            <li>
-              <Link href="/about" className="text-gray-700 hover:text-blue-600">
-                Tentang Kami
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/academics"
-                className="text-gray-700 hover:text-blue-600"
-              >
-                Agenda Sekolah
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/admissions"
-                className="text-gray-700 hover:text-blue-600"
-              >
-                Prestasi Siswa
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="text-gray-700 hover:text-blue-600">
-                Blog
-              </Link>
-            </li>
+            <div className="ml-auto">
+              <ul className="flex items-center space-x-6">
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Tentang Kami
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/strukturOrganisasi"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Struktur Organisasi
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/academics"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Agenda Sekolah
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfwyfDk9qmKQCleFVsvsC-77Ps9ZnrxhoxD3qSNWH45_8ZmeQ/viewform?usp=sf_link"
+                    className="text-gray-700 hover:text-blue-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tamu
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    href="/admissions"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Prestasi Siswa
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/admissions"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Aplikasi
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </ul>
         </nav>
       </header>
@@ -306,7 +357,7 @@ export default function Home() {
                       image: "/teachers/Pak Hari_matematika.png",
                     },
                     {
-                      name: "Dra Sri Harijanti",
+                      name: "Dra. Sri Harijanti",
                       role: "Guru Bimbingan Konseling",
                       image: "/teachers/Bu Sri_BK.png",
                     },

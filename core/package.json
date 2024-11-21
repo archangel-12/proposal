@@ -10,14 +10,20 @@
     "email": "alexandermatthew25@gmail.com",
     "instagram": "r3yanson"
   },
-  "maintainers": ["SMA NEGERI 17 SURABAYA"],
+  "maintainers": [
+    "SMA NEGERI 17 SURABAYA"
+  ],
   "contributors": [
     "Matthew Alexander",
     "SMA NEGERI 17 SURABAYA"
   ],
-  "license":"MIT",
-  "repository": {"url": "https://github.com/archangel-12/proposal"},
-  "categories": ["Education"],
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/archangel-12/proposal"
+  },
+  "categories": [
+    "Education"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
