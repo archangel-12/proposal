@@ -875,58 +875,60 @@ export default function Home() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
+              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <p className="text-sm">Phone: (031) 8700717</p>
+            </div>
+            <div className="w-full md:w-1/4 mb-6 md:mb-0">
+              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
               <ul className="text-sm">
                 <li>
-                  <Link href="/about" className="hover:text-blue-300">
+                  <a href="#" className="hover:text-blue-400">
                     About Us
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="/academics" className="hover:text-blue-300">
+                  <a href="#" className="hover:text-blue-400">
                     Academics
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="/admissions" className="hover:text-blue-300">
+                  <a href="#" className="hover:text-blue-400">
                     Admissions
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-blue-300">
+                  <a href="#" className="hover:text-blue-400">
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
-            <div className="w-full md:w-1/3 mb-6 md:mb-0">
-              <h4 className="text-lg font-semibold mb-4">Connect with us!</h4>
+            <div className="w-full md:w-1/4">
+              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/smantass/?locale=id_ID"
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
+                  href="https://www.facebook.com/smantass/"
+                  className="text-white hover:text-blue-400"
                 >
-                  <FaFacebookF size={24} />
-                  <span className="sr-only">Facebook</span>
-                </a>
-                <a
-                  href="https://twitter.com/iasmantass"
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
-                >
-                  <FaXTwitter size={24} />
-                  <span className="sr-only">Twitter</span>
+                  <FaFacebookF className="w-6 h-6" />
                 </a>
                 <a
                   href="https://www.instagram.com/smansby17/"
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
+                  className="text-white hover:text-blue-400"
                 >
-                  <FaInstagram size={24} />
-                  <span className="sr-only">Instagram</span>
+                  <FaInstagram className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://twitter.com/IASmantass"
+                  className="text-white hover:text-blue-400"
+                >
+                  <FaXTwitter className="w-6 h-6" />
                 </a>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+          <div className="mt-8 text-center text-sm">
             <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
           </div>
         </div>

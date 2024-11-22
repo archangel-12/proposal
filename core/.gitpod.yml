@@ -1,0 +1,11 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - name: Install dependencies
+    init: bun install --cwd core/app
+    command: bun next dev --cwd core/app --hostname 0.0.0.0 --port 3000
+
+ports:
+  - port: 3000
+    onOpen: open-preview
