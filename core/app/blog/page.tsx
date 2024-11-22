@@ -1,57 +1,129 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import headerLogo from "../../public/cropped-HeaderLogo.png";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import { ChevronDown } from "lucide-react";
+import headerLogo from "../../public/cropped-HeaderLogo.png";
+import KunjunganDharmawanita from "./kunjungan-dharmawanita-ke-pabrik-fiesta.mdx";
 
-interface BlogPost {
-  title: string;
-  date: string;
-  excerpt: string;
-  image: string;
-  tags: string[];
-  slug: string;
-}
-
-const blogPosts: BlogPost[] = [
+const blogPosts = [
   {
-
+    id: "kunjungan-dharmawanita-fiesta",
     title: "Kunjungan Dharmawanita ke Pabrik Fiesta",
     date: "30 April 2024",
     excerpt:
       "Kunjungan Dharmawanita SMAN 17 Surabaya ke Pabrik Fiesta di Ngoro, Kabupaten Mojokerto memberikan wawasan baru tentang proses produksi makanan...",
     image: "/hiya.jpeg",
     tags: ["kegiatan", "dharmawanita", "kunjungan"],
-    slug: "kunjungan-dharmawanita-fiesta",
+    content: KunjunganDharmawanita,
   },
-  {
-
-    title: "Tim Voli Putri Raih Juara 2 Tingkat Kota",
-    date: "28 April 2024",
-    excerpt:
-      "Tim voli putri SMAN 17 Surabaya berhasil meraih prestasi membanggakan dengan menjadi runner-up dalam kompetisi tingkat kota...",
-    image: "/lmao.png",
-    tags: ["olahraga", "prestasi", "voli"],
-    slug: "tim-voli-juara-2",
-  },
-  // Add more blog posts as needed
 ];
 
-export default function StrukturOrganisasi() {
+export default function BlogPage() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [isAplikasiOpen, setIsAplikasiOpen] = useState(false);
+  const aplikasiRef = useRef<HTMLDivElement>(null);
+  const [isPrestasiOpen, setIsPrestasiOpen] = useState(false);
+  const prestasiRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        aplikasiRef.current &&
+        !aplikasiRef.current.contains(event.target as Node)
+      ) {
+        setIsAplikasiOpen(false);
+      }
+      if (
+        prestasiRef.current &&
+        !prestasiRef.current.contains(event.target as Node)
+      ) {
+        setIsPrestasiOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
+
+  const aplikasiItems = [
+    {
+      name: "Info GTK",
+      href: "https://info.gtk.kemdikbud.go.id/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Dapodik",
+      href: "http://dapodik.sman17sby.sch.id/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Erapor KM",
+      href: "/erapor-km",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Erapor",
+      href: "http://eraporkm.sman17sby.sch.id/login",
+      target: "_blank",
+      rel: "noopener nonreferrer",
+    },
+    {
+      name: "Quick Edu",
+      href: "/quick-edu",
+      target: "_blank",
+      rel: "noopener nonreferrer",
+    },
+  ];
+
+  const prestasiItems = [
+    {
+      name: "Input Prestasi Siswa",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLScD-xvJtGLx2XiR0oeiDlBwtXTGlZXJ9mxqyxQpV80fhgZqXA/viewform",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Lulusan SNBP tahun 2024",
+      href: "/snbp",
+    },
+    {
+      name: "Prestasi Akademik",
+      href: "/akademik",
+    },
+    {
+      name: "Prestasi Non-Akademik",
+      href: "/non_akademik",
+    },
+    {
+      name: "BIOVATIONS",
+      href: "/biovations",
+    },
+  ];
+
+  const handleAplikasiClick = () => {
+    setIsAplikasiOpen(!isAplikasiOpen);
+  };
+
+  const handlePrestasiClick = () => {
+    setIsPrestasiOpen(!isPrestasiOpen);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
@@ -84,7 +156,7 @@ export default function StrukturOrganisasi() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/tentangKami"
                     className="text-gray-700 hover:text-blue-600"
                   >
                     Tentang Kami
@@ -116,22 +188,96 @@ export default function StrukturOrganisasi() {
                     Tamu
                   </a>
                 </li>
-                <li>
-                  <Link
-                    href="/admissions"
-                    className="text-gray-700 hover:text-blue-600"
+                <div ref={prestasiRef} className="relative">
+                  <button
+                    onClick={handlePrestasiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isPrestasiOpen}
                   >
                     Prestasi Siswa
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/admissions"
-                    className="text-gray-700 hover:text-blue-600"
+                    <motion.div
+                      animate={{ rotate: isPrestasiOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isPrestasiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {prestasiItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              target={item.target}
+                              rel={item.rel}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <div ref={aplikasiRef} className="relative">
+                  <button
+                    onClick={handleAplikasiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isAplikasiOpen}
                   >
                     Aplikasi
-                  </Link>
-                </li>
+                    <motion.div
+                      animate={{ rotate: isAplikasiOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isAplikasiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {aplikasiItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              target={item.target}
+                              rel={item.rel}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <li>
                   <Link
                     href="/blog"
@@ -147,20 +293,78 @@ export default function StrukturOrganisasi() {
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-8">
-        <h1 className="text-3xl font-bold mb-4 text-center">
-          Rekap & Kegiatan Sekolah
+      <main className="container mx-auto px-6 py-12">
+        <h1 className="text-4xl font-bold text-center mb-12">
+          Rekap dan Kegiatan-kegiatan Sekolah
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {blogPosts.map((post) => (
-            <motion.div
-              key={post.image}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+
+        {selectedPost ? (
+          <div className="max-w-4xl mx-auto">
+            <button
+              onClick={() => setSelectedPost(null)}
+              className="mb-6 text-blue-600 hover:text-blue-800 flex items-center gap-2"
             >
-              <Link href={`/blog/${post.slug}`}>
-                <Card className="group overflow-hidden bg-transparent hover:shadow-xl transition-shadow duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+              Kembali ke Daftar Blog
+            </button>
+            <article className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-[400px] md:h-[500px] w-full">
+                <Image
+                  src={selectedPost.image}
+                  alt={selectedPost.title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="p-6 md:p-8">
+                <div className="mb-6">
+                  <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                    {selectedPost.title}
+                  </h1>
+                  <p className="text-gray-600 mb-4">{selectedPost.date}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedPost.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-img:rounded-lg prose-hr:border-gray-200">
+                  <selectedPost.content />
+                </div>
+              </div>
+            </article>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {blogPosts.map((post) => (
+              <motion.div
+                key={post.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Card
+                  className="group overflow-hidden bg-transparent hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                  onClick={() => setSelectedPost(post)}
+                >
                   <div className="relative h-[300px] w-full">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20 z-10" />
                     <Image
@@ -190,10 +394,10 @@ export default function StrukturOrganisasi() {
                     </div>
                   </div>
                 </Card>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
+              </motion.div>
+            ))}
+          </div>
+        )}
       </main>
 
       {/* Footer */}
