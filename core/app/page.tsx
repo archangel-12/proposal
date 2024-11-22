@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,31 +13,114 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { FileText, Users, Lightbulb } from "lucide-react";
+import { FileText, Users, Lightbulb, ChevronDown } from "lucide-react";
 import headerLogo from "../public/cropped-HeaderLogo.png";
 import factoryVisit from "../public/hiya.jpeg";
 import Voley from "../public/lmao.png";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
-const TentangKami = [
-  { title: "Pendirian Sekolah", href: "/about/kurikulum" },
-  { title: "Visi & misi", href: "/about/kesiswaan" },
-  { title: "GTK", href: "/about/kehumasan", hasSubmenu: true },
-];
-
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeItem, setActiveItem] = useState<string | null>(null);
+  const [isAplikasiOpen, setIsAplikasiOpen] = useState(false);
+  const aplikasiRef = useRef<HTMLDivElement>(null);
+  const [isPrestasiOpen, setIsPrestasiOpen] = useState(false);
+  const prestasiRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        aplikasiRef.current &&
+        !aplikasiRef.current.contains(event.target as Node)
+      ) {
+        setIsAplikasiOpen(false);
+      }
+      if (
+        prestasiRef.current &&
+        !prestasiRef.current.contains(event.target as Node)
+      ) {
+        setIsPrestasiOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
+
+  const aplikasiItems = [
+    {
+      name: "Info GTK",
+      href: "https://info.gtk.kemdikbud.go.id/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Dapodik",
+      href: "http://dapodik.sman17sby.sch.id/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Erapor KM",
+      href: "/erapor-km",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Erapor",
+      href: "http://eraporkm.sman17sby.sch.id/login",
+      target: "_blank",
+      rel: "noopener nonreferrer",
+    },
+    {
+      name: "Quick Edu",
+      href: "/quick-edu",
+      target: "_blank",
+      rel: "noopener nonreferrer",
+    },
+  ];
+
+  const prestasiItems = [
+    {
+      name: "Input Prestasi Siswa",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLScD-xvJtGLx2XiR0oeiDlBwtXTGlZXJ9mxqyxQpV80fhgZqXA/viewform",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Lulusan SNBP tahun 2024",
+      href: "/snbp",
+    },
+    {
+      name: "Prestasi Akademik",
+      href: "/akademik",
+    },
+    {
+      name: "Prestasi Non-Akademik",
+      href: "/non_akademik",
+    },
+    {
+      name: "BIOVATIONS",
+      href: "/biovations",
+    },
+  ];
+
+  const handleAplikasiClick = () => {
+    setIsAplikasiOpen(!isAplikasiOpen);
+  };
+
+  const handlePrestasiClick = () => {
+    setIsPrestasiOpen(!isPrestasiOpen);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
       <header
@@ -103,22 +186,96 @@ export default function Home() {
                     Tamu
                   </a>
                 </li>
-                <li>
-                  <Link
-                    href="/admissions"
-                    className="text-gray-700 hover:text-blue-600"
+                <div ref={prestasiRef} className="relative">
+                  <button
+                    onClick={handlePrestasiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isPrestasiOpen}
                   >
                     Prestasi Siswa
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/admissions"
-                    className="text-gray-700 hover:text-blue-600"
+                    <motion.div
+                      animate={{ rotate: isPrestasiOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isPrestasiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {prestasiItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              target={item.target}
+                              rel={item.rel}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <div ref={aplikasiRef} className="relative">
+                  <button
+                    onClick={handleAplikasiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isAplikasiOpen}
                   >
                     Aplikasi
-                  </Link>
-                </li>
+                    <motion.div
+                      animate={{ rotate: isAplikasiOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isAplikasiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {aplikasiItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              target={item.target}
+                              rel={item.rel}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <li>
                   <Link
                     href="/blog"
@@ -651,14 +808,15 @@ export default function Home() {
             Berita Sekolah
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-            <Card>
-              <Image
-                src={factoryVisit}
-                alt="Science Fair"
-                width={600}
-                height={300}
-                className="w-full h-48 object-contain"
-              />
+            <Card className="flex flex-col">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src={factoryVisit}
+                  alt="Science Fair"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Kunjungan Dharmawanita</CardTitle>
                 <CardDescription>
@@ -666,18 +824,19 @@ export default function Home() {
                   Ngoro, Kabupaten Mojokerto
                 </CardDescription>
               </CardHeader>
-              <CardFooter>
+              <CardFooter className="mt-auto">
                 <Button variant="outline">Read More</Button>
               </CardFooter>
             </Card>
-            <Card>
-              <Image
-                src={Voley}
-                alt="Arts Program"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
+            <Card className="flex flex-col">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src={Voley}
+                  alt="Arts Program"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>New Arts Program Launched</CardTitle>
                 <CardDescription>
@@ -687,7 +846,7 @@ export default function Home() {
               <CardContent>
                 <p>other than that, fuck em'. we ball...</p>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="mt-auto">
                 <Button variant="outline">Read More</Button>
               </CardFooter>
             </Card>
