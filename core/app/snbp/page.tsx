@@ -132,303 +132,201 @@ export default function Home() {
     setIsPrestasiOpen(!isPrestasiOpen);
   };
 
-  const principal = {
-    name: "Elon Reeve Musk, FRS",
-    role: "Founder & CEO of Tesla, Inc, SpaceX, X Corp, The Boring Company, & Co-founder of Neuralink, OpenAI, & PayPal",
-    image:
-      "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",
-  };
-
   const staff = [
     {
-      name: "Endang Restuningsih, M.Pd",
-      role: "Guru Matematika",
-      image: "/teachers/bu endang_matematika.png",
+      name: "Putu Kanya Anindita Prabhaswari",
+      role: "Psikologi - Universitas Airlangga",
+      image: "/snbp_2024/XII-IPS-3_PUTU-KANYA-ANINDITA-PRABHASWARI-fotor-2024033062626-350x350.png",
     },
     {
-      name: "Drs.Teguh Juana, M.Si",
-      role: "Guru Sejarah",
-      image: "/teachers/Pak Teguh_Sejarah.png",
+      name: "Ilma Hafizha Nasri",
+      role: "Kewirausahaan - UPN Veteran Jawa Timur",
+      image: "/snbp_2024/XII-IPS-3_ILMA-HAFIZHA-NASRI-fotor-2024033062324-350x350.png",
     },
     {
-      name: "Drs. Teguh Harjono, M.Pd",
-      role: "Guru Bahasa Indonesia",
-      image: "/teachers/Pak Jon_bahasa indonesia.png",
+      name: "Risma Amalia",
+      role: "Manajemen - Universitas Airlangga",
+      image: "/snbp_2024/XII-IPS-3_RISMA-AMALIA-fotor-2024033062741-350x350.png",
     },
     {
-      name: "Drs. Hari Purnomo, M.M",
-      role: "Guru Matematika",
-      image: "/teachers/Pak Hari_matematika.png",
+      name: "Khairina Putri Anindya",
+      role: "Hukum - UPN Veteran Jawa Timur",
+      image: "/snbp_2024/XII-IPS-3_KHAIRINA-PUTRI-ANINDYA-fotor-202403306254-350x350.png",
     },
     {
-      name: "Dra. Sri Harijanti",
-      role: "Guru Bimbingan Konseling",
-      image: "/teachers/Bu Sri_BK.png",
+      name: "Arimbi Rahmawati",
+      role: "Pend. Bahasa Inggris - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-IPS-2_ARIMBI-RAHMAWATI-fotor-2024033063727-350x350.png",
     },
     {
-      name: "Inarni, S.Pd",
-      role: "Guru Biologi",
-      image: "/teachers/bu inarni_biologi.png",
+      name: "Jessica Jovanca Valencia Marino",
+      role: "Hubungan Internasional - Universitas Airlangga",
+      image: "/snbp_2024/XII-IPS-2_JESSICA-JOVANCA-VALENICA-MARINO-fotor-2024033064528-350x350.png",
     },
     {
-      name: "Dwi Untari, S.Pd, M.M",
-      role: "Guru Bahasa Indonesia",
-      image: "/teachers/Bu Dwi_bahasa indonesia.png",
+      name: "Tiara Avida Wulansari",
+      role: "Ekonomi Pembangunan - UPN Veteran Jawa Timur",
+      image: "/snbp_2024/XII-IPS-2_TIARA-AVIDA-WULANSARI-fotor-2024033064912-350x350.png",
     },
     {
-      name: "Chris Wratsari Arditi, M.Pd",
-      role: "Guru Bahasa Indonesia",
-      image: "/teachers/Bu chris_bahasa indonesia.png",
+      name: "Rizki Haryo Firstama",
+      role: "Bisnis Digital - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-IPS-2_RISKI-HARYO-FIRSTAMA-fotor-202403306486-350x350.png",
     },
     {
-      name: "Drs. Baris Juni Prastono",
-      role: "Guru Geografi",
-      image: "/teachers/Pak Baris_geografi.png",
+      name: "Hanum Mafrudo",
+      role: "Pend. Bahasa & Sastra Indonesia - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-IPS-2_HANUM-MAFRUDHO-fotor-2024033064418-350x350.png",
     },
     {
-      name: "Dra. Pipik Maria Poespita, M.M",
-      role: "Guru Kimia",
-      image: "/teachers/Bu Pipik_kimia.png",
+      name: "Nabila Ramadhani Hidayat",
+      role: "Hukum - Universitas Airlangga",
+      image: "/snbp_2024/XII-IPS-2_NABILA-RAMADHANI-HIDAYAT-fotor-2024033064645-350x350.png",
     },
     {
-      name: "Qurratul 'Aini, M.Pd",
-      role: "Guru Fisika",
-      image: "/teachers/Bu Aini_fisika.png",
+      name: "Najwa Eka Salsabila",
+      role: "Ilmu Komunikasi - UPN Veteran Jawa Timur",
+      image: "/snbp_2024/XII-IPS-1_NAJWA-EKA-SALSABILA-fotor-20240330155346-350x350.png",
     },
     {
-      name: "Maria Agustina Darma Rahayu, S.Pd",
-      role: "Guru Fisika & PKWU",
-      image: "/teachers/bu maria_bahasa inggris.png",
+      name: "Dini Mega Fatikasari",
+      role: "Ekonomi Pembangunan - UPN Veteran Jawa Timur",
+      image: "/snbp_2024/XII-IPS-1_DINI-MEGA-FATIKASARI-fotor-2024033071544-350x350.png",
     },
     {
-      name: "Kustapa Yuli Priyanto, S.Pd",
-      role: "Guru Biologi",
-      image: "/teachers/pak kustapa_biologi.png",
+      name: "Ratih Aulia Nisa",
+      role: "Bimbingan & Konseling - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-IPS-1_RATIH-AULIA-NISA-fotor-20240330155821-350x350.png",
     },
     {
-      name: "Suwandi, S.Pd., MM",
-      role: "Guru Matematika",
-      image: "/teachers/pak suwandi_matematika.png",
+      name: "Salwa Paquitha Dametri",
+      role: "Akuntansi - UPN Veteran Jawa Timur",
+      image: "/snbp_2024/XII-IPS-1_SALWA-PAQUITHA-DAMETRI-fotor-2024033016033-350x350.png",
     },
     {
-      name: "Muhammad Rokhim, S.Pd",
-      role: "Guru Bahasa Inggris",
-      image: "/teachers/pak rokhim_bahasa inggris.png",
+      name: "Novita Intan Prameswari",
+      role: "Psikologi - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-IPS-1_NOVITA-INTAN-PRAMESWARI-fotor-2024033015568-350x350.png",
     },
     {
-      name: "L. Eko Wibowo, S.Pd",
-      role: "Guru Fisika",
-      image: "/teachers/pak eko_fisika.png",
+      name: "Karina Azaria",
+      role: "Perpajakan - Universitas Airlangga",
+      image: "/snbp_2024/XII-IPS-1_KARINA-AZARIA-fotor-2024033071658-350x350.png",
     },
     {
-      name: "Fifid Suryaning Fitri, M.Pd",
-      role: "Guru Bahasa Inggris",
-      image: "/teachers/bu fifid_bahasa inggris.png",
+      name: "Ridwan Desta Alfriza",
+      role: "Pend. Bahasa Jepang - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-MIPA-6_RIDWAN-DESTHA-ALFRIZA-fotor-2024033016756-350x350.png",
     },
     {
-      name: "Nur Fitriah, S.Pd",
-      role: "Guru Bahasa Inggris",
-      image: "/teachers/bu fitri_bahasa inggris.png",
+      name: "Eodia Putri Amalia",
+      role: "Instrumentasi - Universitas Brawijaya",
+      image: "/snbp_2024/XII-MIPA-6_EODIA-PUTRI-AMALIA-fotor-2024033016551-350x350.png",
     },
     {
-      name: "Nur Amalia, S.Pd",
-      role: "Guru Matematika",
-      image: "/teachers/bu amalia_matematika.png",
+      name: "Sesha Cindy Indriyana",
+      role: "Kesehatan Masyarakat - Universitas Airlangga",
+      image: "/snbp_2024/XII-MIPA-6_SESHA-CINDY-INDRIYANA-fotor-2024033016952-350x350.png",
     },
     {
-      name: "Rino Hariyono, S.Pd",
-      role: "Guru Penjaskes",
-      image: "/teachers/pak rino_pendidikan olahraga.png",
+      name: "Meutia Hakima",
+      role: "Perencanaan Wilayah & Kota - Institut Teknologi Sepuluh Nopember",
+      image: "/snbp_2024/XII-MIPA-6_-MEUTIA-HAKIMA-fotor-2024033016341-350x350.png",
     },
     {
-      name: "Linda Wirianty, S.Pd",
-      role: "Guru Kimia",
-      image: "/teachers/bu linda_kimia.png",
+      name: "Fawwaz Ammar Fayzul Setyawan",
+      role: "Perencanaan Wilayah & Kota - Institut Teknologi Sepuluh Nopember",
+      image: "/snbp_2024/XII-MIPA-5_FAWWAZ-AMMAR-FAYZUL-SETYAWAN-fotor-20240330161334-350x350.png",
     },
     {
-      name: "Akhmad Fauzi, S.Pd",
-      role: "Guru PkN",
-      image: "/teachers/pak fauzi_olahraga.png",
+      name: "Nhofa Titan Alghoffar",
+      role: "Kedokteran - Universitas Udayana",
+      image: "/snbp_2024/XII-MIPA-5_-NHOFA-TITAN-ALGHOFFAR-fotor-20240330161156-350x350.png",
     },
     {
-      name: "Elvyn Bahterawati, S.Sos., M.Pd",
-      role: "Guru Sosiologi",
-      image: "/teachers/bu elvyn_sosiologi.png",
+      name: "Farrel Ranu Manggala",
+      role: "Teknik Mesin - Universitas Brawijaya",
+      image: "/snbp_2024/XII-MIPA-4_-FARREL-RANU-MANGGALA-fotor-20240330162627-350x350.png",
     },
     {
-      name: "Ibnu Mashuda, S.Pd",
-      role: "Guru Penjaskes",
-      image: "/teachers/pak ibnu_olahraga.png",
+      name: "Natasha Aulia Erdiana Putri",
+      role: "Statistika - Universitas Airlangga",
+      image: "/snbp_2024/XII-MIPA-4_NATASYA-AULIA-ERDIANA-PUTRI-fotor-20240330162920-350x350.png",
     },
     {
-      name: "Anang Didit Soesilo, S.T",
-      role: "Guru PKWU",
-      image: "/teachers/pak anang_cs.png",
+      name: "Sandrina Anggun Anatasia Luvan",
+      role: "Biologi - Universitas Airlangga",
+      image: "/snbp_2024/XII-MIPA-4_SANDRINA-ANGGUN-ANATASIA-LUVAN-fotor-20240330163144-350x350.png",
     },
     {
-      name: "Fauzan Adim, S.E",
-      role: "Guru Ekonomi",
-      image: "/teachers/pak fauzan_ekonomi.png",
+      name: "Shania Naura Risanti",
+      role: "Kedokteran Hewan - Universitas Airlangga",
+      image: "/snbp_2024/XII-MIPA-3_SHANIA-NAURA-RISANTI-fotor-20240330163910-350x350.png",
     },
     {
-      name: "Dimas Dananjaya, S.Pd",
-      role: "Guru Penjaskes",
-      image: "/teachers/pak dimas_olahraga.png",
+      name: "Andin Meilanisa",
+      role: "Teknologi Rekayasa Internet - Politeknik Elektronika Negeri Surabaya",
+      image: "/snbp_2024/XII-MIPA-3_-ANDIN-MEILANISA-fotor-20240330163336-350x350.png",
     },
     {
-      name: "Galuh Prakasyta, S.Psi",
-      role: "Guru Bimbingan Konseling",
-      image: "/teachers/bu galuh_bk.png",
+      name: "Daifa Arifio Fitriandy",
+      role: "Teknik Kelautan - Institut Teknologi Sepuluh Nopember",
+      image: "/snbp_2024/XII-MIPA-3_DAIVA-ARIFIO-fotor-20240330163748-350x350.png",
     },
     {
-      name: "Eka Fidia Ramadhania, S.Pd",
-      role: "Guru Bimbingan Konseling",
-      image: "/teachers/bu eka_bk.png",
+      name: "Eva Aisyiyah Putri",
+      role: "Manajemen Bisnis - Politeknik Perkapalan Negeri Surabaya",
+      image: "/snbp_2024/XII-MIPA-3_-EVANNA-AISYIYAH-P.-fotor-20240330163456-350x350.png",
     },
     {
-      name: "Made Hendra Sasmita, S.Pd",
-      role: "Guru Seni Budaya",
-      image: "/teachers/pak made_seni budaya.png",
+      name: "Bintang Nurcahya Putra",
+      role: "Teknik Sipil - Institut Teknologi Sepuluh Nopember",
+      image: "/snbp_2024/XII-MIPA-3_BINTANG-NURCAHYA-PUTRA-fotor-20240330163621-350x350.png",
     },
     {
-      name: "Nurus Sulhah, S.Pd",
-      role: "Guru PpKn",
-      image: "/teachers/bu nurus_pkn.png",
+      name: "Daffa Fadila Faisal",
+      role: "Teknik Elektro - Universitas Airlangga",
+      image: "/snbp_2024/XII-MIPA-2_DAFFA-FADILA-FAISAL-fotor-20240329132030-350x350.png",
     },
     {
-      name: "Joko Susilo, S.Ag.K",
-      role: "Guru Agama Katolik",
-      image: "/teachers/pak joko_katolik.png",
+      name: "Aidina Sofiyana",
+      role: "Psikologi - Universitas Islam Negeri Sunan  Ampel Surabaya",
+      image: "/snbp_2024/XII-MIPA-2_AIDINA-SOFIYANA-fotor-20240329131459-350x350.png",
     },
     {
-      name: "Indah Triyuliati, S.Pd",
-      role: "Guru Matematika",
-      image: "/teachers/bu indah_matematika.png",
+      name: "Calista Anggraini",
+      role: "Teknik Komputer - Politeknik Elektronika Negeri Surabaya",
+      image: "/snbp_2024/XII-MIPA-2_CALISTA-ANGGRAINI-fotor-20240329131856-350x350.png",
     },
     {
-      name: "Wafir Hasanudin, S.Pd.I, M.Pd",
-      role: "Guru Agama Islam",
-      image: "/teachers/pa wafi_islam.png",
+      name: "Najwa Elok Zulfiah",
+      role: "PGSD - Universitas Negeri Surabaya",
+      image: "/snbp_2024/XII-MIPA-2_NAJWA-ELOK-ZULFIAH-fotor-20240329132643-350x350.png",
     },
     {
-      name: "Mat Sumiaji, S.Pd, M.Si",
-      role: "Guru PpKn",
-      image: "/teachers/pak aji_ppkn.png",
+      name: "Ovelia Daffa Recha Putri",
+      role: "Psikologi - Universitas Airlangga",
+      image: "/snbp_2024/XII-MIPA-2_OVELIA-DAFFA-RECHA-PUTRI-fotor-20240329132835-350x350.png",
     },
     {
-      name: "Ratih Indrawati, S.Pd",
-      role: "Guru Seni Budaya",
-      image: "/teachers/bu ratih_seni budaya.png",
+      name: "Fitria Abdullah",
+      role: "Kedokteran Gigi - Universitas Airlangga",
+      image: "/snbp_2024/xii-mipa-2_FITRIA-ABDULLAH-fotor-20240329132230-1-350x350.png",
     },
     {
-      name: "Nindya Riantika Putri Dewayani, S.Sos, M.Pd",
-      role: "Guru Sosiologi",
-      image: "/teachers/bu nindya_sosiologi.png",
+      name: "Andi Marcella Caya",
+      role: "Teknologi Sains Data - Universitas Airlangga",
+      image: "/snbp_2024/XII-IPA-2_ANDI-MARCELLA-CAYA-fotor-20240329131325-1-350x350.png",
     },
     {
-      name: "Ratna Yulia Damayanti, S.Pd",
-      role: "Guru Bahasa Daerah",
-      image: "/teachers/bu ratna_bahasa daerah.png",
+      name: "Azriel Rizky Baihaqy",
+      role: "Teknik Perancangan & Konstruksi Kapal - Politeknik Perkapalan Negeri Surabaya",
+      image: "/snbp_2024/xii-mipa-2_azriel-rizky-baihaqy-fotor-20240329131633-1-350x350.png",
     },
     {
-      name: "Nur Fadhillah, S.Pd.I, M.Pd",
-      role: "Guru Agama Islam",
-      image: "/teachers/bu nur_islam.png",
-    },
-    {
-      name: "Saiful Hadi, S.Ag",
-      role: "Guru Agama Islam",
-      image: "/teachers/pak saiful_islam.png",
-    },
-    {
-      name: "Siti Astriana, S.Pd",
-      role: "Guru Sejarah",
-      image: "/teachers/bu astri_sejarah.png",
-    },
-    {
-      name: "Aviarina Widya Ismanto, S.Si, M.T",
-      role: "Guru Kimia",
-      image: "/teachers/bu avi_kimia.png",
-    },
-    {
-      name: "Mohammad Rafli Alfisyar, S.Pd",
-      role: "Guru Geografi",
-      image: "/teachers/pak rafli_geografi.png",
-    },
-    {
-      name: "Rena Nurida, S.Pd",
-      role: "Guru Bahasa Jepang",
-      image: "/teachers/bu reni_nihon.png",
-    },
-    {
-      name: "Nur Haniyyah M, S.Pd",
-      role: "Guru Biologi",
-      image: "/teachers/bu nur_biologi.png",
-    },
-    {
-      name: "Adawiya Kurnianingsih, S.Sos",
-      role: "Guru Sosiologi",
-      image: "/teachers/bu ada_sosiologi.png",
-    },
-    {
-      name: "Stevani Siburian, S.Pd",
-      role: "Guru Ekonomi",
-      image: "/teachers/bu stevany_ekonomi.png",
-    },
-    {
-      name: "Faranita Dian S, S.Pd",
-      role: "Guru Bahasa Indonesia",
-      image: "/teachers/bu farah_bahasa indonesia.png",
-    },
-    {
-      name: "Andrej Karpathy",
-      role: "Former Tesla's Director of Artificial Intelligence & Autopilot Vision",
-      image: "/karpathy.jpg",
-    },
-    {
-      name: "Novi Kiki Rizki Amalia",
-      role: "Tenaga Kependidikan",
-      image: "/tenaga_kependidikan/bu novi.png",
-    },
-    {
-      name: "Julius Gatot Pranoto, S.E",
-      role: "Tenaga Kependidikan",
-      image: "/tenaga_kependidikan/pak gatot.png",
-    },
-    {
-      name: "Nurul Huda",
-      role: "Tenaga Kependidikan",
-      image: "/tenaga_kependidikan/pak nurul.png",
-    },
-    {
-      name: "Afri Kurniawan",
-      role: "Kebersihan",
-      image: "/kebersihan/afri.png",
-    },
-    {
-      name: "Ahmat Subakir",
-      role: "Kebersihan",
-      image: "/kebersihan/ahmat.png",
-    },
-    {
-      name: "Warijo",
-      role: "Kebersihan",
-      image: "/kebersihan/warijo.png",
-    },
-    {
-      name: "Iswanto",
-      role: "Keamanan",
-      image: "/keamanan/is.png",
-    },
-    {
-      name: "Rizki Dwi Aryanto",
-      role: "Keamanan",
-      image: "/keamanan/rizky.png",
-    },
-    {
-      name: "Saipul Anwar",
-      role: "Keamanan",
-      image: "/keamanan/saiful.png",
+      name: "Nabila Nurul Hidayah",
+      role: "Teknik Mesin - Institut Teknologi Sepuluh Nopember",
+      image: "/snbp_2024/XII-MIPA-2_NABILA-NURUL-HIDAYAH-fotor-2024032913256-1-350x350.png",
     },
   ];
 
@@ -635,29 +533,14 @@ export default function Home() {
 
       <main className="container mx-auto px-6 py-8">
         <h1 className="text-3xl font-bold mb-4 text-center">
-          Susunan Pimpinan Sekolah
+          Peserta didik SMAN 17 Surabaya lulus SNBP tahun 2024
         </h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center mb-16"
-        >
-          <div className="relative w-48 h-48 mb-4">
-            <div className="absolute inset-0 rounded-full bg-blue-500" />
-            <Image
-              src={principal.image}
-              alt={principal.name}
-              width={192}
-              height={192}
-              className="rounded-full object-cover relative z-10"
-            />
-          </div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">
-            {principal.name}
-          </h2>
-          <p className="text-lg text-gray-600">{principal.role}</p>
-        </motion.div>
+        ></motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {staff.map((member, index) => (

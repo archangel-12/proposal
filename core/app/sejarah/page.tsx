@@ -225,6 +225,14 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    href="/blog"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfwyfDk9qmKQCleFVsvsC-77Ps9ZnrxhoxD3qSNWH45_8ZmeQ/viewform?usp=sf_link"
                     className="text-gray-700 hover:text-blue-600"
@@ -324,14 +332,6 @@ export default function Home() {
                     )}
                   </AnimatePresence>
                 </div>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-gray-700 hover:text-blue-600"
-                  >
-                    Blog
-                  </Link>
-                </li>
               </ul>
             </div>
           </ul>
