@@ -1,0 +1,20 @@
+- if there is a hydration, consider to change the <div> or <p>...
+
+- <div className="text-center">
+    ## hello everyone...
+  </div>
+
+- <div className="text-justify">
+
+  </div>
+
+- <div className="flex justify-center">
+
+  </div>
+
+- <img
+     src="..."
+     alt="..."
+  />  
+
+- DON'T EVER USE THE FUCKING IDX... COULD NOT BE DEPLOYED :(
