@@ -22,6 +22,8 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isTentangKamiOpen, setTentangKamiOpen] = useState(false);
+  const TentangKamiRef = useRef<HTMLDivElement>(null);
   const [isAplikasiOpen, setIsAplikasiOpen] = useState(false);
   const aplikasiRef = useRef<HTMLDivElement>(null);
   const [isPrestasiOpen, setIsPrestasiOpen] = useState(false);
@@ -45,6 +47,12 @@ export default function Home() {
       ) {
         setIsPrestasiOpen(false);
       }
+      if (
+        TentangKamiRef.current &&
+        !TentangKamiRef.current.contains(event.target as Node)
+      ) {
+        setTentangKamiOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -54,6 +62,17 @@ export default function Home() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const TentangKamiItems = [
+    {
+      name: "Sejarah Pendirian Sekolah",
+      href: "/sejarah",
+    },
+    {
+      name: "Guru & Tenaga Kependidikan",
+      href: "/gtk",
+    },
+  ];
 
   const aplikasiItems = [
     {
@@ -113,6 +132,10 @@ export default function Home() {
     },
   ];
 
+  const handleTentangKamiClick = () => {
+    setTentangKamiOpen(!isTentangKamiOpen);
+  };
+
   const handleAplikasiClick = () => {
     setIsAplikasiOpen(!isAplikasiOpen);
   };
@@ -152,14 +175,49 @@ export default function Home() {
                     Home
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/tentangKami"
-                    className="text-gray-700 hover:text-blue-600"
+                <div ref={TentangKamiRef} className="relative">
+                  <button
+                    onClick={handleTentangKamiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isTentangKamiOpen}
                   >
                     Tentang Kami
-                  </Link>
-                </li>
+                    <motion.div
+                      animate={{ rotate: isTentangKamiOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isTentangKamiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {TentangKamiItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <li>
                   <Link
                     href="/strukturOrganisasi"
@@ -729,11 +787,6 @@ export default function Home() {
                       image: "/teachers/bu stevany_ekonomi.png",
                     },
                     {
-                      name: "Rena Nurida, S.Pd",
-                      role: "Guru Bahasa Jepang",
-                      image: "/teachers/bu reni_nihon.png",
-                    },
-                    {
                       name: "Faranita Dian S, S.Pd",
                       role: "Guru Bahasa Indonesia",
                       image: "/teachers/bu farah_bahasa indonesia.png",
@@ -789,7 +842,7 @@ export default function Home() {
               </AnimatePresence>
 
               <div className="flex justify-center space-x-2 mt-8">
-                {[...Array(14)].map((_, i) => (
+                {[...Array(13)].map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setCurrentPage(i)}
