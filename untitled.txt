@@ -8,7 +8,9 @@
 
   </div>
 
-- C
+- <div className="flex justify-center">
+
+  </div>
 
 - <img
      src="..."
