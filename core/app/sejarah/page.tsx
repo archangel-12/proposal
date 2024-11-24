@@ -239,7 +239,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="/academics"
+                    href="/agenda_sekolah"
                     className="text-gray-700 hover:text-blue-600"
                   >
                     Agenda Sekolah

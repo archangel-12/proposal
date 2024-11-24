@@ -13,7 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Loading from "./loading"
+import Loading from "./loading";
 import { FileText, Users, Lightbulb, ChevronDown } from "lucide-react";
 import headerLogo from "../public/cropped-HeaderLogo.png";
 import factoryVisit from "../public/hiya.jpeg";
@@ -22,7 +22,7 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import Infinity from "../components/infinite-scroll-section";
 
 export default function Home() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isBlogOpen, setBlogOpen] = useState(false);
@@ -36,8 +36,8 @@ export default function Home() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false)
-    }, 4000)
+      setLoading(false);
+    }, 4000);
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -72,7 +72,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
-      clearTimeout(timer)
+      clearTimeout(timer);
     };
   }, []);
 
@@ -177,7 +177,7 @@ export default function Home() {
   };
 
   if (loading) {
-    return <Loading />
+    return <Loading />;
   }
 
   return (
@@ -928,7 +928,6 @@ export default function Home() {
           </section>
 
           <Infinity />
-
         </main>
         <section className="news-events container mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">

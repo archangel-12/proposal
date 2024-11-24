@@ -65,10 +65,10 @@ export default function Loading() {
           transition={{ duration: 0.5 }}
         />
       </div>
-      <p className="text-white text-sm mb-2">Welcome Abroad, Smantass...</p>
+      <p className="text-white text-sm mb-2">Welcome abroad, Smantass...</p>
       <p className="text-gray-400 text-xs text-center max-w-xs">
         This site is crafted with Next.js by Vercel and powered by v0,
-        <br />Made with ❤️ by r3yanson
+        <br />Made with ❤️ by <a className='text-sky-400' target='_blank' rel='noopener noreferrer' href="https://www.instagram.com/r3yanson/">r3yanson</a>
       </p>
     </div>
   )
