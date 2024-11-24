@@ -11,6 +11,13 @@ import headerLogo from "../../public/cropped-HeaderLogo.png";
 import achievement from "../berita_kesiswaan/prestasi-cemerlang.mdx";
 import cawaka from "../berita_kesiswaan/cawaska.mdx";
 import ppdb from "../berita_kesiswaan/ppdb.mdx";
+import istighosa from "../berita_kesiswaan/istighosa.mdx";
+import gchq from "../berita_kesiswaan/qchq.mdx";
+import pondok1 from "../berita_kesiswaan/pondok1.mdx";
+import pondok2 from "../berita_kesiswaan/pondok2.mdx";
+import storica from "../berita_kesiswaan/storica.mdx";
+import teacher from "../berita_kesiswaan/teachers_day.mdx";
+import isra from "../berita_kesiswaan/skintas.mdx";
 
 const blogPosts = [
   {
@@ -51,67 +58,67 @@ const blogPosts = [
       "baca selengkapnya..",
     image: "/qchq-ambassador.jpeg",
     tags: ["p5", "smantass"],
-    content: qchq,
+    content: gchq,
   },
   {
-    id: "audiensi-capaska",
-    title: "Audiensi SMAN 17 Surabaya 2024",
-    date: "8 Juni 2024",
+    id: "istighosa",
+    title: "Istighosah Smantass",
+    date: "29 April 2024",
     excerpt:
-      "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
-    image: "/audiensi_5.jpeg",
+      "read me...",
+    image: "/istiqomah.jpeg",
     tags: ["p5", "smantass"],
-    content: cawaka,
+    content: istighosa,
   },
   {
-    id: "audiensi-capaska",
-    title: "Audiensi SMAN 17 Surabaya 2024",
-    date: "8 Juni 2024",
+    id: "pelaksanaan-pondok-ramadhan-xi",
+    title: "Pelaksanaan Pondok Ramadhan Kelas XI",
+    date: "3 April 2024",
     excerpt:
-      "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
-    image: "/audiensi_5.jpeg",
+      "Read More...",
+    image: "/pondok_1.jpeg",
     tags: ["p5", "smantass"],
-    content: cawaka,
+    content: pondok1,
   },
   {
-    id: "audiensi-capaska",
-    title: "Audiensi SMAN 17 Surabaya 2024",
-    date: "8 Juni 2024",
+    id: "pelaksanaan-pondok-ramadhan-x",
+    title: "Pelaksanaan Pondok Ramadhan Kelas X",
+    date: "1 April 2024",
     excerpt:
-      "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
-    image: "/audiensi_5.jpeg",
+      "Read More...",
+    image: "/pondok_5.jpeg",
     tags: ["p5", "smantass"],
-    content: cawaka,
+    content: pondok2,
   },
   {
-    id: "audiensi-capaska",
-    title: "Audiensi SMAN 17 Surabaya 2024",
-    date: "8 Juni 2024",
+    id: "be-the-champion",
+    title: "BE THE CHAMPION AND LET’S CARVE HISTORY WITH SMANTASS COMPETITION XVII INCISIONE STORICA",
+    date: "8 Maret 2024",
     excerpt:
-      "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
-    image: "/audiensi_5.jpeg",
+      "Read More...",
+    image: "/help_me.jpeg",
     tags: ["p5", "smantass"],
-    content: cawaka,
+    content: storica,
   },
   {
-    id: "audiensi-capaska",
-    title: "Audiensi SMAN 17 Surabaya 2024",
-    date: "8 Juni 2024",
+    id: "hari-guru-nasional",
+    title: "PERAYAAN HARI GURU NASIONAL 2023, SMANTASS HADIRKAN DUA MAESTERO PENGABDI ILMU INSPIRATIF",
+    date: "27 November 2023",
     excerpt:
-      "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
-    image: "/audiensi_5.jpeg",
+      "Read More...",
+    image: "/isra_4.jpeg",
     tags: ["p5", "smantass"],
-    content: cawaka,
+    content: teacher,
   },
   {
-    id: "audiensi-capaska",
-    title: "Audiensi SMAN 17 Surabaya 2024",
-    date: "8 Juni 2024",
+    id: "skintass-isra",
+    title: "SKINTASS GELAR PERINGATAN ISRA’ MI’RAJ",
+    date: "2 Febuari 2024",
     excerpt:
-      "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
-    image: "/audiensi_5.jpeg",
+      "Read More...",
+    image: "/isra_!.jpg",
     tags: ["p5", "smantass"],
-    content: cawaka,
+    content: isra,
   },
 ];
 
