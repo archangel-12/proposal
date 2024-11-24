@@ -11,6 +11,17 @@ import headerLogo from "../../public/cropped-HeaderLogo.png";
 import p5 from "../berita_kurikulum/p5.mdx";
 import Apple from "../berita_kurikulum/apel-pembukaan.mdx";
 import SAS from "../berita_kurikulum/sas.mdx";
+import PAT from "../berita_kurikulum/pat.mdx";
+import ANBK from "../berita_kurikulum/anbk.mdx";
+import ASA from "../berita_kurikulum/asa.mdx";
+import SLB from "../berita_kurikulum/slb.mdx";
+import hidrponik from "../berita_kurikulum/hidroponik.mdx";
+import pleno from "../berita_kurikulum/pleno.mdx";
+import WIROSABLENG from "../berita_kurikulum/p5-closing.mdx";
+import osn from "../berita_kurikulum/osn.mdx";
+import usp from "../berita_kurikulum/usp-bks.mdx";
+import uprak from "../berita_kurikulum/uprak.mdx";
+import Verification from "../berita_kurikulum/verifikasi.mdx";
 
 const blogPosts = [
   {
@@ -48,16 +59,16 @@ const blogPosts = [
     excerpt: "Selengkapnya...",
     image: "/sat-sks.jpg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: PAT,
   },
   {
     id: "akbn",
     title: "Asesmen Nasional Berbasis Komputer",
-    date: "29 April 2024",
+    date: "28 Agustus 2023",
     excerpt: "Selengkapnya...",
     image: "/sat-sks-2.jpeg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: ANBK,
   },
   {
     id: "asa",
@@ -66,7 +77,7 @@ const blogPosts = [
     excerpt: "Selengkapnya...",
     image: "/sat-sks-3.jpeg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: ASA,
   },
   {
     id: "survei-lingkungan-belajar",
@@ -75,7 +86,7 @@ const blogPosts = [
     excerpt: "Selengkapnya...",
     image: "/sat-4.jpg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: SLB,
   },
   {
     id: "hidroponik",
@@ -84,7 +95,7 @@ const blogPosts = [
     excerpt: "Selengkapnya...",
     image: "/hidroponik.jpeg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: hidrponik,
   },
   {
     id: "rapat-pleno",
@@ -93,16 +104,52 @@ const blogPosts = [
     excerpt: "Selengkapnya...",
     image: "/rapat_pleno.jpeg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: pleno,
   },
   {
-    id: "penutupan-p5",
-    title: "Penutupan P5",
+    id: "pembukaan-p5",
+    title: "P5 ronde 2",
     date: "4 November 2024",
     excerpt: "Selengkapnya...",
     image: "/penutupan_p5.jpg",
     tags: ["sas", "smantass"],
-    content: SAS,
+    content: WIROSABLENG,
+  },
+  {
+    id: "o-s-n",
+    title: "Membidik Siswa Smantass untuk meroket pada ajang Olimpiade Nasional Nasional",
+    date: "23 Febuari 2024",
+    excerpt: "Selengkapnya...",
+    image: "/osn.jpeg",
+    tags: ["sas", "smantass"],
+    content: osn,
+  },
+  {
+    id: "usp-bks",
+    title: "USP-BKS",
+    date: "17 Febuari 2023",
+    excerpt: "Selengkapnya...",
+    image: "/usp-bks.jpeg",
+    tags: ["sas", "smantass"],
+    content: usp,
+  },
+  {
+    id: "uprak-xii",
+    title: "UPRAK kelas XII",
+    date: "6 Febuari 2023",
+    excerpt: "Selengkapnya...",
+    image: "/uprak_xii.jpeg",
+    tags: ["sas", "smantass"],
+    content: uprak,
+  },
+  {
+    id: "verifikasi-kelulusan",
+    title: "Verifikasi Kelulusan",
+    date: "5 Mei 2023",
+    excerpt: "Selengkapnya...",
+    image: "/verification.jpeg",
+    tags: ["sas", "smantass"],
+    content: Verification,
   },
 ];
 
