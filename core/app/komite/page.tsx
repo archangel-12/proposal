@@ -25,6 +25,8 @@ const blogPosts = [
 
 export default function BlogPage() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isBlogOpen, setBlogOpen] = useState(false);
+  const BlogRef = useRef<HTMLDivElement>(null);
   const [selectedPost, setSelectedPost] = useState(null);
   const [isTentangKamiOpen, setTentangKamiOpen] = useState(false);
   const TentangKamiRef = useRef<HTMLDivElement>(null);
@@ -57,6 +59,9 @@ export default function BlogPage() {
       ) {
         setTentangKamiOpen(false);
       }
+      if (BlogRef.current && !BlogRef.current.contains(event.target as Node)) {
+        setBlogOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -66,6 +71,21 @@ export default function BlogPage() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const BlogItems = [
+    {
+      name: "Berita Kurikulum",
+      href: "/berita_kurikulum",
+    },
+    {
+      name: "Berita Kesiswaan",
+      href: "/berita_kesiswaan",
+    },
+    {
+      name: "Komite",
+      href: "/komite",
+    },
+  ];
 
   const TentangKamiItems = [
     {
@@ -135,6 +155,10 @@ export default function BlogPage() {
       href: "/biovations",
     },
   ];
+
+  const handleBlogClick = () => {
+    setBlogOpen(!isBlogOpen);
+  };
 
   const handleTentangKamiClick = () => {
     setTentangKamiOpen(!isTentangKamiOpen);
@@ -236,14 +260,49 @@ export default function BlogPage() {
                     Agenda Sekolah
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-gray-700 hover:text-blue-600"
+                <div ref={BlogRef} className="relative">
+                  <button
+                    onClick={handleBlogClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isBlogOpen}
                   >
                     Blog
-                  </Link>
-                </li>
+                    <motion.div
+                      animate={{ rotate: isBlogOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isBlogOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {BlogItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <li>
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfwyfDk9qmKQCleFVsvsC-77Ps9ZnrxhoxD3qSNWH45_8ZmeQ/viewform?usp=sf_link"
