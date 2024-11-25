@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "foreignpolicy.com",
       },
+      {
+        protocol: "https",
+        hostname: "v1.pinimg.com"
+      }
     ],
   },
   pageExtensions: ["ts", "tsx", "md", "mdx"],

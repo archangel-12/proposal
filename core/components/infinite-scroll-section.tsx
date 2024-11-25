@@ -5,18 +5,18 @@ import Image from "next/image";
 
 export default function Component() {
   const images = [
-    "/collection/034_DSC_2852-370x247.jpg",
-    "/collection/035_DSC_2883-370x247.jpg",
-    "/collection/036_DSC_2928-370x247.jpg",
-    "/collection/037_DSC_2940-370x247.jpg",
-    "/collection/038_DSC_3009-370x247.jpg",
-    "/collection/039_DSC_3019-370x247.jpg",
-    "/collection/040_DSC_3053-370x247.jpg",
-    "/collection/041_DSC_3059-370x247.jpg",
-    "/collection/042_DSC_3063-370x247.jpg",
-    "/collection/043_DSC_2690-370x247.jpg",
-    "/collection/044_DSC_2640-370x247.jpg",
-    "/collection/045_WhatsApp-Image-2024-06-07-at-12.24.49-1-370x247.jpeg"
+    "/collection/122_DSC_2852-2048x1360.jpg",
+    "/collection/132_DSC_2928-2048x1360.jpg",
+    "/collection/152_DSC_3019-2048x1360.jpg",
+    "/collection/167_DSC_3063-2048x1360.jpg",
+    "/collection/172_DSC_2690-2048x1360.jpg",
+    "/collection/192_IMG_8842-2048x1365.jpg",
+    "/collection/187_IMG_9014-2048x1365.jpg",
+    "/collection/207_IMG_9272-2048x1365.jpg",
+    "/collection/262_DSCF0545-2048x1365.jpg",
+    "/collection/272_DSCF0653-2048x1365.jpg",
+    "/collection/282_DSCF0738-2048x1365.jpg",
+    "/collection/262_DSCF0545-2048x1365.jpg"
   ];
 
   const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images];
