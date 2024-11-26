@@ -39,6 +39,14 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "miro.medium.com"
+      },
+      {
+        protocol: "https",
+        hostname: "img.freepik.com"
+      },
+      {
+        protocol: "https",
+        hostname: "cdn-assetd.kompas.id"
       }
     ],
   },

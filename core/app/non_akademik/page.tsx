@@ -8,149 +8,30 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
 import headerLogo from "../../public/cropped-HeaderLogo.png";
-import p5 from "../berita_kurikulum/p5.mdx";
-import Apple from "../berita_kurikulum/apel-pembukaan.mdx";
-import SAS from "../berita_kurikulum/sas.mdx";
-import PAT from "../berita_kurikulum/pat.mdx";
-import ANBK from "../berita_kurikulum/anbk.mdx";
-import ASA from "../berita_kurikulum/asa.mdx";
-import SLB from "../berita_kurikulum/slb.mdx";
-import hidrponik from "../berita_kurikulum/hidroponik.mdx";
-import pleno from "../berita_kurikulum/pleno.mdx";
-import WIROSABLENG from "../berita_kurikulum/p5-closing.mdx";
-import osn from "../berita_kurikulum/osn.mdx";
-import usp from "../berita_kurikulum/usp-bks.mdx";
-import uprak from "../berita_kurikulum/uprak.mdx";
-import Verification from "../berita_kurikulum/verifikasi.mdx";
+import whistleblower from "../non_akademik/whistleblower.mdx";
+import theDevil from "../non_akademik/war-criminal.mdx";
 
 const blogPosts = [
   {
-    id: "p-5-smantass",
-    title: "Proyek Penguatan Profil Pelajar Pancasila 2024 SMAN 17 Surabaya",
-    date: "13 Juli 2024",
+    id: "whistleblower",
+    title: "The Illusion of the Free World: The Dangers of Mass Surveillance",
+    date: "24 November 2024",
     excerpt:
-      "Terbaik Pertama hasil karya P5 mengenai Kesetaraan Gender dengan tema Suara Demokrasi dengan tim personil nya di kelas XI- 8, yang terdiri dari:...",
-    image: "/apel-p5.jpeg",
-    tags: ["p5", "smantass"],
-    content: p5,
+      "Read More...",
+    image: "https://img.freepik.com/premium-photo/multiple-cctv-cameras-city-mass-surveillance-concept-generative-ai-digital-illustrationxa_124717-2493.jpg",
+    tags: ["mass", "surveillance"],
+    content: whistleblower
   },
   {
-    id: "apel-p5",
-    title: "Apel pembukaan P5",
-    date: "27 Mei 2024",
-    excerpt: "Selengkapnya...",
-    image: "/apel-p5.jpeg",
-    tags: ["p5", "smantass"],
-    content: Apple,
-  },
-  {
-    id: "sas-ii-bks",
-    title: "SAS II-BKS",
-    date: "23 Mei 2024",
-    excerpt: "Selengkapnya...",
-    image: "/sks.jpeg",
-    tags: ["sas", "smantass"],
-    content: SAS,
-  },
-  {
-    id: "pat-sat-bks",
-    title: "PAT-SAT BKS",
-    date: "29 April 2024",
-    excerpt: "Selengkapnya...",
-    image: "/sat-sks.jpg",
-    tags: ["sas", "smantass"],
-    content: PAT,
-  },
-  {
-    id: "akbn",
-    title: "Asesmen Nasional Berbasis Komputer",
-    date: "28 Agustus 2023",
-    excerpt: "Selengkapnya...",
-    image: "/sat-sks-2.jpeg",
-    tags: ["sas", "smantass"],
-    content: ANBK,
-  },
-  {
-    id: "asa",
-    title: "Asesmen Non-Akademik",
-    date: "27 September 2023",
-    excerpt: "Selengkapnya...",
-    image: "/sat-sks-3.jpeg",
-    tags: ["sas", "smantass"],
-    content: ASA,
-  },
-  {
-    id: "survei-lingkungan-belajar",
-    title: "Survei Lingkungan Belajar",
-    date: "11 September 2023",
-    excerpt: "Selengkapnya...",
-    image: "/sat-4.jpg",
-    tags: ["sas", "smantass"],
-    content: SLB,
-  },
-  {
-    id: "hidroponik",
-    title: "SAS II-BKS",
-    date: "15 Mei 2023",
-    excerpt: "Selengkapnya...",
-    image: "/hidroponik.jpeg",
-    tags: ["sas", "smantass"],
-    content: hidrponik,
-  },
-  {
-    id: "rapat-pleno",
-    title: "Rapat Pleno Kelulusan Peserta didik tahun Akademik 2023/2024",
-    date: "23 Mei 2024",
-    excerpt: "Selengkapnya...",
-    image: "/rapat_pleno.jpeg",
-    tags: ["sas", "smantass"],
-    content: pleno,
-  },
-  {
-    id: "pembukaan-p5",
-    title: "P5 ronde 2",
-    date: "4 November 2024",
-    excerpt: "Selengkapnya...",
-    image: "/penutupan_p5.jpg",
-    tags: ["sas", "smantass"],
-    content: WIROSABLENG,
-  },
-  {
-    id: "o-s-n",
-    title: "Membidik Siswa Smantass untuk meroket pada ajang Olimpiade Nasional Nasional",
-    date: "23 Febuari 2024",
-    excerpt: "Selengkapnya...",
-    image: "/osn.jpeg",
-    tags: ["sas", "smantass"],
-    content: osn,
-  },
-  {
-    id: "usp-bks",
-    title: "USP-BKS",
-    date: "17 Febuari 2023",
-    excerpt: "Selengkapnya...",
-    image: "/usp-bks.jpeg",
-    tags: ["sas", "smantass"],
-    content: usp,
-  },
-  {
-    id: "uprak-xii",
-    title: "UPRAK kelas XII",
-    date: "6 Febuari 2023",
-    excerpt: "Selengkapnya...",
-    image: "/uprak_xii.jpeg",
-    tags: ["sas", "smantass"],
-    content: uprak,
-  },
-  {
-    id: "verifikasi-kelulusan",
-    title: "Verifikasi Kelulusan",
-    date: "5 Mei 2023",
-    excerpt: "Selengkapnya...",
-    image: "/verification.jpeg",
-    tags: ["sas", "smantass"],
-    content: Verification,
-  },
+    id: "the-idea-of-war-criminal",
+    title: "The Idea of Getting Away With It",
+    date: "24 November 2024",
+    excerpt:
+      "Read More...",
+    image: "https://cdn-assetd.kompas.id/3HxKqzqEfDz3-iiXN-41ZD7M0L8=/1024x683/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2023%2F05%2F11%2F7db2b680-27fd-4bd9-bc98-4ec25575b9ac_jpg.jpg",
+    tags: ["bastard"],
+    content: theDevil
+  }
 ];
 
 export default function BlogPage() {
@@ -546,7 +427,7 @@ export default function BlogPage() {
       {/* Main Content */}
       <main className="container mx-auto px-6 py-12">
         <h1 className="text-4xl font-bold text-center mb-12">
-          Berita Kurikulum
+          Prestasi Non Akademik
         </h1>
 
         {selectedPost ? (
