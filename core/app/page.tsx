@@ -33,8 +33,13 @@ export default function Home() {
   const aplikasiRef = useRef<HTMLDivElement>(null);
   const [isPrestasiOpen, setIsPrestasiOpen] = useState(false);
   const prestasiRef = useRef<HTMLDivElement>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    const imageInterval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 5000);
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 4000);
@@ -76,6 +81,21 @@ export default function Home() {
     };
   }, []);
 
+  const heroImages = [
+    "/collection/122_DSC_2852-2048x1360.jpg",
+    "/collection/new stuff.jpeg",
+    "/collection/152_DSC_3019-2048x1360.jpg",
+    "/collection/167_DSC_3063-2048x1360.jpg",
+    "/collection/172_DSC_2690-2048x1360.jpg",
+    "/collection/192_IMG_8842-2048x1365.jpg",
+    "/collection/187_IMG_9014-2048x1365.jpg",
+    "/collection/207_IMG_9272-2048x1365.jpg",
+    "/collection/262_DSCF0545-2048x1365.jpg",
+    "/collection/272_DSCF0653-2048x1365.jpg",
+    "/collection/282_DSCF0738-2048x1365.jpg",
+    "/collection/262_DSCF0545-2048x1365.jpg",
+  ];
+
   const BlogItems = [
     {
       name: "Berita Kurikulum",
@@ -84,6 +104,10 @@ export default function Home() {
     {
       name: "Berita Kesiswaan",
       href: "/berita_kesiswaan",
+    },
+    {
+      name: "Berita Kehumasan",
+      href: "/berita_kehumasan"
     },
     {
       name: "Komite",
@@ -420,17 +444,28 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="hero relative h-[600px] flex items-center justify-center">
-          <Image
-            src="https://images2.alphacoders.com/902/902437.jpg"
-            alt="School campus"
-            fill
-            sizes="100vw"
-            priority
-            quality={100}
-            objectFit="cover"
-            className="absolute z-0 object-cover"
-          />
+        <section className="hero relative h-[600px] flex items-center justify-center overflow-hidden">
+          <AnimatePresence initial={false}>
+            <motion.div
+              key={currentImageIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={heroImages[currentImageIndex]}
+                alt={`School campus ${currentImageIndex + 1}`}
+                fill
+                sizes="100vw"
+                priority
+                quality={100}
+                style={{ objectFit: "cover" }}
+                className="absolute z-0"
+              />
+            </motion.div>
+          </AnimatePresence>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -444,7 +479,13 @@ export default function Home() {
               Untuk Bangsa, dan Negaraku
             </p>
             <Button asChild className="bg-blue-600 hover:bg-blue-700">
-              <Link href="/admissions">Apply Now</Link>
+              <Link
+                href="https://ppdbjatim.net/"
+                target="__blank"
+                rel="noopener nonreferrer"
+              >
+                Informasi PPDB
+              </Link>
             </Button>
           </motion.div>
         </section>
@@ -841,11 +882,6 @@ export default function Home() {
                       name: "Rena Nurida, S.Pd",
                       role: "Guru Bahasa Jepang",
                       image: "/teachers/bu reni_nihon.png",
-                    },
-                    {
-                      name: "Nur Haniyyah M, S.Pd",
-                      role: "Guru Biologi",
-                      image: "/teachers/bu nur_biologi.png",
                     },
                     {
                       name: "Adawiya K, S.Sos",

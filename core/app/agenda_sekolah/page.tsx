@@ -143,6 +143,10 @@ export default function BlogPage() {
       href: "/berita_kesiswaan",
     },
     {
+      name: "Berita Kehumasan",
+      href: "/berita_kehumasan",
+    },
+    {
       name: "Komite",
       href: "/komite",
     },

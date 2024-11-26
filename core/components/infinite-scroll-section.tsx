@@ -16,20 +16,31 @@ export default function Component() {
     "/collection/262_DSCF0545-2048x1365.jpg",
     "/collection/272_DSCF0653-2048x1365.jpg",
     "/collection/282_DSCF0738-2048x1365.jpg",
-    "/collection/262_DSCF0545-2048x1365.jpg"
+    "/collection/262_DSCF0545-2048x1365.jpg",
   ];
 
-  const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images];
+  const duplicatedImages = [
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+  ];
 
   return (
     <section className="relative overflow-hidden">
       <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold text-black mb-4">
-          Kehidupan Sekolah
+          Rekap foto- foto kegiatan sekolah
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto">
-          Kegiatan Sekolah
-        </p>
+        <p className="text-gray-400 max-w-2xl mx-auto">Kegiatan Sekolah</p>
       </div>
 
       <motion.div
@@ -92,8 +103,8 @@ export default function Component() {
       </motion.div>
 
       {/* Gradient overlays */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-48 bg-gradient-to-r" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-48 bg-gradient-to-l" />
+      <div className="pointer-events-none absolute bg-gradient-to-r" />
+      <div className="pointer-events-none absolute bg-gradient-to-l" />
     </section>
   );
 }

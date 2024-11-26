@@ -66,6 +66,10 @@ export default function Home() {
       href: "/berita_kesiswaan",
     },
     {
+      name: "Berita Kesiswaan",
+      href: "/berita_kehumasan",
+    },
+    {
       name: "Komite",
       href: "/komite",
     },
@@ -383,11 +387,6 @@ export default function Home() {
       name: "Rena Nurida, S.Pd",
       role: "Guru Bahasa Jepang",
       image: "/teachers/bu reni_nihon.png",
-    },
-    {
-      name: "Nur Haniyyah M, S.Pd",
-      role: "Guru Biologi",
-      image: "/teachers/bu nur_biologi.png",
     },
     {
       name: "Adawiya Kurnianingsih, S.Sos",

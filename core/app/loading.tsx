@@ -1,55 +1,55 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { motion, Variants } from 'framer-motion' // Added Variants import
+import { useState, useEffect } from "react";
+import { motion, Variants } from "framer-motion"; // Added Variants import
 
 export default function Loading() {
-  const [progress, setProgress] = useState(0)
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
         if (oldProgress === 100) {
-          clearInterval(timer)
-          return 100
+          clearInterval(timer);
+          return 100;
         }
-        const diff = Math.random() * 10
-        return Math.min(oldProgress + diff, 100)
-      })
-    }, 200)
+        const diff = Math.random() * 10;
+        return Math.min(oldProgress + diff, 100);
+      });
+    }, 200);
 
     return () => {
-      clearInterval(timer)
-    }
-  }, [])
+      clearInterval(timer);
+    };
+  }, []);
 
   const triangleVariants: Variants = {
-    initial: { 
-      opacity: 0, 
-      pathLength: 0 
+    initial: {
+      opacity: 0,
+      pathLength: 0,
     },
-    animate: { 
-      opacity: 1, 
+    animate: {
+      opacity: 1,
       pathLength: 1,
-      transition: { 
+      transition: {
         duration: 2,
         ease: "easeInOut",
         repeat: Infinity,
-        repeatType: "reverse"
-      }
-    }
-  }
+        repeatType: "reverse",
+      },
+    },
+  };
 
   return (
     <div className="fixed inset-0 bg-black flex flex-col items-center justify-center">
-      <motion.svg 
-        className="w-16 h-16 mb-8" 
-        viewBox="0 0 76 65" 
-        fill="none" 
+      <motion.svg
+        className="w-16 h-16 mb-8"
+        viewBox="0 0 76 65"
+        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <motion.path 
-          d="M37.5274 0L75.0548 65H0L37.5274 0Z" 
+        <motion.path
+          d="M37.5274 0L75.0548 65H0L37.5274 0Z"
           stroke="#ffffff"
           strokeWidth="2"
           variants={triangleVariants}
@@ -58,7 +58,7 @@ export default function Loading() {
         />
       </motion.svg>
       <div className="w-64 h-1 bg-gray-700 rounded-full overflow-hidden mb-4">
-        <motion.div 
+        <motion.div
           className="h-full bg-white"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
@@ -67,9 +67,35 @@ export default function Loading() {
       </div>
       <p className="text-white text-sm mb-2">Welcome abroad, Smantass...</p>
       <p className="text-gray-400 text-xs text-center max-w-xs">
-        This site is crafted with Next.js by Vercel and powered by v0,
-        <br />Made with ❤️ by <a className='text-sky-400' target='_blank' rel='noopener noreferrer' href="https://www.instagram.com/r3yanson/">r3yanson</a>
+        This site is crafted with{" "}
+        <a
+          href="https://nextjs.org/"
+          className="text-gray-600"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Next
+        </a>{" "}
+        by{" "}
+        <a
+          href="https://youtu.be/CHP3aDTP5Qo"
+          className="text-gray-500"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vercel
+        </a>
+        <br />
+        Made with ❤️ by{" "}
+        <a
+          className="text-sky-400"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/r3yanson/"
+        >
+          r3yanson
+        </a>
       </p>
     </div>
-  )
+  );
 }

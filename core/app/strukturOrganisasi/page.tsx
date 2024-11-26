@@ -66,6 +66,10 @@ export default function StrukturOrganisasi() {
       href: "/berita_kesiswaan",
     },
     {
+      name: "Berita Kehumasan",
+      href: "/berita_kehumasan",
+    },
+    {
       name: "Komite",
       href: "/komite",
     },

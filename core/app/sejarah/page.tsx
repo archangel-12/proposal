@@ -68,6 +68,10 @@ export default function Home() {
       href: "/berita_kesiswaan",
     },
     {
+      name: "Berita Kehumasan",
+      href: "/berita_kehumasan",
+    },
+    {
       name: "Komite",
       href: "/komite",
     },

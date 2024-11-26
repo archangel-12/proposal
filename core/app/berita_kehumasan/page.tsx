@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
 import headerLogo from "../../public/cropped-HeaderLogo.png";
-import KunjunganDharmawanita from "./kunjungan-dharmawanita-ke-pabrik-fiesta.mdx";
+import kunjunganDharmawanita from "../berita_kehumasan/kunjungan-dharmawanita-ke-pabrik-fiesta.mdx";
 
 const blogPosts = [
   {
@@ -19,13 +19,17 @@ const blogPosts = [
       "Kunjungan Dharmawanita SMAN 17 Surabaya ke Pabrik Fiesta di Ngoro, Kabupaten Mojokerto memberikan wawasan baru tentang proses produksi makanan...",
     image: "/hiya.jpeg",
     tags: ["kegiatan", "dharmawanita", "kunjungan"],
-    content: KunjunganDharmawanita,
+    content: kunjunganDharmawanita,
   },
 ];
 
 export default function BlogPage() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isBlogOpen, setBlogOpen] = useState(false);
+  const BlogRef = useRef<HTMLDivElement>(null);
   const [selectedPost, setSelectedPost] = useState(null);
+  const [isTentangKamiOpen, setTentangKamiOpen] = useState(false);
+  const TentangKamiRef = useRef<HTMLDivElement>(null);
   const [isAplikasiOpen, setIsAplikasiOpen] = useState(false);
   const aplikasiRef = useRef<HTMLDivElement>(null);
   const [isPrestasiOpen, setIsPrestasiOpen] = useState(false);
@@ -49,6 +53,15 @@ export default function BlogPage() {
       ) {
         setIsPrestasiOpen(false);
       }
+      if (
+        TentangKamiRef.current &&
+        !TentangKamiRef.current.contains(event.target as Node)
+      ) {
+        setTentangKamiOpen(false);
+      }
+      if (BlogRef.current && !BlogRef.current.contains(event.target as Node)) {
+        setBlogOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -58,6 +71,36 @@ export default function BlogPage() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const BlogItems = [
+    {
+      name: "Berita Kurikulum",
+      href: "/berita_kurikulum",
+    },
+    {
+      name: "Berita Kesiswaan",
+      href: "/berita_kesiswaan",
+    },
+    {
+      name: "Berita Kesiswaan",
+      href: "/berita_kehumasan",
+    },
+    {
+      name: "Komite",
+      href: "/komite",
+    },
+  ];
+
+  const TentangKamiItems = [
+    {
+      name: "Sejarah Pendirian Sekolah",
+      href: "/sejarah",
+    },
+    {
+      name: "Guru & Tenaga Kependidikan",
+      href: "/gtk",
+    },
+  ];
 
   const aplikasiItems = [
     {
@@ -117,6 +160,14 @@ export default function BlogPage() {
     },
   ];
 
+  const handleBlogClick = () => {
+    setBlogOpen(!isBlogOpen);
+  };
+
+  const handleTentangKamiClick = () => {
+    setTentangKamiOpen(!isTentangKamiOpen);
+  };
+
   const handleAplikasiClick = () => {
     setIsAplikasiOpen(!isAplikasiOpen);
   };
@@ -154,14 +205,49 @@ export default function BlogPage() {
                     Home
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/tentangKami"
-                    className="text-gray-700 hover:text-blue-600"
+                <div ref={TentangKamiRef} className="relative">
+                  <button
+                    onClick={handleTentangKamiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isTentangKamiOpen}
                   >
                     Tentang Kami
-                  </Link>
-                </li>
+                    <motion.div
+                      animate={{ rotate: isTentangKamiOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isTentangKamiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {TentangKamiItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <li>
                   <Link
                     href="/strukturOrganisasi"
@@ -172,20 +258,55 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <Link
-                    href="/academics"
+                    href="/agenda_sekolah"
                     className="text-gray-700 hover:text-blue-600"
                   >
                     Agenda Sekolah
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-gray-700 hover:text-blue-600"
+                <div ref={BlogRef} className="relative">
+                  <button
+                    onClick={handleBlogClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center"
+                    aria-haspopup="true"
+                    aria-expanded={isBlogOpen}
                   >
                     Blog
-                  </Link>
-                </li>
+                    <motion.div
+                      animate={{ rotate: isBlogOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {isBlogOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                      >
+                        {BlogItems.map((item, index) => (
+                          <motion.div
+                            key={item.name}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                          >
+                            <Link
+                              href={item.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                            >
+                              {item.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <li>
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfwyfDk9qmKQCleFVsvsC-77Ps9ZnrxhoxD3qSNWH45_8ZmeQ/viewform?usp=sf_link"
@@ -295,7 +416,7 @@ export default function BlogPage() {
       {/* Main Content */}
       <main className="container mx-auto px-6 py-12">
         <h1 className="text-4xl font-bold text-center mb-12">
-          Rekap dan Kegiatan-kegiatan Sekolah
+          Berita Kehumasan
         </h1>
 
         {selectedPost ? (
