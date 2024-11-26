@@ -67,23 +67,23 @@ export default function Loading() {
       </div>
       <p className="text-white text-sm mb-2">Welcome abroad, Smantass...</p>
       <p className="text-gray-400 text-xs text-center max-w-xs">
-        This site is crafted with{" "}
+        208919 199205 919 318162054 239208{" "}
         <a
           href="https://nextjs.org/"
           className="text-gray-600"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Next
+          1452420
         </a>{" "}
-        by{" "}
+        225{" "}
         <a
           href="https://youtu.be/CHP3aDTP5Qo"
           className="text-gray-500"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Vercel
+          225183512
         </a>
         <br />
         Made with ❤️ by{" "}

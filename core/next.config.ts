@@ -26,7 +26,19 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "v1.pinimg.com"
+        hostname: "i0.wp.com"
+      },
+      {
+        protocol: "https",
+        hostname: "media.wired.com"
+      },
+      {
+        protocol: "https",
+        hostname: "www.reuters.com"
+      },
+      {
+        protocol: "https",
+        hostname: "miro.medium.com"
       }
     ],
   },
