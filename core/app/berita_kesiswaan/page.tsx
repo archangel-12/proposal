@@ -27,7 +27,7 @@ const blogPosts = [
     excerpt:
       "SELAMAT ATAS PRESTASI YANG SUDAH DI CAPAI DENGAN CEMERLANG, TERIMAKASIH KEPADA SISWA DAN SISWI YANG BERPRESTASI DI BIDANG PENCAK SILAT, PASKIBRAKA, PADUAN SUARA...",
     image: "/prestasi_1.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["another", "achivement"],
     content: achievement,
   },
   {
@@ -37,87 +37,81 @@ const blogPosts = [
     excerpt:
       "audiensi capaska Nasional dengan Bapak Sekretaris Daerah Kota Surabaya bersama...",
     image: "/audiensi_5.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["audiensi"],
     content: cawaka,
   },
   {
     id: "p-p-d-b",
     title: "PPDB SMAN 17 Surabaya",
     date: "30 Mei 2024",
-    excerpt:
-      "informasi ppdb bisa dilihat di post ini...",
+    excerpt: "informasi ppdb bisa dilihat di post ini...",
     image: "/ppdb_1.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["ppdb", "pendaftaran"],
     content: ppdb,
   },
   {
     id: "highschool-ambassador",
     title: "Seleksi Duta SMA 2024",
     date: "8 Juni 2024",
-    excerpt:
-      "baca selengkapnya..",
+    excerpt: "baca selengkapnya..",
     image: "/qchq-ambassador.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["seleksi", "duta", "sma"],
     content: gchq,
   },
   {
     id: "istighosa",
     title: "Istighosah Smantass",
     date: "29 April 2024",
-    excerpt:
-      "read me...",
+    excerpt: "read me...",
     image: "/istiqomah.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["", "istighosah"],
     content: istighosa,
   },
   {
     id: "pelaksanaan-pondok-ramadhan-xi",
     title: "Pelaksanaan Pondok Ramadhan Kelas XI",
     date: "3 April 2024",
-    excerpt:
-      "Read More...",
+    excerpt: "Read More...",
     image: "/pondok_1.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["pondok", "ramadhan"],
     content: pondok1,
   },
   {
     id: "pelaksanaan-pondok-ramadhan-x",
     title: "Pelaksanaan Pondok Ramadhan Kelas X",
     date: "1 April 2024",
-    excerpt:
-      "Read More...",
+    excerpt: "Read More...",
     image: "/pondok_5.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["pondok", "ramadhan"],
     content: pondok2,
   },
   {
     id: "be-the-champion",
-    title: "BE THE CHAMPION AND LET’S CARVE HISTORY WITH SMANTASS COMPETITION XVII INCISIONE STORICA",
+    title:
+      "BE THE CHAMPION AND LET’S CARVE HISTORY WITH SMANTASS COMPETITION XVII INCISIONE STORICA",
     date: "8 Maret 2024",
-    excerpt:
-      "Read More...",
+    excerpt: "Read More...",
     image: "/help_me.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["be", "the" ,"champion"],
     content: storica,
   },
   {
     id: "hari-guru-nasional",
-    title: "PERAYAAN HARI GURU NASIONAL 2023, SMANTASS HADIRKAN DUA MAESTERO PENGABDI ILMU INSPIRATIF",
+    title:
+      "PERAYAAN HARI GURU NASIONAL 2023, SMANTASS HADIRKAN DUA MAESTERO PENGABDI ILMU INSPIRATIF",
     date: "27 November 2023",
-    excerpt:
-      "Read More...",
+    excerpt: "Read More...",
     image: "/isra_4.jpeg",
-    tags: ["p5", "smantass"],
+    tags: ["hari", "guru"],
     content: teacher,
   },
   {
     id: "skintass-isra",
     title: "SKINTASS GELAR PERINGATAN ISRA’ MI’RAJ",
     date: "2 Febuari 2024",
-    excerpt:
-      "Read More...",
+    excerpt: "Read More...",
     image: "/isra_!.jpg",
-    tags: ["p5", "smantass"],
+    tags: ["skintas", "isra"],
     content: isra,
   },
 ];
@@ -181,7 +175,7 @@ export default function BlogPage() {
       href: "/berita_kesiswaan",
     },
     {
-      name: "Berita Kesiswaan",
+      name: "Berita Kehumasan",
       href: "/berita_kehumasan",
     },
     {
@@ -642,37 +636,34 @@ export default function BlogPage() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
+              <p className="text-sm">Email: smantass@ymail.com</p>
               <p className="text-sm">Phone: (031) 8700717</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-2">Link Altenatif</h3>
               <ul className="text-sm">
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About Us
+                  <a href="/tentangKami" className="hover:text-blue-400">
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Academics
+                  <a href="/akademik" className="hover:text-blue-400">
+                    Prestasi Akademik
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Admissions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
+                  <a href="/gtk" className="hover:text-blue-400">
+                    Guru & Tenaga Kependidikan
                   </a>
                 </li>
               </ul>
             </div>
             <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Ikuti Media Sosial Kami
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/smantass/"
@@ -696,7 +687,7 @@ export default function BlogPage() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>

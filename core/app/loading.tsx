@@ -1,7 +1,9 @@
+/*Ini adalah kode yang fungsinya untuk menampilkan loading ketika user berusaha untuk refresh halaman*/
+
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, Variants } from "framer-motion"; // Added Variants import
+import { motion, Variants } from "framer-motion";
 
 export default function Loading() {
   const [progress, setProgress] = useState(0);

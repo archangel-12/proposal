@@ -404,9 +404,9 @@ export default function StrukturOrganisasi() {
         </h1>
         <div className="flex justify-center">
           <Image
-            src="/struktur.jpg"
-            alt="struktur organisasi"
-            width={600}
+            src="https://i.pinimg.com/736x/78/ac/93/78ac93b562efd9b715d98336af35bf40.jpg"
+            alt="yes"
+            width={500}
             height={800}
             className="rounded-lg shadow-lg"
           />

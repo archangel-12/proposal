@@ -15,6 +15,4 @@
 - <img
      src="..."
      alt="..."
-  />  
-
-- DON'T EVER USE THE FUCKING IDX... COULD NOT BE DEPLOYED
+  />

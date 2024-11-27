@@ -14,6 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  /*hehe, halo smantass*/
   title: "SMAN 17 SURABAYA",
   description: "Berbudi dan Berprestasi",
 };

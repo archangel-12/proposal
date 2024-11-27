@@ -16,11 +16,12 @@ import c from "../akademik/c.mdx";
 const blogPosts = [
   {
     id: "falcon-9",
-    title: "The State of Reusable Vehicles: Revolutionizing Space Exploration and Sustainability",
+    title:
+      "The State of Reusable Vehicles: Revolutionizing Space Exploration and Sustainability",
     date: "26 November 2024",
-    excerpt:
-      "Read More...",
-    image: "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/10/f9-hera2.jpg?fit=1200%2C789&ssl=1",
+    excerpt: "Read More...",
+    image:
+      "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/10/f9-hera2.jpg?fit=1200%2C789&ssl=1",
     tags: ["falcon9", "space", "exploration", "further & beyond"],
     content: falcon9,
   },
@@ -29,18 +30,20 @@ const blogPosts = [
     title: "The Minds Behind the Machines",
     date: "26 November 2024",
     excerpt: "Read More...",
-    image: "https://media.wired.com/photos/63a11855a12918bc073554af/master/pass/02_Mind-your-language.jpg",
+    image:
+      "https://media.wired.com/photos/63a11855a12918bc073554af/master/pass/02_Mind-your-language.jpg",
     tags: ["llm", "nlp", "computational"],
-    content: llm
+    content: llm,
   },
   {
     id: "medicine",
     title: "The Future of Medicine and Health: Bridging Biology and Technology",
     date: "26 November 2024",
     excerpt: "Read More...",
-    image: "https://www.reuters.com/resizer/v2/M7ZFYHGSRVNXPGD67NRF6UOQFU.jpg?auth=44bbe66affa0d036740cde513ede7ab778f901bb3f3e84a1828eb1b50778b309&width=4000&quality=80",
+    image:
+      "https://www.reuters.com/resizer/v2/M7ZFYHGSRVNXPGD67NRF6UOQFU.jpg?auth=44bbe66affa0d036740cde513ede7ab778f901bb3f3e84a1828eb1b50778b309&width=4000&quality=80",
     tags: ["neuralink", "health", "safety & regulation"],
-    content: neuralink
+    content: neuralink,
   },
   {
     id: "c-language",
@@ -48,8 +51,8 @@ const blogPosts = [
     date: "26 November 2024",
     image: "https://miro.medium.com/v2/resize:fit:828/0*vOZ2vc8u2TKwAm1E.png",
     tags: ["c", "lang", "bell-labs"],
-    content: c
-  }
+    content: c,
+  },
 ];
 
 export default function BlogPage() {
@@ -572,37 +575,34 @@ export default function BlogPage() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
+              <p className="text-sm">Email: smantass@ymail.com</p>
               <p className="text-sm">Phone: (031) 8700717</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-2">Link Altenatif</h3>
               <ul className="text-sm">
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About Us
+                  <a href="/tentangKami" className="hover:text-blue-400">
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Academics
+                  <a href="/akademik" className="hover:text-blue-400">
+                    Prestasi Akademik
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Admissions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
+                  <a href="/gtk" className="hover:text-blue-400">
+                    Guru & Tenaga Kependidikan
                   </a>
                 </li>
               </ul>
             </div>
             <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Ikuti Media Sosial Kami
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/smantass/"
@@ -626,7 +626,7 @@ export default function BlogPage() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>

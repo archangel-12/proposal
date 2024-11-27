@@ -61,7 +61,7 @@ export default function StrukturOrganisasi() {
     },
     {
       name: "Berita Kehumasan",
-      href: "/berita_kehumasan"
+      href: "/berita_kehumasan",
     },
     {
       name: "Komite",
@@ -391,37 +391,34 @@ export default function StrukturOrganisasi() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
+              <p className="text-sm">Email: smantass@ymail.com</p>
               <p className="text-sm">Phone: (031) 8700717</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-2">Link Altenatif</h3>
               <ul className="text-sm">
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About Us
+                  <a href="/tentangKami" className="hover:text-blue-400">
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Academics
+                  <a href="/akademik" className="hover:text-blue-400">
+                    Prestasi Akademik
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Admissions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
+                  <a href="/gtk" className="hover:text-blue-400">
+                    Guru & Tenaga Kependidikan
                   </a>
                 </li>
               </ul>
             </div>
             <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Ikuti Media Sosial Kami
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/smantass/"
@@ -445,7 +442,7 @@ export default function StrukturOrganisasi() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>

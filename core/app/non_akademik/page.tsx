@@ -16,22 +16,22 @@ const blogPosts = [
     id: "whistleblower",
     title: "The Illusion of the Free World: The Dangers of Mass Surveillance",
     date: "24 November 2024",
-    excerpt:
-      "Read More...",
-    image: "https://img.freepik.com/premium-photo/multiple-cctv-cameras-city-mass-surveillance-concept-generative-ai-digital-illustrationxa_124717-2493.jpg",
+    excerpt: "Read More...",
+    image:
+      "https://img.freepik.com/premium-photo/multiple-cctv-cameras-city-mass-surveillance-concept-generative-ai-digital-illustrationxa_124717-2493.jpg",
     tags: ["mass", "surveillance"],
-    content: whistleblower
+    content: whistleblower,
   },
   {
     id: "the-idea-of-war-criminal",
     title: "The Idea of Getting Away With It",
     date: "24 November 2024",
-    excerpt:
-      "Read More...",
-    image: "https://cdn-assetd.kompas.id/3HxKqzqEfDz3-iiXN-41ZD7M0L8=/1024x683/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2023%2F05%2F11%2F7db2b680-27fd-4bd9-bc98-4ec25575b9ac_jpg.jpg",
+    excerpt: "Read More...",
+    image:
+      "https://cdn-assetd.kompas.id/3HxKqzqEfDz3-iiXN-41ZD7M0L8=/1024x683/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2023%2F05%2F11%2F7db2b680-27fd-4bd9-bc98-4ec25575b9ac_jpg.jpg",
     tags: ["bastard"],
-    content: theDevil
-  }
+    content: theDevil,
+  },
 ];
 
 export default function BlogPage() {
@@ -554,37 +554,34 @@ export default function BlogPage() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
+              <p className="text-sm">Email: smantass@ymail.com</p>
               <p className="text-sm">Phone: (031) 8700717</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-2">Link Altenatif</h3>
               <ul className="text-sm">
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About Us
+                  <a href="/tentangKami" className="hover:text-blue-400">
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Academics
+                  <a href="/akademik" className="hover:text-blue-400">
+                    Prestasi Akademik
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Admissions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
+                  <a href="/gtk" className="hover:text-blue-400">
+                    Guru & Tenaga Kependidikan
                   </a>
                 </li>
               </ul>
             </div>
             <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Ikuti Media Sosial Kami
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/smantass/"
@@ -608,7 +605,7 @@ export default function BlogPage() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>

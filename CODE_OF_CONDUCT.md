@@ -1,5 +1,5 @@
-### <div align="center">the pledge</div>
+### <div align="center">The Pledge</div>
 
-- The Senior High School 17 of Surabaya decides what web content is acceptable in their interest,
+- Senior High School 17 of Surabaya determines what web content is acceptable in their interest.,
 
-- All the property, including the source code belongs to the school
+- All property, including the source code, belongs to the school

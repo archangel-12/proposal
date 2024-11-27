@@ -58,7 +58,7 @@ const blogPosts = [
     date: "29 April 2024",
     excerpt: "Selengkapnya...",
     image: "/sat-sks.jpg",
-    tags: ["sas", "smantass"],
+    tags: ["pat", "sat"],
     content: PAT,
   },
   {
@@ -67,7 +67,7 @@ const blogPosts = [
     date: "28 Agustus 2023",
     excerpt: "Selengkapnya...",
     image: "/sat-sks-2.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["akbn", "smantass"],
     content: ANBK,
   },
   {
@@ -76,7 +76,7 @@ const blogPosts = [
     date: "27 September 2023",
     excerpt: "Selengkapnya...",
     image: "/sat-sks-3.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["asa", "smantass"],
     content: ASA,
   },
   {
@@ -85,16 +85,16 @@ const blogPosts = [
     date: "11 September 2023",
     excerpt: "Selengkapnya...",
     image: "/sat-4.jpg",
-    tags: ["sas", "smantass"],
+    tags: ["survei", "smantass"],
     content: SLB,
   },
   {
     id: "hidroponik",
-    title: "SAS II-BKS",
+    title: "Pemanfaatan Hidroponik",
     date: "15 Mei 2023",
     excerpt: "Selengkapnya...",
     image: "/hidroponik.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["hidroponik", "smantass"],
     content: hidrponik,
   },
   {
@@ -103,7 +103,7 @@ const blogPosts = [
     date: "23 Mei 2024",
     excerpt: "Selengkapnya...",
     image: "/rapat_pleno.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["rapat", "pleno"],
     content: pleno,
   },
   {
@@ -112,16 +112,17 @@ const blogPosts = [
     date: "4 November 2024",
     excerpt: "Selengkapnya...",
     image: "/penutupan_p5.jpg",
-    tags: ["sas", "smantass"],
+    tags: ["p5", "smantass"],
     content: WIROSABLENG,
   },
   {
     id: "o-s-n",
-    title: "Membidik Siswa Smantass untuk meroket pada ajang Olimpiade Nasional Nasional",
+    title:
+      "Membidik Siswa Smantass untuk meroket pada ajang Olimpiade Nasional Nasional",
     date: "23 Febuari 2024",
     excerpt: "Selengkapnya...",
     image: "/osn.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["osn", "smantass"],
     content: osn,
   },
   {
@@ -130,7 +131,7 @@ const blogPosts = [
     date: "17 Febuari 2023",
     excerpt: "Selengkapnya...",
     image: "/usp-bks.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["usp", "smantass"],
     content: usp,
   },
   {
@@ -139,7 +140,7 @@ const blogPosts = [
     date: "6 Febuari 2023",
     excerpt: "Selengkapnya...",
     image: "/uprak_xii.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["uprak", "smantass"],
     content: uprak,
   },
   {
@@ -148,7 +149,7 @@ const blogPosts = [
     date: "5 Mei 2023",
     excerpt: "Selengkapnya...",
     image: "/verification.jpeg",
-    tags: ["sas", "smantass"],
+    tags: ["verifikasi", "smantass"],
     content: Verification,
   },
 ];
@@ -673,37 +674,34 @@ export default function BlogPage() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
+              <p className="text-sm">Email: smantass@ymail.com</p>
               <p className="text-sm">Phone: (031) 8700717</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-2">Link Altenatif</h3>
               <ul className="text-sm">
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About Us
+                  <a href="/tentangKami" className="hover:text-blue-400">
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Academics
+                  <a href="/akademik" className="hover:text-blue-400">
+                    Prestasi Akademik
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Admissions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
+                  <a href="/gtk" className="hover:text-blue-400">
+                    Guru & Tenaga Kependidikan
                   </a>
                 </li>
               </ul>
             </div>
             <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Ikuti Media Sosial Kami
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/smantass/"
@@ -727,7 +725,7 @@ export default function BlogPage() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>

@@ -1,3 +1,10 @@
+/*Ini adalah kode sumber untuk halaman depan proposal laman sekolah*/
+/*Mungkin ada yang berandai-andai kenapa saya memakai simbol bintang dan garis miring. Karena, saya tidak ingin tulisan ini dideteksi oleh compiler TypeScript*/
+/*Jika panjenengan semua membaca apa yang sudah tertulis di README.md, TypeScript adalah bahasa yang paling banyak saya pakai selama membuat proposal laman sekolah*/
+/*TypeScript sendiri memiliki reputasi sebagai bahasa yang sangat ketat dalam mendeteksi kode yang ditulis oleh seorang software engineer*/
+/*Jika kita menghitung berapa jumlah baris kode, termasuk dengan beberapa baris yang kosong, maka ada sekitar 1303 baris kode*/
+/*Saya harus mengakui, proyek ini adalah yang paling besar dalam hal sekedar hobi*/
+
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -14,7 +21,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Loading from "./loading";
-import { FileText, Users, Lightbulb, ChevronDown } from "lucide-react";
+import { FileText, Users, Lightbulb, ChevronDown, Menu, X } from "lucide-react";
 import headerLogo from "../public/cropped-HeaderLogo.png";
 import factoryVisit from "../public/hiya.jpeg";
 import Voley from "../public/lmao.png";
@@ -34,6 +41,8 @@ export default function Home() {
   const [isPrestasiOpen, setIsPrestasiOpen] = useState(false);
   const prestasiRef = useRef<HTMLDivElement>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const imageInterval = setInterval(() => {
@@ -49,6 +58,12 @@ export default function Home() {
     };
 
     const handleClickOutside = (event: MouseEvent) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
       if (
         aplikasiRef.current &&
         !aplikasiRef.current.contains(event.target as Node)
@@ -107,7 +122,7 @@ export default function Home() {
     },
     {
       name: "Berita Kehumasan",
-      href: "/berita_kehumasan"
+      href: "/berita_kehumasan",
     },
     {
       name: "Komite",
@@ -228,10 +243,7 @@ export default function Home() {
             <div className="ml-auto">
               <ul className="flex items-center space-x-6">
                 <li>
-                  <Link
-                    href="/about"
-                    className="text-gray-700 hover:text-blue-600"
-                  >
+                  <Link href="/" className="text-gray-700 hover:text-blue-600">
                     Home
                   </Link>
                 </li>
@@ -439,8 +451,194 @@ export default function Home() {
                 </div>
               </ul>
             </div>
+            <button
+              className="md:hidden text-gray-700 hover:text-blue-600"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
           </ul>
         </nav>
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              ref={mobileMenuRef}
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="md:hidden bg-white shadow-lg"
+            >
+              <div className="py-4 px-6 space-y-4">
+                <Link
+                  href="/"
+                  className="block text-gray-700 hover:text-blue-600"
+                >
+                  Home
+                </Link>
+                <div className="relative">
+                  <button
+                    onClick={handleTentangKamiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center w-full justify-between"
+                    aria-haspopup="true"
+                    aria-expanded={isTentangKamiOpen}
+                  >
+                    Tentang Kami
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                  <AnimatePresence>
+                    {isTentangKamiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="mt-2 space-y-2 pl-4"
+                      >
+                        {TentangKamiItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className="block text-sm text-gray-700 hover:text-blue-600"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <Link
+                  href="/strukturOrganisasi"
+                  className="block text-gray-700 hover:text-blue-600"
+                >
+                  Struktur Organisasi
+                </Link>
+                <Link
+                  href="/agenda_sekolah"
+                  className="block text-gray-700 hover:text-blue-600"
+                >
+                  Agenda Sekolah
+                </Link>
+                {/* Blog dropdown */}
+                <div ref={BlogRef} className="relative">
+                  <button
+                    onClick={handleBlogClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center w-full justify-between"
+                    aria-haspopup="true"
+                    aria-expanded={isBlogOpen}
+                  >
+                    Blog
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                  <AnimatePresence>
+                    {isBlogOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="mt-2 space-y-2 pl-4"
+                      >
+                        {BlogItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className="block text-sm text-gray-700 hover:text-blue-600"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfwyfDk9qmKQCleFVsvsC-77Ps9ZnrxhoxD3qSNWH45_8ZmeQ/viewform?usp=sf_link"
+                  className="block text-gray-700 hover:text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tamu
+                </Link>
+                {/* Prestasi Siswa dropdown */}
+                <div ref={prestasiRef} className="relative">
+                  <button
+                    onClick={handlePrestasiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center w-full justify-between"
+                    aria-haspopup="true"
+                    aria-expanded={isPrestasiOpen}
+                  >
+                    Prestasi Siswa
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                  <AnimatePresence>
+                    {isPrestasiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="mt-2 space-y-2 pl-4"
+                      >
+                        {prestasiItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            target={item.target}
+                            rel={item.rel}
+                            className="block text-sm text-gray-700 hover:text-blue-600"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+                {/* Aplikasi dropdown */}
+                <div ref={aplikasiRef} className="relative">
+                  <button
+                    onClick={handleAplikasiClick}
+                    className="text-gray-700 hover:text-blue-600 transition-colors duration-200 flex items-center w-full justify-between"
+                    aria-haspopup="true"
+                    aria-expanded={isAplikasiOpen}
+                  >
+                    Aplikasi
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                  <AnimatePresence>
+                    {isAplikasiOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="mt-2 space-y-2 pl-4"
+                      >
+                        {aplikasiItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            target={item.target}
+                            rel={item.rel}
+                            className="block text-sm text-gray-700 hover:text-blue-600"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
 
       <main>
@@ -472,7 +670,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="z-10 text-center text-white"
           >
-            <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
+            <h1 className="text-5xl font-medium mb-4 drop-shadow-lg">
               Selamat datang di laman resmi SMA Negeri 17 Surabaya
             </h1>
             <p className="text-xl mb-8 drop-shadow-md">
@@ -557,13 +755,13 @@ export default function Home() {
 
         <main className="container mx-auto px-6 py-12">
           <div className="flex gap-12">
-            <div className="w-1/2">
+            <div className="w-1/2 flex items-center justify-center">
               <Image
                 src="https://asset.kompas.com/crops/bVzqiC1Fk6lbCaIDX4MXnyepvzY=/16x0:787x514/1200x800/data/photo/2018/03/16/69007999.jpg" // Replace with actual principal image
                 alt="anggap aja contoh"
                 width={600}
                 height={800}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg object-cover"
               />
             </div>
             <motion.div
@@ -573,66 +771,72 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl font-bold">
-                <span className="text-gray-800">Good Morning</span>{" "}
-                <span className="text-orange-500">Everyone</span>{" "}
+                <span className="text-gray-800">Selamat Pagi</span>{" "}
+                <span className="text-orange-500">semuanya!</span>{" "}
               </h1>
 
               <h2 className="text-2xl text-gray-700">
-                We choose to go to the Moon!
+                Kita memilih untuk pergi ke Bulan!
               </h2>
 
               <div className="prose prose-lg text-justify">
                 <p>
-                  If this capsule history of our progress teaches us anything,
-                  it is that man, in his quest for knowledge and progress, is
-                  determined and cannot be deterred. The exploration of space
-                  will go ahead, whether we join in it or not, and it is one of
-                  the great adventures of all time, and no nation which expects
-                  to be the leader of other nations can expect to stay behind in
-                  the race for space.
+                  Jika catatan sejarah perjalanan kemajuan kita mengajarkan
+                  sesuatu, itu adalah bahwa manusia, dalam pencariannya akan
+                  pengetahuan dan kemajuan, memiliki tekad yang tak tergoyahkan.
+                  Eksplorasi luar angkasa akan terus berlanjut, entah kita
+                  berpartisipasi atau tidak, dan ini adalah salah satu
+                  petualangan terbesar sepanjang masa. Tidak ada bangsa yang
+                  berharap menjadi pemimpin bagi bangsa lain yang bisa
+                  mengharapkan tertinggal dalam perlombaan menuju luar angkasa.
                 </p>
 
                 <p>
-                  Those who came before us made certain that this country rode
-                  the first waves of the industrial revolutions, the first waves
-                  of modern invention, and the first wave of nuclear power, and
-                  this generation does not intend to founder in the backwash of
-                  the coming age of space. We mean to be a part of it — we mean
-                  to lead it. For the eyes of the world now look into space, to
-                  the moon and to the planets beyond, and we have vowed that we
-                  shall not see it governed by a hostile flag of conquest, but
-                  by a banner of freedom and peace. We have vowed that we shall
-                  not see space filled with weapons of mass destruction, but
-                  with instruments of knowledge and understanding.
+                  Mereka yang datang sebelum kita memastikan bahwa negara ini
+                  menunggangi gelombang pertama revolusi industri, gelombang
+                  pertama penemuan modern, dan gelombang pertama kekuatan
+                  nuklir. Generasi ini tidak berniat terombang-ambing di
+                  gelombang belakang era luar angkasa yang akan datang. Kita
+                  bermaksud menjadi bagian darinya, kita bermaksud memimpinnya.
+                  Karena mata dunia kini tertuju ke luar angkasa, ke bulan, dan
+                  ke planet-planet di luar sana, dan kita telah bersumpah bahwa
+                  kita tidak akan membiarkan wilayah itu diperintah oleh bendera
+                  permusuhan dan penaklukan, tetapi oleh panji kebebasan dan
+                  perdamaian. Kita telah bersumpah bahwa kita tidak akan
+                  membiarkan luar angkasa dipenuhi dengan senjata pemusnah
+                  massal, tetapi dengan instrumen pengetahuan dan pemahaman.
                 </p>
 
                 <p className="italic">
-                  We choose to go to the moon. We choose to go to the moon in
-                  this decade and do the other things, not because they are
-                  easy, but because they are hard, because that goal will serve
-                  to organize and measure the best of our energies and skills,
-                  because that challenge is one that we are willing to accept,
-                  one we are unwilling to postpone, and one which we intend to
-                  win, and the others, too.
+                  Kita memilih untuk pergi ke bulan. Kita memilih untuk pergi ke
+                  bulan dalam dekade ini dan melakukan hal-hal lain, bukan
+                  karena hal itu mudah, tetapi karena itu sulit. Karena tujuan
+                  itu akan menjadi sarana untuk mengorganisasi dan mengukur
+                  kemampuan dan energi terbaik kita, karena tantangan itu adalah
+                  sesuatu yang bersedia kita terima, sesuatu yang tidak ingin
+                  kita tunda, dan sesuatu yang kita berniat untuk menangkan —
+                  serta tantangan lainnya juga.
                 </p>
 
                 <p>
-                  However, I think we’re going to do it, and I think that we
-                  must pay what needs to be paid. I don’t think we ought to
-                  waste any money, but I think we ought to do the job. And this
-                  will be done in the decade of the sixties. It may be done
-                  while some of you are still here at school at this college and
-                  university. It will be done during the term of office of some
-                  of the people who sit here on this platform. But it will be
-                  done. And it will be done before the end of this decade.
+                  Namun, saya yakin kita akan melakukannya, dan saya percaya
+                  bahwa kita harus membayar apa yang diperlukan. Saya tidak
+                  berpikir kita seharusnya menyia-nyiakan dana yang ada, tetapi
+                  saya percaya kita harus menyelesaikan tugas ini. Dan tugas ini
+                  akan diselesaikan pada dekade enam puluhan. Mungkin akan
+                  terjadi saat beberapa dari Anda masih di sekolah atau
+                  berkuliah. Ini akan selesai selama masa jabatan beberapa orang
+                  yang duduk di panggung ini. Tapi ini akan selesai. Dan ini
+                  akan selesai sebelum akhir dekade ini.
                 </p>
 
                 <p>
-                  Well, space is there, and we’re going to climb it, and the
-                  moon and the planets are there, and new hopes for knowledge
-                  and peace are there. And, therefore, as we set sail we ask
-                  God’s blessing on the most hazardous and dangerous and
-                  greatest adventure on which man has ever embarked. Thank you.
+                  Nah, luar angkasa ada di sana, dan kita akan menjangkaunya,
+                  bulan dan planet-planet ada di sana, dan harapan baru untuk
+                  pengetahuan dan perdamaian juga ada di sana. Oleh karena itu,
+                  saat kita memulai perjalanan ini, kita memohon berkat Tuhan
+                  atas petualangan paling berbahaya, menantang, dan terbesar
+                  yang pernah dilakukan umat manusia. Terima kasih
                 </p>
               </div>
 
@@ -987,7 +1191,9 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardFooter className="mt-auto">
-                <Button variant="outline">Read More</Button>
+                <a href="/berita_kehumasan">
+                  <Button variant="outline">Read More</Button>
+                </a>
               </CardFooter>
             </Card>
             <Card className="flex flex-col">
@@ -1000,16 +1206,16 @@ export default function Home() {
                 />
               </div>
               <CardHeader>
-                <CardTitle>New Arts Program Launched</CardTitle>
-                <CardDescription>
-                  Expanding our curriculum with innovative arts courses
-                </CardDescription>
+                <CardTitle>intoTheLmao</CardTitle>
+                <CardDescription>Ey big shout out to X-4</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>other than that, fuck em'. we ball...</p>
+                <p>She's just wow...</p>
               </CardContent>
               <CardFooter className="mt-auto">
-                <Button variant="outline">Read More</Button>
+                <a href="/akademik">
+                  <Button variant="outline">Read More</Button>
+                </a>
               </CardFooter>
             </Card>
           </div>
@@ -1037,37 +1243,34 @@ export default function Home() {
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-              <p className="text-sm">Email: info@sman17sby.sch.id</p>
+              <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
+              <p className="text-sm">Email: smantass@ymail.com</p>
               <p className="text-sm">Phone: (031) 8700717</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-2">Link Altenatif</h3>
               <ul className="text-sm">
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About Us
+                  <a href="/tentangKami" className="hover:text-blue-400">
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Academics
+                  <a href="/akademik" className="hover:text-blue-400">
+                    Prestasi Akademik
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Admissions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
+                  <a href="/gtk" className="hover:text-blue-400">
+                    Guru & Tenaga Kependidikan
                   </a>
                 </li>
               </ul>
             </div>
             <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Ikuti Media Sosial Kami
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/smantass/"
@@ -1091,7 +1294,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved.</p>
+            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>
