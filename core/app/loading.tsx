@@ -1,5 +1,3 @@
-/*Ini adalah kode yang fungsinya untuk menampilkan loading ketika user berusaha untuk refresh halaman*/
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -67,7 +65,7 @@ export default function Loading() {
           transition={{ duration: 0.5 }}
         />
       </div>
-      <p className="text-white text-sm mb-2">Welcome abroad, Smantass...</p>
+      <p className="text-white text-sm mb-2">Welcome Abroad, smantass....</p>
       <p className="text-gray-400 text-xs text-center max-w-xs">
         208919 199205 919 318162054 239208{" "}
         <a
