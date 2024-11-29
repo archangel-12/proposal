@@ -18,8 +18,18 @@ import pondok2 from "../berita_kesiswaan/pondok2.mdx";
 import storica from "../berita_kesiswaan/storica.mdx";
 import teacher from "../berita_kesiswaan/teachers_day.mdx";
 import isra from "../berita_kesiswaan/skintas.mdx";
+import X9 from "../berita_kesiswaan/selamat-atas-prestasi-gemilang.mdx";
 
 const blogPosts = [
+  {
+    id: "x-9",
+    title: "SELAMAT ATAS PRESTASI YANG GEMILANG",
+    date: "09 November 2024",
+    excerpt: "SMAN 17 Surabaya mengucapkan selamat atas prestasi untuk ananda bernama Bintang Aulia Rahmat kelas X-9 meraih Juara ke 2, medali perak di kegiatan Kejurnas hapkido Indonesia ke VII dengan penyelenggara Pengurus Pusat Hapkido Indonesia Semarang, dan di laksanakan pada tanggal 9-10 November",
+    image: "/x9.jpeg",
+    tags: ["Kesiswaan", "prestasi", "non", "akademik"],
+    content: X9
+  },
   {
     id: "prestasi-cemerlang",
     title: "Prestasi Cemerlang SMAN 17 Surabaya",

@@ -8,29 +8,87 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
 import headerLogo from "../../public/cropped-HeaderLogo.png";
-import whistleblower from "../non_akademik/whistleblower.mdx";
-import theDevil from "../non_akademik/war-criminal.mdx";
+import X9 from "../berita_kesiswaan/selamat-atas-prestasi-gemilang.mdx";
+import cheerleader from "../non_akademik/cheerleader.mdx";
+import paskib from "../non_akademik/paskib-ikn.mdx";
+import finswimming from "../non_akademik/paskib-ikn.mdx";
+import grade5 from "../non_akademik/grade-5.mdx";
+import GCHQ from "../non_akademik/qchq.mdx";
+import kartiniModern from "../non_akademik/kartini.mdx";
+import senjata from "../non_akademik/senjata.mdx";
 
 const blogPosts = [
   {
-    id: "whistleblower",
-    title: "The Illusion of the Free World: The Dangers of Mass Surveillance",
-    date: "24 November 2024",
-    excerpt: "Read More...",
-    image:
-      "https://img.freepik.com/premium-photo/multiple-cctv-cameras-city-mass-surveillance-concept-generative-ai-digital-illustrationxa_124717-2493.jpg",
-    tags: ["mass", "surveillance"],
-    content: whistleblower,
+    id: "x-9",
+    title: "SELAMAT ATAS PRESTASI YANG GEMILANG",
+    date: "09 November 2024",
+    excerpt: "SMAN 17 Surabaya mengucapkan selamat atas prestasi untuk ananda bernama Bintang Aulia Rahmat kelas X-9 meraih Juara ke 2, medali perak di kegiatan Kejurnas hapkido Indonesia ke VII dengan penyelenggara Pengurus Pusat Hapkido Indonesia Semarang, dan di laksanakan pada tanggal 9-10 November",
+    image: "/x9.jpeg",
+    tags: ["Kesiswaan", "prestasi", "non", "akademik"],
+    content: X9
   },
   {
-    id: "the-idea-of-war-criminal",
-    title: "The Idea of Getting Away With It",
-    date: "24 November 2024",
-    excerpt: "Read More...",
-    image:
-      "https://cdn-assetd.kompas.id/3HxKqzqEfDz3-iiXN-41ZD7M0L8=/1024x683/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2023%2F05%2F11%2F7db2b680-27fd-4bd9-bc98-4ec25575b9ac_jpg.jpg",
-    tags: ["bastard"],
-    content: theDevil,
+    id: "cheerleader",
+    title: "PRESTASI LAGI…..DAN LAGI…SEMANGAT!!",
+    date: "25 September 2024",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-09-25-at-10.41.37.jpeg",
+    tags: ["non", "akademik"],
+    content: cheerleader
+  },
+  {
+    id: "paskib",
+    title: "AUDIENSI PERSIAPAN PASKIBRAKA NASIONAL 2024 DI IKN OLEH KEPALA SEKOLAH SMAN 17 SURABAYA DAN WALIKOTA SURABAYA",
+    date: " 11 Juli 2024",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-07-14-at-18.28.39-870x416.jpeg",
+    tags: ["paskibraka", "non", "akademik"],
+    content: paskib
+  },
+  {
+    id: "perunggu",
+    title: "Juara 3 (perunggu) Finswimming 400m Bifin",
+    date: "26 Mei 2023",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-04-13-at-10.34.48.jpeg",
+    tags: ["renang","non", "akademik"],
+    content: cheerleader
+  },
+  {
+    id: "cheerleader",
+    title: "PRESTASI LAGI…..DAN LAGI…SEMANGAT!!",
+    date: "25 September 2024",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-09-25-at-10.41.37.jpeg",
+    tags: ["non", "akademik"],
+    content: grade5
+  },
+  {
+    id: "cheerleader",
+    title: "PRESTASI LAGI…..DAN LAGI…SEMANGAT!!",
+    date: "25 September 2024",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-09-25-at-10.41.37.jpeg",
+    tags: ["non", "akademik"],
+    content: cheerleader
+  },
+  {
+    id: "cheerleader",
+    title: "PRESTASI LAGI…..DAN LAGI…SEMANGAT!!",
+    date: "25 September 2024",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-09-25-at-10.41.37.jpeg",
+    tags: ["non", "akademik"],
+    content: cheerleader
+  },
+  {
+    id: "cheerleader",
+    title: "PRESTASI LAGI…..DAN LAGI…SEMANGAT!!",
+    date: "25 September 2024",
+    excerpt: "Read More",
+    image: "/WhatsApp-Image-2024-09-25-at-10.41.37.jpeg",
+    tags: ["non", "akademik"],
+    content: cheerleader
   },
 ];
 

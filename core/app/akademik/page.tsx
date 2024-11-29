@@ -8,50 +8,29 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
 import headerLogo from "../../public/cropped-HeaderLogo.png";
-import falcon9 from "../akademik/falcon-9.mdx";
-import llm from "../akademik/llm.mdx";
-import neuralink from "../akademik/neuralink.mdx";
-import c from "../akademik/c.mdx";
+import lkti from "./lkti.mdx";
+import lkti2 from "./lkti_2.mdx";
 
 const blogPosts = [
   {
-    id: "falcon-9",
+    id: "lkti-3",
     title:
-      "The State of Reusable Vehicles: Revolutionizing Space Exploration and Sustainability",
-    date: "26 November 2024",
+      "Juara 3 LKTI, Seni dan Budaya dalam Rangka Memperingati HUT TNI Ke- 78",
+    date: "13 April 2024",
     excerpt: "Read More...",
     image:
-      "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/10/f9-hera2.jpg?fit=1200%2C789&ssl=1",
-    tags: ["falcon9", "space", "exploration", "further & beyond"],
-    content: falcon9,
+      "/karya_tulis.jpeg",
+    tags: ["prestasi", "akademik"],
+    content: lkti,
   },
   {
-    id: "llm",
-    title: "The Minds Behind the Machines",
-    date: "26 November 2024",
+    id: "juara-3",
+    title: "Juara 3 Lomba Karya Tulis Ilmiah",
+    date: "13 April 2024",
     excerpt: "Read More...",
-    image:
-      "https://media.wired.com/photos/63a11855a12918bc073554af/master/pass/02_Mind-your-language.jpg",
-    tags: ["llm", "nlp", "computational"],
-    content: llm,
-  },
-  {
-    id: "medicine",
-    title: "The Future of Medicine and Health: Bridging Biology and Technology",
-    date: "26 November 2024",
-    excerpt: "Read More...",
-    image:
-      "https://www.reuters.com/resizer/v2/M7ZFYHGSRVNXPGD67NRF6UOQFU.jpg?auth=44bbe66affa0d036740cde513ede7ab778f901bb3f3e84a1828eb1b50778b309&width=4000&quality=80",
-    tags: ["neuralink", "health", "safety & regulation"],
-    content: neuralink,
-  },
-  {
-    id: "c-language",
-    title: "The Success and Legacy of C",
-    date: "26 November 2024",
-    image: "https://miro.medium.com/v2/resize:fit:828/0*vOZ2vc8u2TKwAm1E.png",
-    tags: ["c", "lang", "bell-labs"],
-    content: c,
+    image: "/karya_tulis_1.png",
+    tags: ["prestasi", "akademik"],
+    content: lkti2
   },
 ];
 
