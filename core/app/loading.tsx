@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion"; // Added Variants import
 
 export default function Loading() {
   const [progress, setProgress] = useState(0);
@@ -41,7 +41,7 @@ export default function Loading() {
   };
 
   return (
-    <div className="fixed inset-0 bg-black flex flex-col items-center justify-center">
+    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center">
       <motion.svg
         className="w-16 h-16 mb-8"
         viewBox="0 0 76 65"
@@ -50,16 +50,16 @@ export default function Loading() {
       >
         <motion.path
           d="M37.5274 0L75.0548 65H0L37.5274 0Z"
-          stroke="#ffffff"
+          stroke="#000000"
           strokeWidth="2"
           variants={triangleVariants}
           initial="initial"
           animate="animate"
         />
       </motion.svg>
-      <div className="w-64 h-1 bg-gray-700 rounded-full overflow-hidden mb-4">
+      <div className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden mb-4">
         <motion.div
-          className="h-full bg-white"
+          className="h-full bg-black"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.5 }}

@@ -1,9 +1,4 @@
 /*Ini adalah kode sumber untuk halaman depan proposal laman sekolah*/
-/*Mungkin ada yang berandai-andai kenapa saya memakai simbol bintang dan garis miring. Karena, saya tidak ingin tulisan ini dideteksi oleh compiler TypeScript*/
-/*Jika panjenengan semua membaca apa yang sudah tertulis di README.md, TypeScript adalah bahasa yang paling banyak saya pakai selama membuat proposal laman sekolah*/
-/*TypeScript sendiri memiliki reputasi sebagai bahasa yang sangat ketat dalam mendeteksi kode yang ditulis oleh seorang software engineer*/
-/*Jika kita menghitung berapa jumlah baris kode, termasuk dengan beberapa baris yang kosong, maka ada sekitar 1303 baris kode*/
-/*Saya harus mengakui, proyek ini adalah yang paling besar dalam hal sekedar hobi*/
 
 "use client";
 
