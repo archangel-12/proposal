@@ -22,8 +22,38 @@ import osn from "../berita_kurikulum/osn.mdx";
 import usp from "../berita_kurikulum/usp-bks.mdx";
 import uprak from "../berita_kurikulum/uprak.mdx";
 import Verification from "../berita_kurikulum/verifikasi.mdx";
+import basket from "../berita_kurikulum/basket.mdx";
+import admission from "../berita_kurikulum/kelulusan.mdx";
+import exchange from "../berita_kurikulum/student-exchange.mdx";
 
 const blogPosts = [
+  {
+    id: "basket",
+    title: "Lanjutkan Prestasi Kalian, dan Tetap Semangat Terus!!!",
+    date: "25 September 2024",
+    excerpt: "Read More...",
+    image: "/end-me.jpeg",
+    tags: ["basket", "dbl"],
+    content: basket
+  },
+  {
+    id: "penerimaan",
+    title: "Cek Kelulusan Siswa SMA Negeri 17 Surabaya Tahun Pelajaran 2023/2024",
+    date: "06 Mei 2024",
+    excerpt: "Read More...",
+    image: "/pengumuman.png",
+    tags: ["ppdb", "penerimaan"],
+    content: admission
+  },
+  {
+    id: "student-exchange",
+    title: "kegiatan Student Exchange, SMAN 17 SURABAYA",
+    date: "10 Juli 2023",
+    excerpt: "Read More...",
+    image: "/exchange.jpeg",
+    tags: ["kurikulum", "student", "exchange"],
+    content: exchange
+  },
   {
     id: "p-5-smantass",
     title: "Proyek Penguatan Profil Pelajar Pancasila 2024 SMAN 17 Surabaya",

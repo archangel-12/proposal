@@ -14,8 +14,18 @@ import p5 from "../agenda_sekolah/p5.mdx";
 import p5November from "../agenda_sekolah/p5-november.mdx";
 import blood from "../agenda_sekolah/gedor.mdx";
 import SKI from "../agenda_sekolah/aksi-6.mdx";
+import hariGuru from "../agenda_sekolah/hari-guru.mdx";
 
 const blogPosts = [
+  {
+    id: "hari-guru",
+    title: "Upacara hari Guru 2024",
+    date: "25 November 2024",
+    excerpt: "Read More...",
+    image: "/hari-guru/20241125_072755-1536x1152.jpg",
+    tags: ["hari", "guru"],
+    content: hariGuru
+  },
   {
     id: "MPLS-2024-smantass",
     title: "Kegiatan MPLS 2024 di SMAN 17 Surabaya",
