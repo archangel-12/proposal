@@ -10,14 +10,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "images2.alphacoders.com",
-      },
-      {
-        protocol: "https",
-        hostname: "wallpapers.com",
-      },
-      {
-        protocol: "https",
         hostname: "asset.kompas.com",
       },
       {
@@ -26,33 +18,51 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "i0.wp.com"
+        hostname: "payload.cargocollective.com",
       },
-      {
-        protocol: "https",
-        hostname: "media.wired.com"
-      },
-      {
-        protocol: "https",
-        hostname: "www.reuters.com"
-      },
-      {
-        protocol: "https",
-        hostname: "miro.medium.com"
-      },
-      {
-        protocol: "https",
-        hostname: "img.freepik.com"
-      },
-      {
-        protocol: "https",
-        hostname: "cdn-assetd.kompas.id"
-      }
     ],
   },
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   experimental: {
     mdxRs: true,
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
+          },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+          {
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value:
+              "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+          },
+        ],
+      },
+    ];
   },
 };
 

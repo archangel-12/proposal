@@ -1,6 +1,6 @@
 // this is a sort of test script that i do in the ``page.tsx`` script//
 // originally i want to make a dropdown menu when it comes to mobile but apparently my attempt is sort of fail //
-// to whoever see this, please do not mess with it as this whole thing is part of the test.//
+// to whoever see this, please do not mess with it as this whole thing is part of the test//
 // thank you and god speed //
 
 

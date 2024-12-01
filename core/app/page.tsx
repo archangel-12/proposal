@@ -1,5 +1,3 @@
-/*Ini adalah kode sumber untuk halaman depan proposal laman sekolah*/
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -1098,6 +1096,7 @@ export default function Home() {
                       image: "/teachers/bu farah_bahasa indonesia.png",
                     },
                     {
+                      // This thing should belong to Bu Tiwi And not Elon //
                       name: "Elon Reeve Musk",
                       role: "CEO of Tesla, Inc, SpaceX, & X Corp",
                       image:

@@ -161,6 +161,7 @@ export default function Home() {
   };
 
   const principal = {
+    // This thing should belong to Pak Khoirul And not Elon //
     name: "Elon Reeve Musk, FRS",
     role: "Founder & CEO of Tesla, Inc, SpaceX, X Corp, The Boring Company, & Co-founder of Neuralink, OpenAI, & PayPal",
     image:
@@ -404,6 +405,7 @@ export default function Home() {
       image: "/teachers/bu farah_bahasa indonesia.png",
     },
     {
+      // This too should belong to Bu Tiwi
       name: "Andrej Karpathy",
       role: "Former Tesla's Director of Artificial Intelligence & Autopilot Vision",
       image: "/karpathy.jpg",

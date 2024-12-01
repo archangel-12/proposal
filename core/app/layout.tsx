@@ -14,9 +14,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  /*hehe, halo smantass*/
   title: "SMAN 17 SURABAYA",
   description: "Berbudi dan Berprestasi",
+  referrer: "no-referrer",
+  robots: "noindex, nofollow",
 };
 
 export default function RootLayout({
@@ -26,11 +27,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+        />
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </head>
     </html>
   );
 }
