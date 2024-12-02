@@ -9,6 +9,13 @@ import { Card } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
 import headerLogo from "../../public/cropped-HeaderLogo.png";
 import kunjunganDharmawanita from "../berita_kehumasan/kunjungan-dharmawanita-ke-pabrik-fiesta.mdx";
+import ppdb from "../berita_kesiswaan/ppdb.mdx";
+import purnawidya from "../berita_kehumasan/purnawidya.mdx";
+import hariPendidikan from "../berita_kehumasan/hari-pendidikan.mdx";
+import bestCostume from "../berita_kehumasan/best-costume.mdx";
+import halalBihalal from "../berita_kehumasan/halal-bihalal.mdx";
+import sumpahPemuda from "../berita_kehumasan/sumpah-pemuda.mdx";
+import lombaGuru from "../berita_kehumasan/lomba-guru.mdx";
 
 const blogPosts = [
   {
@@ -21,6 +28,69 @@ const blogPosts = [
     tags: ["kegiatan", "dharmawanita", "kunjungan"],
     content: kunjunganDharmawanita,
   },
+  {
+    id: "p-p-d-b",
+    title: "PPDB SMAN 17 Surabaya",
+    date: "30 Mei 2024",
+    excerpt: "informasi ppdb bisa dilihat di post ini...",
+    image: "/ppdb_1.jpeg",
+    tags: ["ppdb", "pendaftaran"],
+    content: ppdb,
+  },
+  {
+    id: "purnawidya",
+    title: "PURNAWIDYA SMA NEGERI 17 SURABAYA TAHUN AJARAN 2023/2024",
+    date: "22 Mei 2024",
+    excerpt: "Read More...",
+    image: "/end_to_last.jpeg",
+    tags: ["kelulusan", "kehumasan"],
+    content: purnawidya,
+  },
+  {
+    id: "hari-pendidikan",
+    title: "PELAKSANAAN UPACARA BENDERA MEMPERINGATI HARI PENDIDIKAN NASIONAL",
+    date: "02 Mei 2024",
+    excerpt: "Read More...",
+    image: "/hari-pendidikan.jpeg",
+    tags: ["kehumasan", "hari", "pendidikan"],
+    content: hariPendidikan,
+  },
+  {
+    id: "best-costume",
+    title: "BEST COSTUME KATEGORI GURU PADA MOMEN HARI PENDIDIKAN NASIONAL DAN HARI KARTINI 2024",
+    date: "09 Mei 2024",
+    excerpt: "Read More...",
+    image: "/best-costume.jpeg",
+    tags: ["kehumasan", "hari", "pendidikan", "kartini"],
+    content: bestCostume,
+  },
+  {
+    id: "halal-bihalal",
+    title: "Halal Bihalal SMAN 17 Surabaya",
+    date: "22 April 2024",
+    excerpt: "Read More...",
+    image: "/halal-bihalal.jpeg",
+    tags: ["kehumasan", "halal", "bihalal"],
+    content: halalBihalal,
+  },
+  {
+    id: "sumpah-pemuda",
+    title: "UPACARA MEMPERINGATI HARI SUMPAH PEMUDA",
+    date: "14 Maret 2024",
+    excerpt: "Read More...",
+    image: "/sumpah-pemuda.jpeg",
+    tags: ["Kehumasan", "hari", "sumpah", "pemuda"],
+    content: sumpahPemuda,
+  },
+  {
+    id: "lomba-guru",
+    title: "KESERUAN LOMBA GURU PADA SAAT MOMEN AGUSTUSAN DI SMAN 17 SURABAYA",
+    date: "12 Maret 2024",
+    excerpt: "Read More...",
+    image: "/lomba-guru.jpeg",
+    tags: ["kehumasan", "lomba", "guru"],
+    content: lombaGuru,
+  }
 ];
 
 export default function BlogPage() {

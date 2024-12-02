@@ -4,7 +4,7 @@
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
   },
-  "version": "0.1.2",
+  "version": "0.1.4",
   "author": {
     "name": "Matthew {@archangel-12 || @thenothing_12} Alexander",
     "email": "alexandermatthew25@gmail.com",
@@ -27,6 +27,9 @@
   ],
   "private": true,
   "scripts": {
+    "update-check": "bun outdated",
+    "update-interactive": "bun update --interactive",
+    "update-all": "bun update --latest",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
