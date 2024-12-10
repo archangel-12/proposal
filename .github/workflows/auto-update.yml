@@ -1,9 +1,9 @@
-name: Lisa will change eventually
+name: Auto Update Dependencies
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
-  workflow_dispatch:  # Allows manual trigger
+    - cron: '0 0 * * 0'  # Runs at 00:00 every Sunday
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update-core-dependencies:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for proper Git operatio
+          fetch-depth: 0  # Fetch all history for proper Git operations
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
@@ -27,7 +27,7 @@ jobs:
       - name: Commit and Push Changes
         working-directory: ./core
         run: |
-          git config --global user.name "⸜(｡˃ ᵕ ˂ )⸝♡"
+          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add package.json bun.lockb
           git commit -m "chore: update dependencies in core folder"
