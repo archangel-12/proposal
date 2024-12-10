@@ -1,4 +1,4 @@
-name: Update Core Dependencies
+name: Auto Update Dependencies
 
 on:
   schedule:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Fetch all history for proper Git operations
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
@@ -23,9 +23,14 @@ jobs:
         working-directory: ./core
         run: |
           bun update --save
-          
-      - name: Verify Updates
+
+      - name: Commit and Push Changes
         working-directory: ./core
         run: |
-          echo "Updated dependencies in 'core' folder:"
-          cat bun.lockb || echo "No lockfile found. Update may not have persisted"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add package.json bun.lockb
+          git commit -m "chore: update dependencies in core folder"
+          git push origin HEAD
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
