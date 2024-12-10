@@ -1,4 +1,4 @@
-name: Auto Update Dependencies
+name: Update Core Dependencies
 
 on:
   schedule:
@@ -6,48 +6,26 @@ on:
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  update-dependencies:
+  update-core-dependencies:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for proper git operations
-      
+          fetch-depth: 0
+
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
 
-      - name: Configure Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Update dependencies
+      - name: Update Dependencies in Core
         working-directory: ./core
         run: |
           bun update --save
           
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: Update dependencies
-          title: 'chore: update dependencies'
-          body: |
-            This PR updates project dependencies to their latest versions.
-            Please review the changes and merge if everything looks good.
-          branch: auto-dependency-update
-          delete-branch: true
-          path: core
-          token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Check for changes
-        id: git-check
+      - name: Verify Updates
         working-directory: ./core
         run: |
-          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
-
-      - name: Notify if no updates
-        if: steps.git-check.outputs.changes != 'true'
-        run: |
-          echo "No updates were found this time."
+          echo "Updated dependencies in 'core' folder:"
+          cat bun.lockb || echo "No lockfile found. Update may not have persisted"
