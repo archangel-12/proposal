@@ -1,28 +1,32 @@
-name: Update Dependencies
+name: Auto Update Dependencies
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * 0'  # Runs at 00:00 every Sunday
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update-dependencies:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./core
-
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for proper git operations
       
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
 
-      - name: Update dependencies
+      - name: Configure Git
         run: |
-          bun update --latest
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Update dependencies
+        working-directory: ./core
+        run: |
+          bun update --save
           
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
@@ -32,19 +36,18 @@ jobs:
           body: |
             This PR updates project dependencies to their latest versions.
             Please review the changes and merge if everything looks good.
-            
-            Changes made in the core directory.
           branch: auto-dependency-update
-          base: ${{ github.head_ref }}
-          path: ./core
           delete-branch: true
+          path: core
+          token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Check for changes
         id: git-check
+        working-directory: ./core
         run: |
           git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Notify if no updates
         if: steps.git-check.outputs.changes != 'true'
         run: |
-          echo "No updates were found this time :). have a good day..."
+          echo "No updates were found this time."
