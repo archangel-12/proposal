@@ -9,9 +9,59 @@ Repositori ini seperti *folder* tempat saya menyimpan semua file, gambar, dan ko
 ### Mengapa saya melakukan ini?
 Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat saya magang selama hampir empat bulan. Pengalaman tersebut mengajarkan saya banyak hal, tidak hanya tentang pengembangan web, tetapi juga bagaimana bekerja dengan siswa dan memahami dunia mereka. Saya tahu bahwa saya bukan guru terbaik, tetapi pengalaman ini memberi saya pelajaran berharga, dan saya ingin memberikan sesuatu kembali dengan cara terbaik yang saya bisa.
 
+### Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?
+
+- Lihat __kode sumber secara langsung__
+
+   Bisa dengan mengklik tombol titik `.` atau tinggal mengubah link repo menjadi `.dev`. Pada akhirnya, tinggal mengubah domain dari `.com` menjadi `.dev`. [Github](https://github.com/), selaku platform tempat saya mengarspip semua proyek saya memperkenalkan konsep ini agar proses edit kode menjadi lebih mudah. Jika masih tidak mengerti bagaimana cara kerjanya, bisa dilihat demonstrasi di bawah atau penjelasan secara lengkap di link [ini](https://github.com/github/dev)
+
+   ![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
+
+- Unduh?
+
+  Ada berbagai cara untuk mengunduh dan melihat kode sumber untuk perangkat lokal. Saya mengkategorikan cara __Konvesional__ dan cara __Cepat__. Mari kita mulai dengan cara __konvensional__.
+
+
+  - ### Konvensional
+      1. Pertama, mari kita unduh folder yang ada dalam repositori dengan cara menekan tombol `Code <>` kemudiann menekan *Download Zip Folder*. Ini akan mengunduh kumpulan file dan folder yang ada dalam bentuk zip folder. Ingatlah kita mengunduh file dan folder dari repositori ini saja, jangan samakan seperti kita mengunduh virus ataupun *malware* karena pada dasarnya, kita tidak mengunduh virus, melainkan file dan folder di repo ini saja, semoga bisa dimengerti
+      2. Pertama, mari kita mengunduh platform yang akan kita gunakan, dimulai dari [editor untuk kode](https://code.visualstudio.com/), dan yang terakhir, [*runtime* untuk mengeksekusi kode](https://nodejs.org/en)
+      3. Jika sudah melewati tahap pertama, maka untuk saatnya kita tinggal memasukkan semua folder yang sudah di unduh ke dalam editor kode. Tinggal masukkan saja, maka editor kode akan insialisasi semua file yang ada dalam folder tersebut dengan sendirinya
+      4. Saatnya kita mengunduh *plugin* yang akan kita gunakan. Kita bisa menekan kombinasi tombol `CTRL + SHIFT + tanda miring` di keyboard kita. Tentu saja sesuatu muncul secara tiba-tiba dari bawah, dan ini dinamakan `Terminal`. Terminal inilah tempat kita akan menulis dan memberitahukan alat-alat apa saja yang akan kita butuhkan nantinya selama proses melihat, ataupun jika ada yang berniat, mengedit kode
+      5. Nah, jika sudah melewati tahap ketiga, kita bisa menulis sesuatu seperti:
+         ```sh
+         cd core
+         ```
+         ini akan mengarahkan terminal ke folder `core`. Karena disitulah saya menyimpan file dan semuanya
+
+      6. Selanjutnya, kita tinggal mengunduh semua yang kita perlukan, yaitu dengan mengetik:
+         ```sh
+         /run_all.bash
+         ```
+         ini akan menyuruh terminal untuk mengunduh segala jenis alat dan *plugin* yang kita perlukan
+
+      7. Selamat :) kita sudah berada di tahap konvensional terakhir. Jika sudah melewati tahap-tahap sebelumnya, maka kita tinggal menekan link *localhost* yang berformat `http://localhost:3000/`. Selamat melihat-lihat :)
+
+
+   - ### Cara Cepat
+
+      Nah, semenjak Github diakuisi oleh [Microsoft](https://www.nytimes.com/2018/06/04/technology/microsoft-github-cloud-computing.html) dan ditambah pandemi Covid, Github memperkenalkan [*Codespaces*](https://github.com/features/codespaces). Codespaces inilah yang saya maksud dalam konsep IDE di point alat dan plugin. Lebih tepatnya, *Virtual IDE*. Ini bermanfaat sekali bagi saya yang tidak memiliki laptop dengan performa cepat. Kenapa? agar saya bisa mengedit, menyimpan, dan mengunduh alat-alat yang saya butuhkan tanpa harus konfigurasi langsung di laptop saya yang dimana, payah jika ingin mengedit kode :). Berikut jika ingin menerapkan cara cepat:
+
+      1. Mari kita buat akun Github Jika ini [pertama kali](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)nya mengakses Github, maka kita harus membuat akun. Pilihan pembuatan akun baru bisa darimana saja, bisa dengan memakai email dari Google, Apple, atau Facebook
+      2. Jika sudah melewati tahap pertama, maka kita langsung menuju Codespaces, dengan menekan `Code <>` dan Codespaces. Harusnya pilihan Codespaces ada di sebelah opsi `local`
+      3. Jika sudah ketemu, kita tinggal menekan "*Create codespace on main*". Github mungkin memberikan opsi untuk *forking* repositori, akan tetapi jika tidak menemukan *warning* atau semacamnya, maka kita berada di jalur yang benar
+      4. Jika sudah melewati cara ketiga, maka untuk sejenak kita biarkan Github untuk inisialisi file dengan sendirinya
+      5. Oke, tahap kelima dan setelahnya jauh lebih mudah setelah ini. Jika Codespace sudah siap, maka hal yang kita lakukan adalah dengan membuka terminal, yang dimana, cara membukanya sama seperti poin no.4 di cara konvensional
+      6. Tahap terakhir tinggal mengaplikasikan metode yang sama seperti poin no.5 di cara konvensional...
+
+      Ini adalah demonstrasi bagaimana cara menggunakan Codespace:
+
+      ![github codespace](https://luke.geek.nz/assets/images/OpenCodespace-7ded5b93f6b3d8f25a98c42f2503235b.gif)
+
+### Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `README.md`) akan ditulis dalam bahasa Inggris dikarenakan, jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
+
 ### Alat dan plugin apa saja yang saya gunakan saat membuat proposal website ini?
 
-1. Segala jenis *Integrated Development Environment*
+1. Segala jenis Virtual *Integrated Development Environment*
    
    Secara default, IDE (*Integrated Development Environment*) adalah editor teks gratis dan sumber terbuka yang terjangkau dan memungkinkan kita untuk menyimpan file langsung ke *cloud*. Sebagai seorang *enthusiast*, saya menggunakan alat ini karena mereka memungkinkan saya untuk mengedit kode secara online tanpa perlu menginstal perangkat lunak tambahan di komputer saya. Namun, alasan utama saya mengandalkan ini adalah karena laptop saya kesulitan menjalankan aplikasi pengkodean berat dan sering melambat atau mengalami *error* :)
 
@@ -48,9 +98,5 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
     Secara default, [*Markdown*](https://daringfireball.net/projects/markdown/syntax) adalah bahasa sederhana yang digunakan untuk menulis konten di web. Ini sangat baik untuk membuat dokumen seperti file README atau posting blog karena mudah dibaca dan ditulis. Namun, *Markdown* sendiri memiliki keterbatasan, meskipun bekerja dengan baik untuk format teks dasar, ia kesulitan ketika kita perlu menambahkan fungsionalitas dinamis, seperti menyematkan komponen interaktif atau menggunakan elemen *React* dalam konten Anda. Inilah fungsi kehadiran MDX (*Markdown* + [*JSX*](https://react.dev/learn/writing-markup-with-jsx)). *MDX* adalah versi yang diperluas dari *Markdown* yang memungkinkan kita menggunakan komponen *React* langsung di dalam file *Markdown* kita. Misalnya, di file MDX, kita bisa menulis teks biasa bersama dengan komponen kustom seperti grafik, tombol, atau formulir, semuanya dalam satu tempat. MDX sangat populer dalam proyek-proyek seperti situs dokumentasi atau blog karena memungkinkan pengembang untuk mengintegrasikan kode dan konten secara mulus. Alih-alih memisahkan keduanya ke dalam file yang berbeda, kita bisa menjaga semuanya dalam satu file, menjadikannya lebih mudah untuk dikelola dan dipelihara :)
    
 
-### Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?
-
-<!--!>later</!-->
-
 ### Apa lagi yang perlu diketahui?
-Repositori ini dilindungi oleh Lisensi [MIT](/LICENSE). Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama Anda menyertakan lisensi aslinya. Ini seperti meminjam alat dari seseorang, tetapi tetap memberikan penghargaan kepada mereka.
+Repositori ini dilindungi oleh Lisensi [MIT](/LICENSE). Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama kita menyertakan lisensi aslinya. Ini seperti meminjam alat dari seseorang, tetapi tetap memberikan penghargaan kepada mereka.
