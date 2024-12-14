@@ -31,9 +31,7 @@ echo -e "${YELLOW}Starting the Actual lisa Runtime and update process...${NC}"
 
 run_command "npm i -g bun" "Installing the Actual Lisa..."
 
-run_command "bun run update-check" "Checking for Lisa..."
-
-run_command "bun run update-all" "Updating Lisa..."
+run_command "bun update --latest" "Updating Lisa..."
 
 echo -e "${GREEN}Welcome Aboard, smantass...${NC}"
 echo "moshi moshi?..."
