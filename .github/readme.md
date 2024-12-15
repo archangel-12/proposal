@@ -1,0 +1,4 @@
+### <div align="center">worth to notice!!!</div>
+___
+
+### I’ve set up a workflow, so to speak, which ensures that this repository will always be updated. Meaning all third-party packages I’ve used during the development of this website proposal. You’re welcome to view the list of packages in the [dependencies](/core/package.json). The repository will be updated every Saturday, always following Reykjavik's time (UTC+0). Why Iceland’s time instead of the Western Indonesia Time? It’s simple: GitHub seems to focus more on whatever AI projects they’re working on, rather than on basic features like time zone support. Also, please note that the repository will be updated five minutes after the intended time :/

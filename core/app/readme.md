@@ -1,0 +1,7 @@
+### <div align="center">Brief Summary</div>
+#### <div align="center">Worth to mention that I make some of notes in either the [__non_akademik__](./non_akademik/) or the [__berita_kurikulum__](./berita_kurikulum) folder. You may wanna read it...</div>
+---
+
+#### Welcome to __app__, think of it as the heart of the school, it's where everything comes together and where the core structure of our website is organized. Imagine this folder as the school's administration office, where the schedules, activities, and resources are managed and coordinated. In this folder, we define the main structure of the website, how the different "*subjects*" ([pages](./page.tsx)) work together to provide a smooth experience for students, teachers, and visitors. Just like the school principal plans the day-to-day activities and ensures everything runs on time, the app folder makes sure the website functions properly and that all routes, layouts, and navigation are well-organized.
+
+#### In short, the app folder is where the fundamental structure of the site is put in place, making sure everything works together efficiently, just like how the school’s administration keeps things running smoothly behind the scenes...

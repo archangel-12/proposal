@@ -1,0 +1,4 @@
+### <div align="center">Brief Summary</div>
+---
+
+#### This is the __Public__ folder. Think of it as the school's bulletin board or media room. It's where all the important shared resources are stored, ready for anyone to access at any time. Imagine it's the place where you pin posters, keep copies of newsletters, or store videos from last year's graduation ceremony. These resources don’t need to go through any extra processing, They’re just there, waiting to be shown to students, parents, and teachers, much like how anyone can grab a flyer off the bulletin board. This makes the public folder the go to place for storing all your school’s essential media and ensuring it’s easily accessible to everyone visiting the site...

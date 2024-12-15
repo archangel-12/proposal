@@ -1,10 +1,12 @@
-## Profil Sekolah
+### <div align="center">Profil sekolah</div>
+___
+
 SMA Negeri (SMAN) 17 Surabaya atau dikenal dengan akronim Smantass, merupakan salah satu Sekolah Menengah Atas Negeri yang ada di Provinsi Jawa Timur, Indonesia. Sama dengan SMA pada umumnya di Indonesia masa pendidikan sekolah di SMAN 17 Surabaya ditempuh dalam waktu tiga tahun pelajaran, mulai dari Kelas X sampai Kelas XII. SMA Negeri 17 berada dalam satu komplek bersama dengan SMP Negeri 35 Surabaya
 
 ## Akreditasi
 - Nilai Akreditasi: 94.34
 - Peringkat Akreditasi: A
-- Tanggal Penetapan: 17-Nov-2017
+- Tanggal Penetapan: 17 November 2017
 
 ## Fasilitas
 Berbagai fasilitas yang dimiliki oleh SMAN 17 Surabaya antara lain:
@@ -39,11 +41,11 @@ SMA Negeri 17 memiliki banyak kegiatan ekstrakurikuler, di antaranya:
 - BSJ (Basket Smantass Jaya)
 - VSJ (Voli Smantass Jaya)
 - FSJ (Futsal Smantass Jaya)
-- TASSCHO (Smantass Choir)
+- TASSCHO (Smantass *Choir*)
 - Keroncong Gethuk Smantass
 - Lingkungan Hidup
 - PETROMAKS
-- SEC (Smantass English Club)
+- SEC (*Smantass English Club*)
 - KIR (Kelompok Ilmiah Remaja)
 - Matriks
 - Band
