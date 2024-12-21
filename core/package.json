@@ -1,10 +1,10 @@
 {
-  "name": "proposal_website_smantass",
+  "name": "smantass",
   "manifesto": {
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
   },
-  "version": "0.1.4",
+  "version": "2.0.0",
   "author": {
     "name": "Matthew {@archangel-12 || @thenothing_12} Alexander",
     "email": "alexandermatthew25@gmail.com",
@@ -25,7 +25,13 @@
   "categories": [
     "Education"
   ],
-  "private": true,
+  "keywords": [
+    "Education",
+    "school",
+    "website",
+    "proposal"
+  ],
+  "private": false,
   "scripts": {
     "update-check": "bun outdated",
     "update-interactive": "bun update --interactive",
