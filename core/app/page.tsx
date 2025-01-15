@@ -1288,7 +1288,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; 2024 SMAN 17 SURABAYA. All rights reserved</p>
+            <p>&copy; {new Date().getFullYear()} SMAN 17 SURABAYA. All rights reserved</p>
           </div>
         </div>
       </footer>

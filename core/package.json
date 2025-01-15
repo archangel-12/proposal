@@ -4,7 +4,7 @@
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
   },
-  "version": "2.0.0",
+  "version": "2.0.2",
   "author": {
     "name": "Matthew {@archangel-12 || @thenothing_12} Alexander",
     "email": "alexandermatthew25@gmail.com",
@@ -22,6 +22,30 @@
   "repository": {
     "url": "https://github.com/archangel-12/proposal"
   },
+  "files": [
+    "readme.md",
+    "LICENSE",
+    "command.sh",
+    "code_of_conduct.md",
+    "core/",
+    "app/",
+    "components/",
+    "lib/",
+    ".eslintrc.json",
+    ".gitignore",
+    "components.json",
+    "Dockerfile",
+    "next-env.d.ts",
+    "next.config.ts",
+    "note.doc",
+    "package.json",
+    "poscss.config.mjs",
+    "readme.md",
+    "run_all.sh",
+    "speed.sh",
+    "tailwind.config.ts",
+    "tsconfig.json"
+  ],
   "categories": [
     "Education"
   ],
@@ -39,7 +63,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "bun install"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -49,9 +74,9 @@
     "@types/mdx": "^2.0.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.17.0",
+    "framer-motion": "^11.18.0",
     "gray-matter": "^4.0.3",
-    "lucide-react": "^0.471.0",
+    "lucide-react": "^0.471.1",
     "next": "15.1.4",
     "next-mdx-remote": "^5.0.0",
     "react": "19.0.0",
@@ -62,12 +87,12 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^22.10.5",
-    "@types/react": "^19.0.4",
-    "@types/react-dom": "^19.0.2",
+    "@types/node": "^22.10.6",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
     "eslint": "^9.18.0",
     "eslint-config-next": "15.1.4",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
   }

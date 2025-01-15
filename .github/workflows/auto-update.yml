@@ -3,7 +3,7 @@ name: Auto Update Dependencies
 on:
   schedule:
     - cron: '0 0 * * 6'
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   update-core-dependencies:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for proper Git operations
+          fetch-depth: 0
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1

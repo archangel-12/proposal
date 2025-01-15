@@ -33,3 +33,9 @@ yarn-error.log*
 # TypeScript cache
 *.tsbuildinfo
 next-env.d.ts
+
+# Include source folders
+!core
+!app
+!components
+!lib
