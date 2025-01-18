@@ -1,4 +1,4 @@
-name: Auto Update Dependencies
+name: let it happen
 
 on:
   schedule:
@@ -22,6 +22,7 @@ jobs:
       - name: Update Dependencies in Core
         working-directory: ./core
         run: |
+          export NODE_OPTIONS=--max-old-space-size=4096
           bun update --latest
           bun install
 
