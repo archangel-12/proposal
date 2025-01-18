@@ -2,8 +2,8 @@
 // 
 // export default function Home() {
 //   const jsonData = JSON.stringify([
-//     { name: "jeslyn", age: 18 },
-//     { name: "bunga", age: 19 },
+//     { name: "jeslyn", age: 19 },
+//     { name: "bunga", age: 16 },
 //   ]);
 // 
 //   const users = parseUsers(jsonData);
