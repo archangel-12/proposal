@@ -9,24 +9,32 @@ jobs:
   update-core-dependencies:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: repo in check
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Setup Bun
+      - name: setup bun because why not?
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
 
-      - name: Update Dependencies in Core
+      - name: clean workspace
+        run: |
+          git clean -fdx
+          git reset --hard HEAD
+
+      - name: clear bun cache
+        run: bun cache clean
+
+      - name: update dependencies in core
         working-directory: ./core
         run: |
           export NODE_OPTIONS=--max-old-space-size=4096
           bun update --latest
-          bun install
+          bun install --silent --no-save
 
-      - name: Commit and Push Changes
+      - name: commit and push changes
         working-directory: ./core
         run: |
           git config --global user.name "github-actions[bot]"
