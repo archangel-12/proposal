@@ -24,9 +24,6 @@ jobs:
           git clean -fdx
           git reset --hard HEAD
 
-      - name: clear bun cache
-        run: bun cache clean
-
       - name: update dependencies in core
         working-directory: ./core
         run: |
