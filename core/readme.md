@@ -35,7 +35,7 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
 
       6. Selanjutnya, kita tinggal mengunduh semua yang kita perlukan, yaitu dengan mengetik:
          ```sh
-         /run_all.bash
+         ./run.sh
          ```
          ini akan menyuruh terminal untuk mengunduh segala jenis alat dan *plugin* yang kita perlukan
 

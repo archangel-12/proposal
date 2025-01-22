@@ -27,14 +27,14 @@ run_command() {
     fi
 }
 
-echo -e "${YELLOW}Starting the Actual lisa Runtime and update process...${NC}"
+echo -e "${YELLOW}starting the actual runtime n' update process...${NC}"
 
-run_command "npm i -g bun" "Installing the Actual Lisa..."
+run_command "npm i -g bun" "download runtime..."
 
-run_command "bun update --latest" "Updating Lisa..."
+run_command "bun update --latest" "everything must be new..."
 
-echo -e "${GREEN}Welcome Aboard, smantass...${NC}"
-echo "moshi moshi?..."
+echo -e "${GREEN}welcome abroad, smantass...${NC}"
+echo "moshi moshi?"
 bun run dev
 
-echo -e "${YELLOW}Sampai Jumpa :)${NC}"
+echo -e "${YELLOW}localhost terminated. goodbye :)${NC}"

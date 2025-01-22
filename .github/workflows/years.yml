@@ -1,4 +1,4 @@
-name: Update License Year
+name: the less i know, the better
 
 on:
   schedule:
@@ -9,20 +9,20 @@ jobs:
   update-license-year:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: intothelmao
         uses: actions/checkout@v3
 
-      - name: Update license year
+      - name: change the year
         run: |
           CURRENT_YEAR=$(date +"%Y")
           sed -i "s/Copyright (c) [0-9]\{4\}/Copyright (c) $CURRENT_YEAR/" LICENSE
           
-      - name: Check for changes
+      - name: lmao
         id: git-check
         run: |
           git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
 
-      - name: Commit changes
+      - name: do changing
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
@@ -30,7 +30,7 @@ jobs:
           git add LICENSE
           git commit -m "Update license year to $CURRENT_YEAR"
           
-      - name: Push changes
+      - name: and there it is
         if: steps.git-check.outputs.changes == 'true'
         uses: ad-m/github-push-action@master
         with:

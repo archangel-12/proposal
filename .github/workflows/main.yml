@@ -37,7 +37,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add package.json bun.lockb
-          git commit -m "chore: update dependencies in core folder"
+          git commit -m "fresh from the oven"
           git push origin HEAD
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -4,4 +4,4 @@ output=$(wget --report-speed=bits -O /dev/null "$url" 2>&1)
 
 speed=$(echo "$output" | grep -oP '(?<=\().+?(?=\))')
 
-echo "Download speed: $speed"
+echo "download speed: $speed"

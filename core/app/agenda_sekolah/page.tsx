@@ -24,7 +24,7 @@ const blogPosts = [
     excerpt: "Read More...",
     image: "/hari-guru/20241125_072755-1536x1152.jpg",
     tags: ["hari", "guru"],
-    content: hariGuru
+    content: hariGuru,
   },
   {
     id: "MPLS-2024-smantass",

@@ -18,8 +18,7 @@ const blogPosts = [
       "Juara 3 LKTI, Seni dan Budaya dalam Rangka Memperingati HUT TNI Ke- 78",
     date: "13 April 2024",
     excerpt: "Read More...",
-    image:
-      "/karya_tulis.jpeg",
+    image: "/karya_tulis.jpeg",
     tags: ["prestasi", "akademik"],
     content: lkti,
   },
@@ -30,7 +29,7 @@ const blogPosts = [
     excerpt: "Read More...",
     image: "/karya_tulis_1.png",
     tags: ["prestasi", "akademik"],
-    content: lkti2
+    content: lkti2,
   },
 ];
 
