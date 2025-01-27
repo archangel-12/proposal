@@ -4,7 +4,7 @@
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
   },
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": {
     "name": "matthew {@archangel-12 || @thenothing_12} alexander",
     "email": "alexandermatthew25@gmail.com",
@@ -47,6 +47,7 @@
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.1.6",
     "@radix-ui/react-slot": "^1.1.1",
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/mdx": "^2.0.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

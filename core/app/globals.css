@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -62,11 +60,17 @@ body {
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+/* Ever since Tailwind upgraded to v4, the following code stopped working. */
+/* The `@apply border-border` throws an error stating "unknown utility class". */
+/* It's unclear why, as the `border-border` utility is defined in the config. */
+/* The `@apply bg-background text-foreground` also doesn't seem to apply correctly. */
+/* For now, this section has been commented out until a fix or clarification is found. */
+
+/* @layer base { */
+/*   * { */
+/*     @apply border-border; */
+/*   } */
+/*   body { */
+/*     @apply bg-background text-foreground; */
+/*   } */
+/* } */

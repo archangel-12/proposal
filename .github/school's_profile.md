@@ -17,21 +17,21 @@ The various facilities available at SMAN 17 Surabaya include:
 - Chemistry Laboratory
 - Computer Laboratory
 - Language Laboratory
-- School Health Unit (UKS)
+- School Health Unit (*UKS*)
 - Cafeteria
 - Cooperative Store
 - Restrooms
 - Greenhouse
 - Scout Hall
 - Auditorium
-- Prayer Room (Musholla)
-- Student Council Room (OSIS Room)
-- Science Club Room (KIR Room)
+- Prayer Room (*Musholla*)
+- Student Council Room (*OSIS* Room)
+- Science Club Room (*KIR* Room)
 
 ## Extracurriculars
 SMAN 17 offers a variety of extracurricular activities, including:
 - Youth Red Cross (PMR)
-- Perisai Diri (Self-Defense Club)
+- *Perisai Diri* (Self-Defense Club)
 - HIPPALAS (Nature and Arts Enthusiasts Association of SMAN 17 Surabaya)
 - Journalism
 - Cheerleading (XVII CHEER)
@@ -42,11 +42,11 @@ SMAN 17 offers a variety of extracurricular activities, including:
 - VSJ (Smantass Volleyball Team)
 - FSJ (Smantass Futsal Team)
 - TASSCHO (Smantass Choir)
-- Keroncong Gethuk Smantass (Traditional Music Group)
+- *Keroncong Gethuk* Smantass (Traditional Music Group)
 - Environmental Club
 - PETROMAKS
 - SEC (Smantass English Club)
 - KIR (Youth Scientific Group)
-- Matriks
+- *Matriks*
 - Band
-- Nanoka (Japanese Language Club)
+- *Nanoka* (Japanese Language Club)
