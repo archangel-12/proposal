@@ -4,7 +4,7 @@
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
   },
-  "version": "3.0.1",
+  "version": "3.0.2",
   "author": {
     "name": "matthew {@archangel-12 || @thenothing_12} alexander",
     "email": "alexandermatthew25@gmail.com",
@@ -70,7 +70,7 @@
     "eslint": "^9.20.1",
     "eslint-config-next": "15.1.7",
     "postcss": "^8.5.2",
-    "tailwindcss": "^4.0.6",
+    "tailwindcss": "4.0.6",
     "typescript": "^5.7.3"
   }
 }
