@@ -79,3 +79,7 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
 
 ### Apa lagi yang perlu diketahui?
 Repositori ini dilindungi oleh Lisensi [MIT](/LICENSE). Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama kita menyertakan lisensi aslinya. Ini seperti meminjam alat dari seseorang, tetapi tetap memberikan penghargaan kepada mereka.
+
+- [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
+
+- [![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)

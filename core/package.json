@@ -1,5 +1,6 @@
 {
   "name": "smantass_proposal",
+  "description": "a supposed to be school's new proposal site",
   "manifesto": {
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
@@ -11,26 +12,14 @@
     "instagram": "@r3yanson",
     "github": "@archangel-12, @thenothing12"
   },
-  "maintainers": [
-    "SMA NEGERI 17 SURABAYA"
-  ],
-  "contributors": [
-    "matthew alexander",
-    "SMA NEGERI 17 SURABAYA"
-  ],
-  "license": "MIT",
+  "maintainers": ["SMA NEGERI 17 SURABAYA"],
+  "contributors": ["matthew alexander", "SMA NEGERI 17 SURABAYA"],
+  "license": "(MIT OR CC-BY-4.0)",
   "repository": {
     "url": "https://github.com/archangel-12/proposal"
   },
-  "categories": [
-    "Education"
-  ],
-  "keywords": [
-    "Education",
-    "school",
-    "website",
-    "proposal"
-  ],
+  "categories": ["Education"],
+  "keywords": ["Education", "school", "website", "proposal"],
   "private": false,
   "scripts": {
     "update-check": "bun outdated",

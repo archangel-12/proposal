@@ -80,3 +80,7 @@ This is my way of showing appreciation to the school where I interned for almost
 ### What else should I know?
 
 This repository is protected by the [MIT License](/LICENSE). This means you're free to use, copy, modify, and distribute the code as long as you include the original license. It’s like borrowing a tool from someone but giving them credit for it
+
+- [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
+
+- [![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)
