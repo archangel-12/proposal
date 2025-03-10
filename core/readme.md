@@ -1,15 +1,21 @@
-### <div align="center">Penjelasan</div>
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="100"></a>
+  <br>
+  Penjelasan
+</h1>
+
 #### <div align="center">Untuk teks dalam bahasa ![terjemahan bahasa Inggris](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/20px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?20230715230526) bisa melihat ke deskripsi [paling awal](/README.md)</div>
 ##### <div align="center">Untuk keterangan bersifat teknis, bisa dilihat dalam format `.md` dan BUKAN `.mdx`</div>
----
 
-### Jadi, apa ini?
-Repositori ini seperti *folder* tempat saya menyimpan semua file, gambar, dan kode untuk situs web yang saya usulkan untuk [SMA Negeri 17 Surabaya](https://maps.app.goo.gl/LTp8YwdNVenDtcFr9). Meskipun struktur kodenya mungkin belum sempurna (dan mungkin perlu penyesuaian sebelum dipublikasikan secara online), ini adalah fondasi untuk membangun proyek ini.
 
-### Mengapa saya melakukan ini?
+### 1. Jadi, proyek apakah ini?
+> Repositori ini seperti *folder* tempat saya menyimpan semua file, gambar, dan kode untuk situs web yang saya usulkan untuk [SMA Negeri 17 Surabaya](https://maps.app.goo.gl/LTp8YwdNVenDtcFr9). Meskipun struktur kodenya mungkin belum sempurna (dan mungkin perlu penyesuaian sebelum dipublikasikan secara online), ini adalah fondasi untuk membangun proyek ini.
+
+### 2. Mengapa saya melakukan ini?
 Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat saya magang selama hampir empat bulan. Pengalaman tersebut mengajarkan saya banyak hal, tidak hanya tentang pengembangan web, tetapi juga bagaimana bekerja dengan siswa dan memahami dunia mereka. Saya tahu bahwa saya bukan guru terbaik, tetapi pengalaman ini memberi saya pelajaran berharga, dan saya ingin memberikan sesuatu kembali dengan cara terbaik yang saya bisa.
 
-### Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?
+### 3. Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?
 
 - Lihat __kode sumber secara langsung__
 
@@ -57,9 +63,10 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
 
       ![github codespace](https://luke.geek.nz/assets/images/OpenCodespace-7ded5b93f6b3d8f25a98c42f2503235b.gif)
 
-### Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `README.md`) akan ditulis dalam bahasa Inggris dikarenakan, jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
+> [!IMPORTANT] 
+> Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `README.md`) akan ditulis dalam bahasa Inggris dikarenakan jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
 
-### Alat dan plugin apa saja yang saya gunakan saat membuat proposal website ini?
+### 3. Alat dan plugin apa saja yang saya gunakan saat membuat proposal website ini?
 
    1. Segala jenis *IDE* berbasis *virtual* – Menggunakan [Gitpod](https://www.gitpod.io/) atau [Project IDX](https://idx.dev/) oleh Google sebagai lingkungan pengembangan berbasis cloud.
 
@@ -80,6 +87,6 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
 ### Apa lagi yang perlu diketahui?
 Repositori ini dilindungi oleh Lisensi [MIT](/LICENSE). Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama kita menyertakan lisensi aslinya. Ini seperti meminjam alat dari seseorang, tetapi tetap memberikan penghargaan kepada mereka.
 
-- [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
+[![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
 
-- [![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)
+[![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)

@@ -1,3 +1,10 @@
+/* Hi there :) */
+/* When I wrote this, only I and my personalized LLM model, which I use as a reference, understood what I was doing... */
+/* Now, only God knows :( */
+
+/* I'm sorry if it's too long. You're right—it should've been optimized and separated, as the rule of the framework is always to use components. :) */
+/* But I didn’t. Sorry :) */
+
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -1288,7 +1295,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} SMAN 17 SURABAYA. All rights reserved</p>
+            <p>
+              &copy; {new Date().getFullYear()} SMAN 17 SURABAYA. All rights
+              reserved
+            </p>
           </div>
         </div>
       </footer>

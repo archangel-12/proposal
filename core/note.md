@@ -2,13 +2,13 @@
 
 - ```html
     <div className="text-center">
-      ## hello everyone...
+      ## hi smantass...
     </div>
   ```
 
 - ````html
     <div className="text-justify">
-      ### this is an example the way of writing
+      ### when we win, do not forget that these people want you broke, dead, your kids r***d and brainwashed, and they think it's funny
     </div>
 
 - ```html
@@ -17,3 +17,5 @@
      alt="..."
     />
   ```
+
+- for full documentation, you can refer to this [site](https://nextjs.org/docs/messages/react-hydration-error) :)

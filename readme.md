@@ -1,18 +1,22 @@
-### <div align="center">The Explanation</div>
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="100"></a>
+  <br>
+  Description
+</h1>
 
 #### <div align="center">For ![Indonesian translation](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/20px-Flag_of_Indonesia.svg.png) translation, please refer to [this file](/core/readme.md)</div>
 
----
 
-### So what is this?
+### 1. So what is this?
 
-This repository serves as a sort of folder or a collection of files and images for my proposed website for [Senior High School 17 of Surabaya](https://maps.app.goo.gl/nXSSRhYwREe6CQks6). While I acknowledge that the code structure might not be perfect and could face challenges when deployed online, it represents a starting point for this project.
+> This repository serves as a sort of folder or a collection of files and images for my proposed website for [Senior High School 17 of Surabaya](https://maps.app.goo.gl/nXSSRhYwREe6CQks6). While I acknowledge that the code structure might not be perfect and could face challenges when deployed online, it represents a starting point for this project.
 
-### Why am I doing this?
+### 2. Why am I doing this?
 
 This is my way of showing appreciation to the school where I interned for almost four months. The experience taught me new skills, not only in web development but also in handling and understanding kids. Although I’m aware that teaching isn’t my strong suit, the internship gave me invaluable life lessons, and I feel indebted to the school.
 
-### How to properly download and view collections of folders and files?
+### 3. How to properly download and view collections of folders and files?
 
 - View the source code directly
 
@@ -60,7 +64,7 @@ This is my way of showing appreciation to the school where I interned for almost
 
       ![github codespace](https://luke.geek.nz/assets/images/OpenCodespace-7ded5b93f6b3d8f25a98c42f2503235b.gif)
 
-### What tools and plugins did you use while creating this website proposal?
+### 3. What tools and plugins did you use while creating this website proposal?
    1. Any kind of *Virtual* IDE – Primarily used [Gitpod](https://www.gitpod.io/) or [Project IDX](https://idx.dev/) by Google for a cloud-based development environment.
 
    2. Runtime – Leveraged [Bun](https://bun.sh/) for its performance and modern JavaScript runtime capabilities.
@@ -77,10 +81,10 @@ This is my way of showing appreciation to the school where I interned for almost
 
    8. [AI](https://v0.dev/) for seeking reference
 
-### What else should I know?
+### 4. What else should I know?
 
-This repository is protected by the [MIT License](/LICENSE). This means you're free to use, copy, modify, and distribute the code as long as you include the original license. It’s like borrowing a tool from someone but giving them credit for it
+This repository is protected by the [MIT License](/LICENSE) and [Cc by 4.0](/license-CC-BY-4.0). This means you're free to use, copy, modify, and distribute the code as long as you include the original license. It’s like borrowing a tool from someone but giving them credit for it
 
-- [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
+[![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
 
-- [![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)
+[![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)

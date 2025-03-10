@@ -1,5 +1,10 @@
-### <div align="center">Profil sekolah</div>
-___
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="200"></a>
+  <br>
+  Profil sekolah
+  <br>
+</h1>
 
 SMA Negeri (SMAN) 17 Surabaya atau dikenal dengan akronim Smantass, merupakan salah satu Sekolah Menengah Atas Negeri yang ada di Provinsi Jawa Timur, Indonesia. Sama dengan SMA pada umumnya di Indonesia masa pendidikan sekolah di SMAN 17 Surabaya ditempuh dalam waktu tiga tahun pelajaran, mulai dari Kelas X sampai Kelas XII. SMA Negeri 17 berada dalam satu komplek bersama dengan SMP Negeri 35 Surabaya
 
