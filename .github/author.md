@@ -1,1 +1,5 @@
 #### hello, my name is matt, but i prefer to be called archie. i am currently a senior undergraduate and an incoming graduate student. programming is just a hobby of mine, which i pursue in the hope of curbing my boredom 😶
+
+#### that's all...
+
+#### ~~not sponsored by <img src="https://companieslogo.com/img/orig/C6L.SI-4461b2e9.png?t=1720244491" alt="sq_brand" width="20px" style="vertical-align: text-bottom;">, <img src="https://companieslogo.com/img/orig/AF.PA_BIG-be64dc4a.png?t=1730518159" alt="af-klm_brand" width="90px" style="vertical-align: text-bottom;">, <img src="https://logos-world.net/wp-content/uploads/2023/01/Star-Alliance-Logo-500x281.png" alt="sq_brand" width="90px" style="vertical-align: middle;">, and not even <img src="https://companieslogo.com/img/orig/github-97592640.png?t=1720244494 " alt="sq_brand" width="20px" style="vertical-align: middle;">~~

@@ -55,8 +55,8 @@ SMAN 17 offers a variety of extracurricular activities, including:
 - _Keroncong Gethuk_ Smantass (Traditional Music Group)
 - Environmental Club
 - PETROMAKS
-- SEC (Smantass ![english](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/20px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?20230715230526) Club)
+- SEC (Smantass <img src="https://www.svgrepo.com/show/405643/flag-for-flag-united-kingdom.svg" alt="gb_flag" width="20px" style="vertical-align: text-bottom;"> language club)
 - KIR (Youth Scientific Group)
 - _Matriks_
 - Band
-- _Nanoka_ (![english](https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/20px-Flag_of_Japan.svg.png) Language Club)
+- _Nanoka_ (<img src="https://www.svgrepo.com/show/249004/japan.svg" alt="jp_flag" width="20px" style="vertical-align: middle;"> language club)

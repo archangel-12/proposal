@@ -5,7 +5,7 @@
   Penjelasan
 </h1>
 
-#### <div align="center">Untuk teks dalam bahasa ![terjemahan bahasa Inggris](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/20px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?20230715230526) bisa melihat ke deskripsi [paling awal](/README.md)</div>
+#### <div align="center">Untuk teks dalam bahasa <img src="https://www.svgrepo.com/show/405643/flag-for-flag-united-kingdom.svg" alt="gb_flag" width="20px" style="vertical-align: text-bottom;"> bisa melihat ke deskripsi [paling awal](/readme.md)</div>
 ##### <div align="center">Untuk keterangan bersifat teknis, bisa dilihat dalam format `.md` dan BUKAN `.mdx`</div>
 
 
@@ -64,28 +64,28 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
       ![github codespace](https://luke.geek.nz/assets/images/OpenCodespace-7ded5b93f6b3d8f25a98c42f2503235b.gif)
 
 > [!IMPORTANT] 
-> Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `README.md`) akan ditulis dalam bahasa Inggris dikarenakan jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
+> Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `readme.md`) akan ditulis dalam bahasa Inggris dikarenakan jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
 
 ### 3. Alat dan plugin apa saja yang saya gunakan saat membuat proposal website ini?
 
-   1. Segala jenis *IDE* berbasis *virtual* – Menggunakan [Gitpod](https://www.gitpod.io/) atau [Project IDX](https://idx.dev/) oleh Google sebagai lingkungan pengembangan berbasis cloud.
+   1. Segala jenis *IDE* berbasis *virtual*: Menggunakan <a href="https://www.gitpod.io/"><img src="https://www.svgrepo.com/show/373626/gitpod.svg" alt="gitpod" width="20px" style="vertical-align: text-bottom;"></a> atau <a href="https://idx.google.com/"><img src="https://cdn.brandfetch.io/idH-6nF2GH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="idx" width="20px" style="vertical-align: text-bottom;"></a> sebagai lingkungan pengembangan berbasis *cloud*.
 
-   2. *Runtime* – Memakai [Bun](https://bun.sh/) karena performanya yang cepat dan efisien.
+   2. *Runtime*: Memakai <a href="https://bun.sh/"><img src="https://bun.sh/logo.svg" alt="bun" width="20px" style="vertical-align: text-bottom;"></a> karena performanya yang cepat dan efisien.
 
-   3. Kerangka kerja – mengandalkan [Next.js](https://nextjs.org/) untuk fitur yang kuat serta dukungan [server-side rendering](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering).
+   3. Kerangka kerja: Memakai <a href="https://nextjs.org/"><img src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" alt="next" width="20px" style="vertical-align: text-bottom;"></a> untuk fitur yang kuat serta dukungan [*server-side rendering*](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering).
 
-   4. *Styling* – Menggunakan tailwind.css sebagai solusi styling berbasis [*utility-first*](https://tailwindcss.com/docs/styling-with-utility-classes).
+   4. *Styling*: Menggunakan <a href="https://tailwindcss.com/"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="tailwind" width="20px" style="vertical-align: text-bottom;"></a> sebagai solusi *styling* berbasis [*utility-first*](https://tailwindcss.com/docs/styling-with-utility-classes).
 
-   5. Pustaka komponen – Menggunakan [ui](https://ui.shadcn.com/) untuk mempercepat pengembangan antarmuka pengguna.
+   5. Pustaka komponen: Menggunakan <a href="https://ui.shadcn.com/"><img src="https://logolist.net/wp-content/uploads/2024/04/shadcn-ui.svg" alt="ui" width="20px" style="vertical-align: text-bottom;"></a> untuk mempercepat pengembangan antarmuka pengguna.
 
-   6. Bahasa – Menggunakan [TypeScript](http://typescriptlang.com/)
+   6. Bahasa: Memakai <a href="http://typescriptlang.com/"><img src="https://www.svgrepo.com/show/439022/typescript.svg" alt="ui" width="20px" style="vertical-align: text-bottom;"></a>
 
-   7. Penulisan Konten – Menggunakan [MDX](https://mdxjs.com/) untuk mengintegrasikan Markdown dengan [JSX](https://react.dev/learn/writing-markup-with-jsx) agar pengalaman menulis konten lebih fleksibel.
+   7. Penulisan Konten: Menggunakan <a href="https://mdxjs.com/"><img src="https://www.svgrepo.com/show/373768/light-mdx.svg" alt="ui" width="30px" style="vertical-align: middle;"></a> untuk mengintegrasikan sintaks *markdown* dengan [*jsx*](https://react.dev/learn/writing-markup-with-jsx) agar pengalaman menulis konten lebih fleksibel.
 
-   8. AI untuk mencari referensi
+   8. [KB](https://v0.dev/) untuk mencari referensi
 
 ### Apa lagi yang perlu diketahui?
-Repositori ini dilindungi oleh Lisensi [MIT](/LICENSE). Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama kita menyertakan lisensi aslinya. Ini seperti meminjam alat dari seseorang, tetapi tetap memberikan penghargaan kepada mereka.
+Repositori ini dilindungi oleh Lisensi <a href="/LICENSE"><img src="https://www.svgrepo.com/show/444064/legal-license-mit.svg" width="40px" style="vertical-align: middle;"></a> dan <a href="/license-CC-BY-4.0"><img src="https://blog.okfn.org/files/2014/01/cc40-itshere-2751.png" width="30px" style="vertical-align: middle;"></a>. Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama kita menyertakan lisensi aslinya.
 
 [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
 

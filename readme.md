@@ -1,16 +1,16 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="100"></a>
+  <a href="https://maps.app.goo.gl/nXSSRhYwREe6CQks6"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="100"></a>
   <br>
   Description
 </h1>
 
-#### <div align="center">For ![Indonesian translation](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/20px-Flag_of_Indonesia.svg.png) translation, please refer to [this file](/core/readme.md)</div>
+#### <div align="center">For <img src="https://www.svgrepo.com/show/405511/flag-for-flag-indonesia.svg" alt="id_flag" width="20px" style="vertical-align: text-bottom;"> translation, please refer to [this file](/core/readme.md)</div>
 
 
 ### 1. So what is this?
 
-> This repository serves as a sort of folder or a collection of files and images for my proposed website for [Senior High School 17 of Surabaya](https://maps.app.goo.gl/nXSSRhYwREe6CQks6). While I acknowledge that the code structure might not be perfect and could face challenges when deployed online, it represents a starting point for this project.
+> This repository serves as a sort of folder or a collection of files and images for my proposed website for the [Senior High School 17 of Surabaya](https://maps.app.goo.gl/nXSSRhYwREe6CQks6). While I acknowledge that the code structure might not be perfect and could face challenges when deployed online, it represents a starting point for this project :)
 
 ### 2. Why am I doing this?
 
@@ -65,25 +65,25 @@ This is my way of showing appreciation to the school where I interned for almost
       ![github codespace](https://luke.geek.nz/assets/images/OpenCodespace-7ded5b93f6b3d8f25a98c42f2503235b.gif)
 
 ### 3. What tools and plugins did you use while creating this website proposal?
-   1. Any kind of *Virtual* IDE – Primarily used [Gitpod](https://www.gitpod.io/) or [Project IDX](https://idx.dev/) by Google for a cloud-based development environment.
+   1. Any kind of *Virtual* IDE: Primarily used <a href="https://www.gitpod.io/"><img src="https://www.svgrepo.com/show/373626/gitpod.svg" alt="gitpod" width="20px" style="vertical-align: text-bottom;"></a> or <a href="https://idx.google.com/"><img src="https://cdn.brandfetch.io/idH-6nF2GH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="idx" width="20px" style="vertical-align: text-bottom;"></a> for a cloud-based development environment.
 
-   2. Runtime – Leveraged [Bun](https://bun.sh/) for its performance and modern JavaScript runtime capabilities.
+   2. Runtime: Leveraged <a href="https://bun.sh/"><img src="https://bun.sh/logo.svg" alt="bun" width="20px" style="vertical-align: text-bottom;"></a> for its performance and modern <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://www.svgrepo.com/show/349419/javascript.svg" alt="js" width="20px" style="vertical-align: text-bottom;"></a> runtime capabilities.
 
-   3. Framework – Built the project using [Next.js](https://nextjs.org/) for its robust features and [server-side rendering](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering).
+   3. Framework: Built the project using <a href="https://nextjs.org/"><img src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" alt="next" width="20px" style="vertical-align: text-bottom;"></a> for its robust features and [server-side rendering](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering).
 
-   4. Styling – Implemented [taiwind.css](https://tailwindcss.com/) for utility-first styling.
+   4. Styling: Implemented <a href="https://tailwindcss.com/"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="tailwind" width="20px" style="vertical-align: text-bottom;"></a> for utility-first styling.
    
-   5. Component Library – Used [ui](https://ui.shadcn.com/) to streamline UI development.
+   5. Component Library: Used <a href="https://ui.shadcn.com/"><img src="https://logolist.net/wp-content/uploads/2024/04/shadcn-ui.svg" alt="ui" width="20px" style="vertical-align: text-bottom;"></a> to streamline UI development.
 
-   6. Language – Developed the project in [TypeScript](http://typescriptlang.com/) for type safety and maintainability.
+   6. Language: Mostly in <a href="http://typescriptlang.com/"><img src="https://www.svgrepo.com/show/439022/typescript.svg" alt="ui" width="20px" style="vertical-align: text-bottom;"></a> for type safety and maintainability.
 
-   7. Content Writing – Utilized [MDX](https://mdxjs.com/) to integrate Markdown with [JSX](https://react.dev/learn/writing-markup-with-jsx) for a seamless content experience.
+   7. Content Writing: Utilized <a href="https://mdxjs.com/"><img src="https://www.svgrepo.com/show/373768/light-mdx.svg" alt="ui" width="30px" style="vertical-align: middle;"></a> to integrate markdown with [jsx](https://react.dev/learn/writing-markup-with-jsx) for a seamless content experience.
 
    8. [AI](https://v0.dev/) for seeking reference
 
 ### 4. What else should I know?
 
-This repository is protected by the [MIT License](/LICENSE) and [Cc by 4.0](/license-CC-BY-4.0). This means you're free to use, copy, modify, and distribute the code as long as you include the original license. It’s like borrowing a tool from someone but giving them credit for it
+This repository is protected by the <a href="/LICENSE"><img src="https://www.svgrepo.com/show/444064/legal-license-mit.svg" width="40px" style="vertical-align: middle;"></a> & <a href="/license-CC-BY-4.0"><img src="https://blog.okfn.org/files/2014/01/cc40-itshere-2751.png" width="30px" style="vertical-align: middle;"></a> which means you're free to use, copy, modify, and distribute the code as long as you include the original license. It’s like borrowing a tool from someone but giving them credit for it
 
 [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
 
