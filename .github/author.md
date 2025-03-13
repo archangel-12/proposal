@@ -2,4 +2,4 @@
 
 #### that's all...
 
-#### ~~not sponsored by <img src="https://companieslogo.com/img/orig/C6L.SI-4461b2e9.png?t=1720244491" alt="sq_brand" width="20px" style="vertical-align: text-bottom;">, <img src="https://companieslogo.com/img/orig/AF.PA_BIG-be64dc4a.png?t=1730518159" alt="af-klm_brand" width="90px" style="vertical-align: text-bottom;">, <img src="https://logos-world.net/wp-content/uploads/2023/01/Star-Alliance-Logo-500x281.png" alt="sq_brand" width="90px" style="vertical-align: middle;">, and not even <img src="https://companieslogo.com/img/orig/github-97592640.png?t=1720244494 " alt="sq_brand" width="20px" style="vertical-align: middle;">~~
+#### ~~not sponsored by [star alliance](https://www.staralliance.com/en/home) or any of its members. not even [sq](https://www.singaporeair.com/) or [lh](https://www.lufthansa.com/us/en/homepage), which I hold dear the most~~

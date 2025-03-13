@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="200"></a>
+  <a href="https://www.instagram.com/smansby17/"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="200"></a>
   <br>
   Profil sekolah
   <br>

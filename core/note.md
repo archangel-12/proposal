@@ -18,4 +18,4 @@
     />
   ```
 
-- for full documentation, you can refer to this [site](https://nextjs.org/docs/messages/react-hydration-error) :)
+- for full documentation, you can refer to the [documentation](https://nextjs.org/docs/messages/react-hydration-error) :)

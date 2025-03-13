@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="200"></a>
+  <a href="https://www.instagram.com/smansby17/"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="200"></a>
   <br>
   School's profile
   <br>
@@ -55,8 +55,8 @@ SMAN 17 offers a variety of extracurricular activities, including:
 - _Keroncong Gethuk_ Smantass (Traditional Music Group)
 - Environmental Club
 - PETROMAKS
-- SEC (Smantass <img src="https://www.svgrepo.com/show/405643/flag-for-flag-united-kingdom.svg" alt="gb_flag" width="20px" style="vertical-align: text-bottom;"> language club)
+- SEC (Smantass ![gb_flag](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/20px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?20230715230526) language club)
 - KIR (Youth Scientific Group)
 - _Matriks_
 - Band
-- _Nanoka_ (<img src="https://www.svgrepo.com/show/249004/japan.svg" alt="jp_flag" width="20px" style="vertical-align: middle;"> language club)
+- _Nanoka_ (![jp_flag](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/20px-Flag_of_Japan.svg.png?20090916032838) language club)

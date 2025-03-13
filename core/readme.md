@@ -1,21 +1,92 @@
-<h1 align="center">
-  <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="smantass" width="100"></a>
-  <br>
-  Penjelasan
-</h1>
+<!--
+  terimakasih banyak kepada [otneildrew](https://github.com/othneildrew/Best-README-Template) and [race2infinity](https://github.com/race2infinity/The-Documentation-Compendium). for reference, please go to his readme profile...
+-->
 
-#### <div align="center">Untuk teks dalam bahasa <img src="https://www.svgrepo.com/show/405643/flag-for-flag-united-kingdom.svg" alt="gb_flag" width="20px" style="vertical-align: text-bottom;"> bisa melihat ke deskripsi [paling awal](/readme.md)</div>
-##### <div align="center">Untuk keterangan bersifat teknis, bisa dilihat dalam format `.md` dan BUKAN `.mdx`</div>
+<a id="readme-top"></a>
 
+<br />
 
-### 1. Jadi, proyek apakah ini?
-> Repositori ini seperti *folder* tempat saya menyimpan semua file, gambar, dan kode untuk situs web yang saya usulkan untuk [SMA Negeri 17 Surabaya](https://maps.app.goo.gl/LTp8YwdNVenDtcFr9). Meskipun struktur kodenya mungkin belum sempurna (dan mungkin perlu penyesuaian sebelum dipublikasikan secara online), ini adalah fondasi untuk membangun proyek ini.
+<div align="center">
+  <a href="https://www.instagram.com/smansby17/">
+    <img src="https://www.dbl.id/uploads/school/13178/683-SMAN_17_SURABAYA.png" alt="Logo" width="90" height="90">
+  </a>
 
-### 2. Mengapa saya melakukan ini?
-Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat saya magang selama hampir empat bulan. Pengalaman tersebut mengajarkan saya banyak hal, tidak hanya tentang pengembangan web, tetapi juga bagaimana bekerja dengan siswa dan memahami dunia mereka. Saya tahu bahwa saya bukan guru terbaik, tetapi pengalaman ini memberi saya pelajaran berharga, dan saya ingin memberikan sesuatu kembali dengan cara terbaik yang saya bisa.
+  <h3 align="center">Deskripsi</h3>
 
-### 3. Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?
+  <p align="center">
+    Untuk melihat deskripsi paling awal, bisa kembali ke laman <a href="/readme.md">sebelumnya</>
+    <br />
+    <a href="https://github.com/archangel-12/proposal"><strong>Selamat bereksplorasi :) »</strong></a>
+    <br/>
+    <strong>Untuk keterangan bersifat teknis, bisa dilihat dalam format .md dan BUKAN .mdx</strong>
+    <div align="center">
+
+   [![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
+   [![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)
+   [![lisensi](https://img.shields.io/badge/lisensi-MIT-blue.svg)](/LICENSE)
+   [![lisensi: CC BY 4.0](https://img.shields.io/badge/lisensi-cc_by_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+   </div>
+    <br />
+    <a href="/core/app/">Untuk kode sumber, bisa dilihat di folder ini</a>
+  </p>
+</div>
+
+<details>
+    <summary>Daftar isi</summary>
+    <ol>
+        <li>
+            <a href="#jadi-proyek-apakah-ini?">Jadi, proyek apakah ini?</a>
+        </li>
+        <li>
+            <a href="#mengapa-membuat-proyek-ini">Mengapa membuat proyek ini?</a>
+        </li>
+        <li><a href="#alat-dan-plugin-apa-saja-yang-digunakan-saat-membuat-proposal-website ini?">Alat dan plugin apa saja yang digunakan saat membuat proposal website ini?</a></li>
+        <li>
+            <a href="#bagaimana-mengunduh-dan-melihat-kumpulan-folder-dan-file-dengan-benar?">Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?</a>
+            <ul>
+                <li><a href="#lihat-kode-sumber-secara-langsung">Lihat kode sumber secara langsung</a></li>
+                <li>
+                    <a href="#unduh">Unduh?</a>
+                    <ul>
+                        <li><a href="#konvensional">Konvensional</a></li>
+                        <li><a href="#cara cepat">Cara cepat</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="acknowledgments">Acknowledgments</a></li>
+    </ol>
+</details>
+
+### Jadi, proyek apakah ini?
+> Repositori ini seperti *folder* tempat saya menyimpan semua file, gambar, dan kode untuk situs web yang saya usulkan untuk [SMA Negeri 17 Surabaya](https://www.instagram.com/smansby17/). Meskipun struktur kodenya mungkin belum sempurna (dan mungkin perlu penyesuaian sebelum dipublikasikan secara online), namun ini adalah fondasi untuk membangun proyek ini.
+
+### Mengapa membuat proyek ini?
+Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat saya magang selama hampir 4 bulan. Pengalaman tersebut mengajarkan saya banyak hal, tidak hanya tentang pengembangan web, tetapi juga bagaimana bekerja dengan siswa dan memahami dunia mereka. Saya tahu bahwa saya bukan guru terbaik, tetapi pengalaman ini memberi saya pelajaran berharga, dan saya ingin memberikan sesuatu kembali dengan cara terbaik yang saya bisa.
+
+---
+
+### Alat dan plugin apa saja yang digunakan saat membuat proposal website ini?
+   1. Segala jenis *IDE* berbasis *virtual*: Menggunakan <a href="https://gitpod.io/"><img src="https://img.shields.io/badge/-gitpod-orange?logo=gitpod&logoColor=white&label=" alt="gitpod"/></a> atau <a href="https://idx.dev/"><img src="https://img.shields.io/badge/project%20idx-beta-blue?logo=googlecloud&logoColor=white" alt="idx.dev"/></a> sebagai lingkungan pengembangan berbasis *cloud*.
+
+   2. *Runtime*: Memakai <a href="https://bun.sh/"><img src="https://img.shields.io/badge/bun-%23000000.svg?logo=bun&logoColor=white" alt="bun"></a> karena performanya yang cepat dan efisien.
+
+   3. Kerangka kerja: Memakai <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/next-%23000000.svg?logo=next.js&logoColor=white" alt="next"></a> untuk fitur yang kuat serta dukungan [*server-side rendering*](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering).
+
+   4. *Styling*: Menggunakan <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/tailwind-%2338B2AC.svg?logo=tailwindcss&logoColor=white" alt="tailwind"></a> sebagai solusi *styling* berbasis [*utility-first*](https://tailwindcss.com/docs/styling-with-utility-classes).
+
+   5. Pustaka komponen: Menggunakan <a href="https://ui.shadcn.com/"><img src="https://img.shields.io/badge/shadcn/ui-%2318181B.svg?logo=vercel&logoColor=white" alt="shadcn/ui"></a> untuk mempercepat pengembangan antarmuka pengguna.
+
+   6. Bahasa: Memakai <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/-%23007ACC.svg?logo=typescript&logoColor=white" alt="ts"></a>
+
+   7. Penulisan Konten: Menggunakan <a href="https://mdxjs.com/"><img src="https://img.shields.io/badge/mdx-%23FBBF24.svg?logo=mdx&logoColor=black" alt="MDX"></a> untuk mengintegrasikan sintaks *markdown* dengan [*jsx*](https://react.dev/learn/writing-markup-with-jsx) agar pengalaman menulis konten lebih fleksibel.
+
+   8. [KB](https://v0.dev/) untuk mencari referensi
+
+> [!IMPORTANT] 
+> Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `readme.md`) akan ditulis dalam bahasa Inggris dikarenakan jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
+
+### Bagaimana mengunduh dan melihat kumpulan folder dan file dengan benar?
 
 - Lihat __kode sumber secara langsung__
 
@@ -62,31 +133,10 @@ Proyek ini adalah cara saya menunjukkan rasa terima kasih kepada sekolah tempat 
       Ini adalah demonstrasi bagaimana cara menggunakan Codespace:
 
       ![github codespace](https://luke.geek.nz/assets/images/OpenCodespace-7ded5b93f6b3d8f25a98c42f2503235b.gif)
+___
 
-> [!IMPORTANT] 
-> Untuk selanjutnya, segala bentuk dokumentasi (dalam kasus ini, segala yang dalam bentuk file `readme.md`) akan ditulis dalam bahasa Inggris dikarenakan jujur, saya lebih nyaman memakai bahasa Inggris jika ber-urusan dalam hal teknis, ditambah banyak perbendaharaan kata dalam bahasa Indonesia tidak sekaya seperti bahasa Inggris.... Sekian dan harap dimaklumi :)
-
-### 3. Alat dan plugin apa saja yang saya gunakan saat membuat proposal website ini?
-
-   1. Segala jenis *IDE* berbasis *virtual*: Menggunakan <a href="https://www.gitpod.io/"><img src="https://www.svgrepo.com/show/373626/gitpod.svg" alt="gitpod" width="20px" style="vertical-align: text-bottom;"></a> atau <a href="https://idx.google.com/"><img src="https://cdn.brandfetch.io/idH-6nF2GH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="idx" width="20px" style="vertical-align: text-bottom;"></a> sebagai lingkungan pengembangan berbasis *cloud*.
-
-   2. *Runtime*: Memakai <a href="https://bun.sh/"><img src="https://bun.sh/logo.svg" alt="bun" width="20px" style="vertical-align: text-bottom;"></a> karena performanya yang cepat dan efisien.
-
-   3. Kerangka kerja: Memakai <a href="https://nextjs.org/"><img src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" alt="next" width="20px" style="vertical-align: text-bottom;"></a> untuk fitur yang kuat serta dukungan [*server-side rendering*](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering).
-
-   4. *Styling*: Menggunakan <a href="https://tailwindcss.com/"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="tailwind" width="20px" style="vertical-align: text-bottom;"></a> sebagai solusi *styling* berbasis [*utility-first*](https://tailwindcss.com/docs/styling-with-utility-classes).
-
-   5. Pustaka komponen: Menggunakan <a href="https://ui.shadcn.com/"><img src="https://logolist.net/wp-content/uploads/2024/04/shadcn-ui.svg" alt="ui" width="20px" style="vertical-align: text-bottom;"></a> untuk mempercepat pengembangan antarmuka pengguna.
-
-   6. Bahasa: Memakai <a href="http://typescriptlang.com/"><img src="https://www.svgrepo.com/show/439022/typescript.svg" alt="ui" width="20px" style="vertical-align: text-bottom;"></a>
-
-   7. Penulisan Konten: Menggunakan <a href="https://mdxjs.com/"><img src="https://www.svgrepo.com/show/373768/light-mdx.svg" alt="ui" width="30px" style="vertical-align: middle;"></a> untuk mengintegrasikan sintaks *markdown* dengan [*jsx*](https://react.dev/learn/writing-markup-with-jsx) agar pengalaman menulis konten lebih fleksibel.
-
-   8. [KB](https://v0.dev/) untuk mencari referensi
-
-### Apa lagi yang perlu diketahui?
-Repositori ini dilindungi oleh Lisensi <a href="/LICENSE"><img src="https://www.svgrepo.com/show/444064/legal-license-mit.svg" width="40px" style="vertical-align: middle;"></a> dan <a href="/license-CC-BY-4.0"><img src="https://blog.okfn.org/files/2014/01/cc40-itshere-2751.png" width="30px" style="vertical-align: middle;"></a>. Artinya, Anda bebas menggunakan, menyalin, memodifikasi, dan mendistribusikan kode ini selama kita menyertakan lisensi aslinya.
-
-[![let it happen](https://github.com/archangel-12/proposal/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/archangel-12/proposal/actions/workflows/main.yml)
-
-[![CodeQL](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/archangel-12/proposal/actions/workflows/github-code-scanning/codeql)
+### *Acknowledgments*
+* *big shoutout* untuk kalian-kalian yang menjadi bagian dari plp tahun kemarin...
+* <a href="https://www.instagram.com/plp_sma17.unesa/">
+  <img src="https://img.shields.io/badge/semuanya didokumentasikan disini :)-%23E4405F.svg?logo=instagram&logoColor=white" alt="Instagram">
+</a>
