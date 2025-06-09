@@ -1,8 +1,13 @@
 {
   "name": "@archangel-12/proposal",
   "version": "3.0.2",
-  "license": "MIT, CC-BY-4.0",
-  "exports": "./..",
+  "exports": {
+    "./core": "./core/",
+    "./components": "./components/",
+    "./utils": "./utils/",
+    "./pages": "./pages/",
+    "./styles": "./styles/"
+  },
   "publish": {
     "exclude": ["public"]
   }
