@@ -1,0 +1,9 @@
+{
+  "name": "@archangel-12/proposal",
+  "version": "3.0.2",
+  "license": "MIT, CC-BY-4.0",
+  "exports": "./.",
+  "publish": {
+    "exclude": ["public"]
+  }
+}
