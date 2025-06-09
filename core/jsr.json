@@ -2,11 +2,11 @@
   "name": "@archangel-12/proposal",
   "version": "3.0.2",
   "exports": {
-    "./core": "./core/",
-    "./components": "./components/",
-    "./utils": "./utils/",
-    "./pages": "./pages/",
-    "./styles": "./styles/"
+    "./core": "./core",
+    "./components": "./components",
+    "./utils": "./utils",
+    "./pages": "./pages",
+    "./styles": "./styles"
   },
   "publish": {
     "exclude": ["public"]
