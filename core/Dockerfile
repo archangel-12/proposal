@@ -1,4 +1,4 @@
-FROM oven/bun:latest as builder
+FROM oven/bun as builder
 
 WORKDIR /core/app
 
@@ -7,7 +7,7 @@ RUN bun install
 
 COPY core/app .
 
-FROM oven/bun:runtime as runtime
+FROM oven/bun as runtime
 
 WORKDIR /core/app
 
