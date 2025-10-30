@@ -19,7 +19,12 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "payload.cargocollective.com",
-      },
+      }
+      ,
+      {
+        protocol: "https",
+        hostname: "aspenideasfestival.imgix.net"
+      }
     ],
   },
   pageExtensions: ["ts", "tsx", "md", "mdx"],

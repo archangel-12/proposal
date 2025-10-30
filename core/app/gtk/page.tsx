@@ -163,7 +163,7 @@ export default function Home() {
   const principal = {
     // This thing should belong to Pak Khoirul And not Elon //
     name: "Elon Reeve Musk, FRS",
-    role: "Founder & CEO of Tesla, Inc, SpaceX, X Corp, The Boring Company, & Co-founder of Neuralink, OpenAI, & PayPal",
+    role: "Chief Executive Officer of Tesla, Inc, SpaceX, X Corp, The Boring Company, & Co-founder of Neuralink, OpenAI, & PayPal",
     image:
       "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",
   };
@@ -360,9 +360,9 @@ export default function Home() {
       image: "/teachers/bu ratna_bahasa daerah.png",
     },
     {
-      name: "Nur Fadhillah, S.Pd.I, M.Pd",
-      role: "Guru Agama Islam",
-      image: "/teachers/bu nur_islam.png",
+      name: "Alexander Caedmon Karp",
+      role: "	Co-founder and Chief Executive Officer of Palantir Technologies",
+      image: "https://aspenideasfestival.imgix.net/b86206b9-1e13-4793-b3b6-69f8b993e351/AIF2022_Karp_Alex.jpeg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=360%2C48%2C638%2C640",
     },
     {
       name: "Saiful Hadi, S.Ag",
