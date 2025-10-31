@@ -1,6 +1,14 @@
-export const teachers = [
+export const principal = {
+  // This thing should belong to Pak Khoirul And not Elon //
+  name: "Elon Reeve Musk, FRS",
+  role: "Chief Executive Officer of Tesla, Inc, SpaceX, X Corp, The Boring Company, & Co-founder of Neuralink, OpenAI, & PayPal",
+  image:
+    "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",
+};
+
+export const staff = [
   {
-    name: "Endang R., M.Pd",
+    name: "Endang Restuningsih, M.Pd",
     role: "Guru Matematika",
     image: "/teachers/bu endang_matematika.png",
   },
@@ -45,7 +53,7 @@ export const teachers = [
     image: "/teachers/Pak Baris_geografi.png",
   },
   {
-    name: "Dra. Pipik Maria P, M.M",
+    name: "Dra. Pipik Maria Poespita, M.M",
     role: "Guru Kimia",
     image: "/teachers/Bu Pipik_kimia.png",
   },
@@ -55,12 +63,12 @@ export const teachers = [
     image: "/teachers/Bu Aini_fisika.png",
   },
   {
-    name: "Maria Agustina D.P, S.Pd",
+    name: "Maria Agustina Darma Rahayu, S.Pd",
     role: "Guru Fisika & PKWU",
     image: "/teachers/bu maria_bahasa inggris.png",
   },
   {
-    name: "Kustapa Yuli P, S.Pd",
+    name: "Kustapa Yuli Priyanto, S.Pd",
     role: "Guru Biologi",
     image: "/teachers/pak kustapa_biologi.png",
   },
@@ -80,7 +88,7 @@ export const teachers = [
     image: "/teachers/pak eko_fisika.png",
   },
   {
-    name: "Fifid Suryaning F, M.Pd",
+    name: "Fifid Suryaning Fitri, M.Pd",
     role: "Guru Bahasa Inggris",
     image: "/teachers/bu fifid_bahasa inggris.png",
   },
@@ -110,7 +118,7 @@ export const teachers = [
     image: "/teachers/pak fauzi_olahraga.png",
   },
   {
-    name: "ELVYN B, S.Sos., M.Pd",
+    name: "Elvyn Bahterawati, S.Sos., M.Pd",
     role: "Guru Sosiologi",
     image: "/teachers/bu elvyn_sosiologi.png",
   },
@@ -165,7 +173,7 @@ export const teachers = [
     image: "/teachers/bu indah_matematika.png",
   },
   {
-    name: "Wafi H, S.Pd.I, M.Pd",
+    name: "Wafir Hasanudin, S.Pd.I, M.Pd",
     role: "Guru Agama Islam",
     image: "/teachers/pa wafi_islam.png",
   },
@@ -180,7 +188,7 @@ export const teachers = [
     image: "/teachers/bu ratih_seni budaya.png",
   },
   {
-    name: "Nindya R.P.D, S.Sos, M.Pd",
+    name: "Nindya Riantika Putri Dewayani, S.Sos, M.Pd",
     role: "Guru Sosiologi",
     image: "/teachers/bu nindya_sosiologi.png",
   },
@@ -190,10 +198,10 @@ export const teachers = [
     image: "/teachers/bu ratna_bahasa daerah.png",
   },
   {
-    name: "Dr. Alexander Caedmon Karp",
-    role: "CEO of Palantir Technologies",
+    name: "Alexander Caedmon Karp",
+    role: "Co-founder and Chief Executive Officer of Palantir Technologies",
     image:
-      "https://image.tmdb.org/t/p/w235_and_h235_face/4gI0x5RtIqvT7LHL3MbGgBUuQHK.jpg",
+      "https://aspenideasfestival.imgix.net/b86206b9-1e13-4793-b3b6-69f8b993e351/AIF2022_Karp_Alex.jpeg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=360%2C48%2C638%2C640",
   },
   {
     name: "Saiful Hadi, S.Ag",
@@ -206,12 +214,12 @@ export const teachers = [
     image: "/teachers/bu astri_sejarah.png",
   },
   {
-    name: "Aviarina Widya I, S.Si, M.T",
+    name: "Aviarina Widya Ismanto, S.Si, M.T",
     role: "Guru Kimia",
     image: "/teachers/bu avi_kimia.png",
   },
   {
-    name: "Mohammad Rafli A, S.Pd",
+    name: "Mohammad Rafli Alfisyar, S.Pd",
     role: "Guru Geografi",
     image: "/teachers/pak rafli_geografi.png",
   },
@@ -221,7 +229,7 @@ export const teachers = [
     image: "/teachers/bu reni_nihon.png",
   },
   {
-    name: "Adawiya K, S.Sos",
+    name: "Adawiya Kurnianingsih, S.Sos",
     role: "Guru Sosiologi",
     image: "/teachers/bu ada_sosiologi.png",
   },
@@ -236,11 +244,10 @@ export const teachers = [
     image: "/teachers/bu farah_bahasa indonesia.png",
   },
   {
-    // This thing should belong to Bu Tiwi And not Elon //
-    name: "Elon Reeve Musk",
-    role: "CEO of Tesla, Inc, SpaceX, & X Corp",
-    image:
-      "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",
+    // This too should belong to Bu Tiwi
+    name: "Andrej Karpathy",
+    role: "Former Tesla's Director of Artificial Intelligence & Autopilot Vision",
+    image: "/karpathy.jpg",
   },
   {
     name: "Novi Kiki Rizki Amalia",
@@ -248,7 +255,7 @@ export const teachers = [
     image: "/tenaga_kependidikan/bu novi.png",
   },
   {
-    name: "Julius Gatot P, S.E",
+    name: "Julius Gatot Pranoto, S.E",
     role: "Tenaga Kependidikan",
     image: "/tenaga_kependidikan/pak gatot.png",
   },
@@ -256,5 +263,35 @@ export const teachers = [
     name: "Nurul Huda",
     role: "Tenaga Kependidikan",
     image: "/tenaga_kependidikan/pak nurul.png",
+  },
+  {
+    name: "Afri Kurniawan",
+    role: "Kebersihan",
+    image: "/kebersihan/afri.png",
+  },
+  {
+    name: "Ahmat Subakir",
+    role: "Kebersihan",
+    image: "/kebersihan/ahmat.png",
+  },
+  {
+    name: "Warijo",
+    role: "Kebersihan",
+    image: "/kebersihan/warijo.png",
+  },
+  {
+    name: "Iswanto",
+    role: "Keamanan",
+    image: "/keamanan/is.png",
+  },
+  {
+    name: "Rizki Dwi Aryanto",
+    role: "Keamanan",
+    image: "/keamanan/rizky.png",
+  },
+  {
+    name: "Saipul Anwar",
+    role: "Keamanan",
+    image: "/keamanan/saiful.png",
   },
 ];

@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "aspenideasfestival.imgix.net"
+      },
+      {
+        protocol: "https",
+        hostname: "image.tmdb.org"
       }
     ],
   },
