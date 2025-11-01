@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import headerLogo from "../public/cropped-HeaderLogo.png";
-import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import Socials from "./Socials";
 
 export default function Footer() {
   return (
@@ -27,7 +27,12 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Hubungi kami:</h3>
-            <p className="text-sm">Email: smantass@ymail.com</p>
+            <a
+              href="mailto:smantass@ymail.com?subject=Hello&body=Hi%20there!"
+              className="text-sm text-blue-500 hover:underline"
+            >
+              Email: smantass@ymail.com
+            </a>
             <p className="text-sm">Phone: (031) 8700717</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -54,34 +59,14 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-2">
               Ikuti Media Sosial Kami
             </h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.facebook.com/smantass/"
-                className="text-white hover:text-blue-400"
-              >
-                <FaFacebookF className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.instagram.com/smansby17/"
-                className="text-white hover:text-blue-400"
-              >
-                <FaInstagram className="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com/IASmantass"
-                className="text-white hover:text-blue-400"
-              >
-                <FaXTwitter className="w-6 h-6" />
-              </a>
-            </div>
+            <Socials />
           </div>
         </div>
-        <div className="mt-8 text-center text-sm">
-          <p>
-            &copy; {new Date().getFullYear()} SMAN 17 SURABAYA. All rights
-            reserved
-          </p>
-        </div>
+        <br />
+        <p className="mt-8 text-center text-sm">
+          &copy; {new Date().getFullYear()} SMAN 17 SURABAYA. Hak cipta
+          dilindungi Undang-undang
+        </p>
       </div>
     </footer>
   );

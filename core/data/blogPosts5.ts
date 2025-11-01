@@ -7,6 +7,7 @@ import grade5 from "@/app/non_akademik/grade-5.mdx";
 import GCHQ from "@/app/non_akademik/qchq.mdx";
 import kartiniModern from "@/app/non_akademik/kartini.mdx";
 import senjata from "@/app/non_akademik/senjata.mdx";
+import type { BlogPost } from "@/types/blog";
 
 export interface BlogPost5 {
   id: string;
