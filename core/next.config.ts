@@ -26,9 +26,10 @@ const nextConfig: NextConfig = {
         hostname: "aspenideasfestival.imgix.net"
       },
       {
-        protocol: "https",
-        hostname: "image.tmdb.org"
-      }
+        protocol: 'https',
+        hostname: 'cloudfront-us-east-1.images.arcpublishing.com',
+        pathname: '/**',
+      },
     ],
   },
   pageExtensions: ["ts", "tsx", "md", "mdx"],

@@ -17,7 +17,6 @@ export default function PrincipalMessage() {
             className="rounded-lg shadow-lg object-cover"
           />
         </div>
-
         <motion.div
           className="md:w-1/2 space-y-6"
           initial={{ opacity: 0, x: 20 }}

@@ -20,7 +20,7 @@ export default function page() {
           className="flex flex-col items-center mb-16"
         >
           <div className="relative w-48 h-48 mb-4">
-            <div className="absolute inset-0 rounded-full bg-blue-500" />
+            <div className="absolute inset-0 rounded-full" />
             <Image
               src={principal.image}
               alt={principal.name}

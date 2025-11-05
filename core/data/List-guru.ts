@@ -5,7 +5,7 @@ export const teachers = [
     image: "/teachers/bu endang_matematika.png",
   },
   {
-    name: "Drs.Teguh Juana, M.Si",
+    name: "Drs. Teguh Juana, M.Si",
     role: "Guru Sejarah",
     image: "/teachers/Pak Teguh_Sejarah.png",
   },
@@ -190,10 +190,10 @@ export const teachers = [
     image: "/teachers/bu ratna_bahasa daerah.png",
   },
   {
-    name: "Dr. Alexander Caedmon Karp",
+    name: "Dr. Alexander Caedmon Karp, Ph.D",
     role: "CEO of Palantir Technologies",
     image:
-      "https://image.tmdb.org/t/p/w235_and_h235_face/4gI0x5RtIqvT7LHL3MbGgBUuQHK.jpg",
+      "https://cloudfront-us-east-1.images.arcpublishing.com/thedailybeast/UZLXATURONAW3D4Z4BZHPEFT4U.jpg",
   },
   {
     name: "Saiful Hadi, S.Ag",
@@ -237,7 +237,7 @@ export const teachers = [
   },
   {
     // This thing should belong to Bu Tiwi And not Elon //
-    name: "Elon Reeve Musk",
+    name: "Elon Reeve Musk, FRS",
     role: "CEO of Tesla, Inc, SpaceX, & X Corp",
     image:
       "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",

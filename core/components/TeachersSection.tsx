@@ -20,7 +20,6 @@ export default function TeachersSection() {
           <h2 className="text-4xl font-bold text-gray-800 mb-2">DEWAN GURU</h2>
           <p className="text-gray-600">Guru & Tenaga Kependidikan Sekolah</p>
         </div>
-
         <AnimatePresence mode="wait">
           <motion.div
             key={currentPage}
@@ -39,7 +38,7 @@ export default function TeachersSection() {
                 className="flex flex-col items-center"
               >
                 <div className="relative w-48 h-48 mb-4">
-                  <div className="absolute inset-0 bg-red-500 rounded-full"></div>
+                  <div className="absolute inset-0 rounded-full"></div>
                   <Image
                     src={teacher.image}
                     alt={teacher.name}
@@ -48,15 +47,14 @@ export default function TeachersSection() {
                     className="rounded-full object-cover border-4 relative z-10"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                <h3 className="font-semibold text-gray-800 mb-2">
                   {teacher.name}
                 </h3>
-                <p className="text-gray-600">{teacher.role}</p>
+                <p className="font-normal text-gray-600">{teacher.role}</p>
               </motion.div>
             ))}
           </motion.div>
         </AnimatePresence>
-
         <div className="flex justify-center space-x-2 mt-8">
           {[...Array(totalPages)].map((_, i) => (
             <button

@@ -1,9 +1,7 @@
 export const principal = {
-  // This thing should belong to Pak Khoirul And not Elon //
-  name: "Elon Reeve Musk, FRS",
-  role: "Chief Executive Officer of Tesla, Inc, SpaceX, X Corp, The Boring Company, & Co-founder of Neuralink, OpenAI, & PayPal",
-  image:
-    "https://foreignpolicy.com/wp-content/uploads/2023/11/elon-musk-messy-hero-GettyImages-1239416791.jpg?resize=1200,1200",
+  name: "Zaenal Arifin, M.PD",
+  role: "Kepala Sekolah",
+  image: "/BANG-J-PROFIL.png",
 };
 
 export const staff = [
@@ -13,7 +11,7 @@ export const staff = [
     image: "/teachers/bu endang_matematika.png",
   },
   {
-    name: "Drs.Teguh Juana, M.Si",
+    name: "Drs. Teguh Juana, M.Si",
     role: "Guru Sejarah",
     image: "/teachers/Pak Teguh_Sejarah.png",
   },
@@ -197,11 +195,12 @@ export const staff = [
     role: "Guru Bahasa Daerah",
     image: "/teachers/bu ratna_bahasa daerah.png",
   },
+  // This should belong to new teacher
   {
-    name: "Alexander Caedmon Karp",
-    role: "Co-founder and Chief Executive Officer of Palantir Technologies",
+    name: "Dr. Alexander Caedmon Karp, Ph.D",
+    role: "Direktur utama & salah satu pendiri Palantir technologies",
     image:
-      "https://aspenideasfestival.imgix.net/b86206b9-1e13-4793-b3b6-69f8b993e351/AIF2022_Karp_Alex.jpeg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=360%2C48%2C638%2C640",
+      "https://cloudfront-us-east-1.images.arcpublishing.com/thedailybeast/UZLXATURONAW3D4Z4BZHPEFT4U.jpg",
   },
   {
     name: "Saiful Hadi, S.Ag",
@@ -244,9 +243,9 @@ export const staff = [
     image: "/teachers/bu farah_bahasa indonesia.png",
   },
   {
-    // This too should belong to Bu Tiwi
+    // This should belong to Bu Tiwi
     name: "Andrej Karpathy",
-    role: "Former Tesla's Director of Artificial Intelligence & Autopilot Vision",
+    role: "Mantan direktur kecerdasan buatan & autopilot visi Tesla, Inc",
     image: "/karpathy.jpg",
   },
   {

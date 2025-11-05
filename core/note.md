@@ -8,7 +8,7 @@
 
 - ````html
     <div className="text-justify">
-      ### when we win, do not forget that these people want you broke, dead, your kids r***d and brainwashed, and they think it's funny
+      ### I don't think in 'win-lose.' I think in domination
     </div>
 
 - ```html

@@ -5,21 +5,33 @@
     "1": "The Senior High School 17 of Surabaya decides what web content is acceptable in their interest",
     "2": "All the property, including the source code belongs to the school"
   },
-  "version": "3.0.2",
+  "version": "4.0.0",
   "author": {
     "name": "matthew {@archangel-12 || @thenothing_12} alexander",
     "email": "alexandermatthew25@gmail.com",
     "instagram": "@r3yanson",
     "github": "@archangel-12, @thenothing12"
   },
-  "maintainers": ["SMA NEGERI 17 SURABAYA"],
-  "contributors": ["matthew alexander", "SMA NEGERI 17 SURABAYA"],
+  "maintainers": [
+    "SMA NEGERI 17 SURABAYA"
+  ],
+  "contributors": [
+    "matthew alexander",
+    "SMA NEGERI 17 SURABAYA"
+  ],
   "license": "(MIT OR CC-BY-4.0)",
   "repository": {
     "url": "https://github.com/archangel-12/proposal"
   },
-  "categories": ["Education"],
-  "keywords": ["Education", "school", "website", "proposal"],
+  "categories": [
+    "Education"
+  ],
+  "keywords": [
+    "Education",
+    "school",
+    "website",
+    "proposal"
+  ],
   "private": false,
   "scripts": {
     "update-check": "bun outdated",

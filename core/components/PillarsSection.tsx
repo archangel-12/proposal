@@ -1,40 +1,9 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FileText, Users, Lightbulb } from "lucide-react";
 
 export default function PillarsSection() {
-  const pillars = [
-    {
-      title: "INOVATIF",
-      icon: FileText,
-      description:
-        "Di era digital sekarang ini guru harus bisa mengimbangi dan melangkah maju untuk mengikuti perkembangan pendidikan untuk meningkatkan keprofesionalan dalam mengajar sehingga lebih menarik dan mampu berinovatif",
-      name: "INARNI, S.PD",
-      image:
-        "https://i.pinimg.com/originals/62/8b/e9/628be9123fd21fddf512814d3e36da7c.gif",
-    },
-    {
-      title: "MANDIRI",
-      icon: Users,
-      description:
-        "Manusia hebat adalah mereka yang mampu memotivasi dirinya sendiri tanpa harus diminta atau dipaksa orang lain. Berinisiatif sendiri dan berbuat baik menjadikan manusia kuat dan mandiri",
-      name: "TOTOK SUDARTO, S.PD",
-      image:
-        "https://i.pinimg.com/originals/64/a9/19/64a9196a102faf69e4ff8284cb3996ca.gif",
-    },
-    {
-      title: "KREATIF",
-      icon: Lightbulb,
-      description:
-        "Pembelajaran yang disesuaikan dengan kondisi fisik pada jam tersebut dengan selingan humor dan tidak mengurangi isi materi",
-      name: "DRS. TEGUH JUANA, M.SI",
-      image:
-        "https://i.pinimg.com/originals/60/03/0e/60030eb651d4f7965b67dceab21484b7.gif",
-    },
-  ];
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-3">
       {pillars.map((pillar, index) => (
@@ -70,3 +39,33 @@ export default function PillarsSection() {
     </div>
   );
 }
+
+const pillars = [
+  {
+    title: "INOVATIF",
+    icon: FileText,
+    description:
+      "Di era digital sekarang ini guru harus bisa mengimbangi dan melangkah maju untuk mengikuti perkembangan pendidikan untuk meningkatkan keprofesionalan dalam mengajar sehingga lebih menarik dan mampu berinovatif",
+    name: "INARNI, S.PD",
+    image:
+      "https://i.pinimg.com/originals/62/8b/e9/628be9123fd21fddf512814d3e36da7c.gif",
+  },
+  {
+    title: "MANDIRI",
+    icon: Users,
+    description:
+      "Manusia hebat adalah mereka yang mampu memotivasi dirinya sendiri tanpa harus diminta atau dipaksa orang lain. Berinisiatif sendiri dan berbuat baik menjadikan manusia kuat dan mandiri",
+    name: "TOTOK SUDARTO, S.PD",
+    image:
+      "https://i.pinimg.com/originals/64/a9/19/64a9196a102faf69e4ff8284cb3996ca.gif",
+  },
+  {
+    title: "KREATIF",
+    icon: Lightbulb,
+    description:
+      "Pembelajaran yang disesuaikan dengan kondisi fisik pada jam tersebut dengan selingan humor dan tidak mengurangi isi materi",
+    name: "DRS. TEGUH JUANA, M.SI",
+    image:
+      "https://i.pinimg.com/originals/60/03/0e/60030eb651d4f7965b67dceab21484b7.gif",
+  },
+];
