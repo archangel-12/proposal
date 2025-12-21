@@ -1,5 +1,5 @@
 "use client";
-import { teachers } from "@/data/List-guru";
+import teachers from "@/json/list-guru.json";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";

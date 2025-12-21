@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { acceptedData } from "@/data/accepted";
+import lulus from "@/json/accepted.json";
 
 export default function page() {
   return (
@@ -21,7 +21,7 @@ export default function page() {
         ></motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {acceptedData.map((member, index) => (
+          {lulus.map((member, index) => (
             <motion.div
               key={member.name}
               initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,9 @@ export default function page() {
               <h3 className="text-lg font-semibold text-gray-800 mb-1 text-center">
                 {member.name}
               </h3>
-              <p className="text-sm text-gray-600 text-center">{member.role}</p>
+              <p className="text-sm text-gray-600 text-center">
+                {member.Diterima}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { staff, principal } from "@/data/staff";
+import SemuaStaf from "@/json/staff.json";
+
+const { staff, principal } = SemuaStaf;
 
 export default function page() {
   return (
