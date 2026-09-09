@@ -37,12 +37,8 @@ export default function Header() {
             priority
           />
         </Link>
-        <ul className="hidden md:flex items-center space-x-6 ml-auto">
-          <li>
-            <Link href="/" className="text-gray-700 hover:text-blue-600">
-              Home
-            </Link>
-          </li>
+        <ul className="hidden md:flex items-baseline space-x-6 ml-auto">
+          
           {menus.map((menu) => (
             <li key={menu.title}>
               <DropdownMenu title={menu.title} items={menu.items} />

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright 2025 matthew {archangel-12 || thenothing_12} alexander & SMA Negeri 17 Surabaya
+Copyright 2025 @archangel-12
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
