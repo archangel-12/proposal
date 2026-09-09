@@ -64,7 +64,7 @@ export default function PrincipalMessage() {
           </div>
 
           <div className="mt-8 inline-block border-2 border-gray-800 px-6 py-2">
-            <p className="font-semibold">Zaenal Arifin, M.PD</p>
+            <p className="font-semibold">Zaenal Arifin, M.Pd</p>
           </div>
         </motion.div>
       </div>

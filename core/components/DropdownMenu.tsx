@@ -18,7 +18,6 @@ interface DropdownMenuProps {
 
 export default function DropdownMenu({ title, items }: DropdownMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div 
       className="relative inline-block text-left"
